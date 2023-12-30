@@ -1,0 +1,50 @@
+.flashcard {
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 40px;
+}
+
+.flashcard .card-front,
+.flashcard .card-back {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+    border: 2px solid #76737e;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: font-size 0.3s ease, transform 0.3s ease;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background-color: #2f2b3a;
+
+    p {
+        margin: 5px 0;
+    }
+}
+
+.card-front {
+    background-color: #46424f;
+}
+
+.flipped .card-back {
+    transform: rotateY(0deg);
+}
+
+.flipped .card-front {
+    transform: rotateY(180deg);
+}
+
+.flashcard:hover {
+    .card-front {
+        font-size: 1.8em;
+    }
+
+    /* .card-back {
+        font-size: 1.3em;
+    } */
+}
