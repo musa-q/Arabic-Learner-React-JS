@@ -1,3 +1,4 @@
+import { Button } from 'bootstrap';
 import { useEffect, useState } from 'react';
 
 const tenses = ["present", "past", "future"];
@@ -10,6 +11,8 @@ const VerbsPage = () => {
     const [currentConjugation, setCurrentConjugation] = useState(null);
     const [resultMessage, setResultMessage] = useState("");
     const [dataLoaded, setDataLoaded] = useState(false);
+    const [showAnswerButton, setShowAnswerButton] = useState(false);
+    const [revealAnswer, setRevealAnswer] = useState(false);
 
     const getRandomConjugation = () => {
         if (!dataLoaded || !verbData.length) {
@@ -31,6 +34,7 @@ const VerbsPage = () => {
             setResultMessage("Correct!");
         } else {
             setResultMessage("Incorrect. Try again.");
+            setShowAnswerButton(true);
         }
     };
 
@@ -38,7 +42,13 @@ const VerbsPage = () => {
         getRandomConjugation();
         setCurrentAnswer("");
         setResultMessage("");
+        setShowAnswerButton(false);
+        setRevealAnswer(false);
     };
+
+    const showAnswerClicked = () => {
+        setRevealAnswer(true);
+    }
 
     useEffect(() => {
         const fetchData = async () => {
@@ -96,6 +106,14 @@ const VerbsPage = () => {
                     <button type="button" id="next-button" onClick={nextQuestion}>Next</button>
                 </form>
                 <p id="result-message">{resultMessage}</p>
+                {showAnswerButton && (
+                    <>
+                        <button type="button" onClick={showAnswerClicked}>Show answer</button>
+                        {revealAnswer && (
+                            <p>{correctAnswer}</p>
+                        )}
+                    </>
+                )}
             </div>
         </>
     );
