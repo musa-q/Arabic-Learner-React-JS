@@ -1,5 +1,12 @@
-import { Button } from 'bootstrap';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
+import Row from 'react-bootstrap/Row';
+import COl from 'react-bootstrap/Col';
+import Table from 'react-bootstrap/Table';
 import { useEffect, useState } from 'react';
+import './VerbsPage.css';
+import Col from 'react-bootstrap/Col';
 
 const tenses = ["present", "past", "future"];
 const pronouns = ["i", "you_m", "you_f", "he", "she", "they", "we"];
@@ -47,7 +54,7 @@ const VerbsPage = () => {
     };
 
     const showAnswerClicked = () => {
-        setRevealAnswer(true);
+        setRevealAnswer(!revealAnswer);
     }
 
     useEffect(() => {
@@ -79,43 +86,50 @@ const VerbsPage = () => {
     }
 
     return (
-        <>
+        <div className="verbs-page-container">
             <h1>Verb Conjugation Practice</h1>
 
-            <div id="practice-container">
-                <div className="info-text">
-                    {currentConjugation && (
-                        <>
-                            <h2>{currentConjugation.word.english}: <strong>{currentConjugation.word.arabic}</strong></h2>
-                            <p id="pronoun-display">Pronoun: <strong>{currentConjugation.pronoun}</strong></p>
-                            <p id="verb-display">Tense: <strong>{currentConjugation.tense}</strong></p>
-                        </>
-                    )}
-                </div>
-                <form id="conjugation-form" method="POST">
-                    <label htmlFor="user-input">Your Answer:</label>
-                    <input
-                        type="text"
-                        id="user-input"
-                        name="user-input"
-                        value={currentAnswer}
-                        onChange={(e) => setCurrentAnswer(e.target.value)}
-                        required
-                    />
-                    <button type="button" onClick={checkAnswer}>Check</button>
-                    <button type="button" id="next-button" onClick={nextQuestion}>Next</button>
-                </form>
-                <p id="result-message">{resultMessage}</p>
-                {showAnswerButton && (
-                    <>
-                        <button type="button" onClick={showAnswerClicked}>Show answer</button>
-                        {revealAnswer && (
-                            <p>{correctAnswer}</p>
+            <Card className="practice-container">
+                <ListGroup variant="flush">
+                    <div className="info-text">
+                        {currentConjugation && (
+                            <>
+                                <Card.Header>{currentConjugation.word.english}: <strong>{currentConjugation.word.arabic}</strong></Card.Header>
+
+                                <ListGroup.Item>
+                                    <Row className='con-info'>
+                                        <Col><Card.Title>Pronoun: {currentConjugation.pronoun}</Card.Title></Col>
+                                        <Col><Card.Title>Tense: {currentConjugation.tense}</Card.Title></Col>
+                                    </Row>
+                                </ListGroup.Item>                            </>
                         )}
-                    </>
-                )}
-            </div>
-        </>
+                    </div>
+                    <div className='bottom-section'>
+                        <form id="conjugation-form" method="POST">
+                            <label htmlFor="user-input">Your Answer:</label>
+                            <input
+                                type="text"
+                                id="user-input"
+                                name="user-input"
+                                value={currentAnswer}
+                                onChange={(e) => setCurrentAnswer(e.target.value)}
+                                required
+                            />
+                            <Button className="con-form-button" variant="primary" type="button" onClick={checkAnswer}>Check</Button>
+                            <Button className="con-form-button" variant="secondary" type="button" onClick={nextQuestion}>Next</Button>
+                        </form>
+                        <p id="result-message">{resultMessage}</p>
+                        {showAnswerButton && (
+                            <>
+                                <Button className="show-answer-button" type="button" variant="secondary" onClick={showAnswerClicked}>Show answer</Button>                                {revealAnswer && (
+                                    <p id='correct-answer'>The answer is: {correctAnswer}</p>
+                                )}
+                            </>
+                        )}
+                    </div>
+                </ListGroup>
+            </Card >
+        </div>
     );
 };
 
