@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './FlashCards.css'; // Import your CSS file
+import './FlashCards.css';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
