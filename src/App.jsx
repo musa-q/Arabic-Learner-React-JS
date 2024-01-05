@@ -5,6 +5,7 @@ import VerbsPage from './pages/VerbsPage'
 import WordsPage from './pages/WordsPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MyNavBar from './components/NavBar';
+import ChooseWordsPage from './pages/ChooseWordsPage';
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState('home');
