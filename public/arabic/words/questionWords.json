@@ -1,3 +1,50 @@
 {
-    "title": "Question Words"
+    "title": "Question Words",
+    "translations": [
+        {
+            "arabic": "مين",
+            "romanized": "Meen",
+            "english": "Who"
+        },
+        {
+            "arabic": "وين",
+            "romanized": "Wein",
+            "english": "Where"
+        },
+        {
+            "arabic": "شو",
+            "romanized": "Shu",
+            "english": "What"
+        },
+        {
+            "arabic": "إيش",
+            "romanized": "Eesh",
+            "english": "What"
+        },
+        {
+            "arabic": "متى",
+            "romanized": "Mata",
+            "english": "When"
+        },
+        {
+            "arabic": "ایمتى",
+            "romanized": "Imta",
+            "english": "When"
+        },
+        {
+            "arabic": "ليش",
+            "romanized": "Leesh",
+            "english": "Why"
+        },
+        {
+            "arabic": "كيف",
+            "romanized": "Keef",
+            "english": "How"
+        },
+        {
+            "arabic": "كم",
+            "romanized": "Kam",
+            "english": "How much"
+        }
+    ]
 }

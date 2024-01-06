@@ -1,11 +1,11 @@
 {
     "files": [
         {
-            "title": "Question Words",
+            "title": "Common Words",
             "filename": "commonWords.json"
         },
         {
-            "title": "Common Words",
+            "title": "Question Words",
             "filename": "questionWords.json"
         }
     ]
