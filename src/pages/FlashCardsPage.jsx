@@ -4,6 +4,7 @@ import './FlashCardsPage.css'
 
 const FlashCardsPage = ({ wordsList }) => {
     const [flashcards, setFlashcards] = useState([]);
+    const [pageTitle, setPageTitle] = useState("Words Practice");
 
     useEffect(() => {
         const fetchData = async () => {
@@ -14,6 +15,7 @@ const FlashCardsPage = ({ wordsList }) => {
                 }
                 const data = await response.json();
                 setFlashcards(data.translations);
+                setPageTitle(data.title);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -24,7 +26,7 @@ const FlashCardsPage = ({ wordsList }) => {
 
     return (
         <div className="flash-cards-page-container">
-            <h1>Words Practice</h1>
+            <h1>{pageTitle}</h1>
             <div>
                 <FlashCards flashcards={flashcards} />
             </div>
