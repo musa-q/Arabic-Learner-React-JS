@@ -1,85 +1,410 @@
 {
+  "title": "Common Words",
   "translations": [
-    { "arabic": "مرحبا", "romanized": "Marhaba", "english": "Hello" },
-    { "arabic": "شكراً", "romanized": "Shukran", "english": "Thank you" },
-    { "arabic": "عفواً", "romanized": "Afwan", "english": "You're welcome" },
-    { "arabic": "نعم", "romanized": "Na'am", "english": "Yes" },
-    { "arabic": "لا", "romanized": "La", "english": "No" },
-    { "arabic": "ماء", "romanized": "Maa", "english": "Water" },
-    { "arabic": "طعام", "romanized": "Ta'am", "english": "Food" },
-    { "arabic": "كيف حالك؟", "romanized": "Kayfa halak/halik?", "english": "How are you?" },
-    { "arabic": "بخير", "romanized": "Bikhair", "english": "I'm fine" },
-    { "arabic": "أنا", "romanized": "Ana", "english": "I" },
-    { "arabic": "أنتَ / أنتِ", "romanized": "Anta / Anti", "english": "You (masculine) / You (feminine)" },
-    { "arabic": "هو / هي", "romanized": "Huwa / Hiya", "english": "He / She" },
-    { "arabic": "نحن", "romanized": "Nahnu", "english": "We" },
-    { "arabic": "أنتم", "romanized": "Antum", "english": "You (plural)" },
-    { "arabic": "هم / هن", "romanized": "Hum / Hun", "english": "They (masculine) / They (feminine)" },
-    { "arabic": "هنا", "romanized": "Huna", "english": "Here" },
-    { "arabic": "هناك", "romanized": "Hunak", "english": "There" },
-    { "arabic": "متى", "romanized": "Mata", "english": "When" },
-    { "arabic": "أين", "romanized": "Ayna", "english": "Where" },
-    { "arabic": "كم؟", "romanized": "Kam?", "english": "How much?" },
-    { "arabic": "ما", "romanized": "Ma", "english": "What" },
-    { "arabic": "لماذا", "romanized": "Limaadha", "english": "Why" },
-    { "arabic": "كيف؟", "romanized": "Kayfa?", "english": "How?" },
-    { "arabic": "إلى اللقاء", "romanized": "Ila al-liqaa", "english": "Goodbye" },
-    { "arabic": "من فضلك", "romanized": "Min fadlik", "english": "Please" },
-    { "arabic": "آسف / آسفة", "romanized": "Aasif / Aasifah", "english": "Sorry" },
-    { "arabic": "لا شكر على واجب", "romanized": "La shukr 'ala wajib", "english": "No thanks necessary" },
-    { "arabic": "عيد ميلاد سعيد!", "romanized": "Eid milad sa'id!", "english": "Happy Birthday!" },
-    { "arabic": "كم الساعة؟", "romanized": "Kam as-saa'a?", "english": "What time is it?" },
-    { "arabic": "أنا آسف / آسفة", "romanized": "Ana aasif / aasifah", "english": "I am sorry" },
-    { "arabic": "مع السلامة", "romanized": "Ma'a as-salama", "english": "Goodbye" },
-    { "arabic": "أهلاً", "romanized": "Ahlan", "english": "Welcome" },
-    { "arabic": "في أي مكان؟", "romanized": "Fe ayyi makaan?", "english": "Where is it?" },
-    { "arabic": "صباح الخير", "romanized": "Sabah al-khayr", "english": "Good morning" },
-    { "arabic": "مساء الخير", "romanized": "Masaa' al-khayr", "english": "Good evening" },
-    { "arabic": "ليلة سعيدة", "romanized": "Layla sa'ida", "english": "Good night" },
-    { "arabic": "شكلها/شكله", "romanized": "shaklaha/shkluh", "english": "Looks good" },
-    { "arabic": "ما اسمك؟", "romanized": "Ma ismuk? / Ma ismik?", "english": "What is your name? (male/female)" },
-    { "arabic": "اسمي...", "romanized": "Ismi...", "english": "My name is..." },
-    { "arabic": "كيف يمكنني المساعدة؟", "romanized": "Kayfa yumkinuni al-musa'ada?", "english": "How can I help you?" },
-    { "arabic": "فهمت", "romanized": "Fahimt", "english": "I understood" },
-    { "arabic": "لا أفهم", "romanized": "La afham", "english": "I don't understand" },
-    { "arabic": "ماذا تفعل؟", "romanized": "Maadha taf'al?", "english": "What are you doing?" },
-    { "arabic": "أين الحمام؟", "romanized": "Ayna al-hammaam?", "english": "Where is the bathroom?" },
-    { "arabic": "جيد / جيدة", "romanized": "Jayyid / Jayyida", "english": "Good" },
-    { "arabic": "سيئ / سيئة", "romanized": "Sayy' / Sayy'a", "english": "Bad" },
-    { "arabic": "كبير / كبيرة", "romanized": "Kabeer / Kabeera", "english": "Big" },
-    { "arabic": "صغير / صغيرة", "romanized": "Sagheer / Sagheera", "english": "Small" },
-    { "arabic": "جديد / جديدة", "romanized": "Jadeed / Jadeeda", "english": "New" },
-    { "arabic": "قديم / قديمة", "romanized": "Qadeem / Qadeema", "english": "Old" },
-    { "arabic": "كثير / كثيرة", "romanized": "Katheer / Katheera", "english": "Many" },
-    { "arabic": "قليل / قليلة", "romanized": "Qaleel / Qaleela", "english": "Few" },
-    { "arabic": "جميل / جميلة", "romanized": "Jameel / Jameela", "english": "Beautiful" },
-    { "arabic": "قبيح / قبيحة", "romanized": "Qabeeh / Qabeeha", "english": "Ugly" },
-    { "arabic": "ساخن / ساخنة", "romanized": "Saakhin / Saakhna", "english": "Hot" },
-    { "arabic": "بارد / باردة", "romanized": "Barid / Barida", "english": "Cold" },
-    { "arabic": "سريع / سريعة", "romanized": "Saree' / Saree'a", "english": "Fast" },
-    { "arabic": "بطيء / بطيءة", "romanized": "Bateel / Bateela", "english": "Slow" },
-    { "arabic": "كبير / كبيرة", "romanized": "Kabeer / Kabeera", "english": "Tall" },
-    { "arabic": "قصير / قصيرة", "romanized": "Qaseer / Qaseera", "english": "Short" },
-    { "arabic": "طويل / طويلة", "romanized": "Taweel / Taweela", "english": "Long" },
-    { "arabic": "قصير / قصيرة", "romanized": "Qaseer / Qaseera", "english": "Short" },
-    { "arabic": "سمين / سمينة", "romanized": "Sameen / Sameena", "english": "Fat" },
-    { "arabic": "نحيف / نحيفة", "romanized": "Naheef / Naheefa", "english": "Thin" },
-    { "arabic": "سعيد / سعيدة", "romanized": "Sa'eed / Sa'eeda", "english": "Happy" },
-    { "arabic": "حزين / حزينة", "romanized": "Hazeen / Hazeena", "english": "Sad" },
-    { "arabic": "مريض / مريضة", "romanized": "Marid / Mareeda", "english": "Sick" },
-    { "arabic": "صحيح / صحيحة", "romanized": "Saheeh / Saheeha", "english": "Healthy" },
-    { "arabic": "مليء / مليءة", "romanized": "Malee' / Malee'a", "english": "Full" },
-    { "arabic": "فارغ / فارغة", "romanized": "Faaregh / Faaregha", "english": "Empty" },
-    { "arabic": "قوي / قوية", "romanized": "Qawi / Qawia", "english": "Strong" },
-    { "arabic": "ضعيف / ضعيفة", "romanized": "Da'eef / Da'eefa", "english": "Weak" },
-    { "arabic": "غني / غنية", "romanized": "Ghani / Ghania", "english": "Rich" },
-    { "arabic": "فقير / فقيرة", "romanized": "Faqeer / Faqeera", "english": "Poor" },
-    { "arabic": "جيد الحظ", "romanized": "Jayyid al-haz", "english": "Good luck" },
-    { "arabic": "لديك جميلة", "romanized": "Ladayk jameela", "english": "You have a beautiful" },
-    { "arabic": "تحية", "romanized": "Tahiyah", "english": "Greetings" },
-    { "arabic": "لطيف / لطيفة", "romanized": "Lateef / Lateefa", "english": "Nice" },
-    { "arabic": "صديق / صديقة", "romanized": "Sadeeq / Sadeeqa", "english": "Friend" },
-    { "arabic": "أفهمك", "romanized": "Afhemak", "english": "I understand you" },
-    { "arabic": "لا مشكلة", "romanized": "La mushkila", "english": "No problem" }
+    {
+      "arabic": "مرحبا",
+      "romanized": "Marhaba",
+      "english": "Hello"
+    },
+    {
+      "arabic": "شكراً",
+      "romanized": "Shukran",
+      "english": "Thank you"
+    },
+    {
+      "arabic": "عفواً",
+      "romanized": "Afwan",
+      "english": "You're welcome"
+    },
+    {
+      "arabic": "نعم",
+      "romanized": "Na'am",
+      "english": "Yes"
+    },
+    {
+      "arabic": "لا",
+      "romanized": "La",
+      "english": "No"
+    },
+    {
+      "arabic": "ماء",
+      "romanized": "Maa",
+      "english": "Water"
+    },
+    {
+      "arabic": "طعام",
+      "romanized": "Ta'am",
+      "english": "Food"
+    },
+    {
+      "arabic": "كيف حالك؟",
+      "romanized": "Kayfa halak/halik?",
+      "english": "How are you?"
+    },
+    {
+      "arabic": "بخير",
+      "romanized": "Bikhair",
+      "english": "I'm fine"
+    },
+    {
+      "arabic": "أنا",
+      "romanized": "Ana",
+      "english": "I"
+    },
+    {
+      "arabic": "أنتَ / أنتِ",
+      "romanized": "Anta / Anti",
+      "english": "You (masculine) / You (feminine)"
+    },
+    {
+      "arabic": "هو / هي",
+      "romanized": "Huwa / Hiya",
+      "english": "He / She"
+    },
+    {
+      "arabic": "نحن",
+      "romanized": "Nahnu",
+      "english": "We"
+    },
+    {
+      "arabic": "أنتم",
+      "romanized": "Antum",
+      "english": "You (plural)"
+    },
+    {
+      "arabic": "هم / هن",
+      "romanized": "Hum / Hun",
+      "english": "They (masculine) / They (feminine)"
+    },
+    {
+      "arabic": "هنا",
+      "romanized": "Huna",
+      "english": "Here"
+    },
+    {
+      "arabic": "هناك",
+      "romanized": "Hunak",
+      "english": "There"
+    },
+    {
+      "arabic": "متى",
+      "romanized": "Mata",
+      "english": "When"
+    },
+    {
+      "arabic": "أين",
+      "romanized": "Ayna",
+      "english": "Where"
+    },
+    {
+      "arabic": "كم؟",
+      "romanized": "Kam?",
+      "english": "How much?"
+    },
+    {
+      "arabic": "ما",
+      "romanized": "Ma",
+      "english": "What"
+    },
+    {
+      "arabic": "لماذا",
+      "romanized": "Limaadha",
+      "english": "Why"
+    },
+    {
+      "arabic": "كيف؟",
+      "romanized": "Kayfa?",
+      "english": "How?"
+    },
+    {
+      "arabic": "إلى اللقاء",
+      "romanized": "Ila al-liqaa",
+      "english": "Goodbye"
+    },
+    {
+      "arabic": "من فضلك",
+      "romanized": "Min fadlik",
+      "english": "Please"
+    },
+    {
+      "arabic": "آسف / آسفة",
+      "romanized": "Aasif / Aasifah",
+      "english": "Sorry"
+    },
+    {
+      "arabic": "لا شكر على واجب",
+      "romanized": "La shukr 'ala wajib",
+      "english": "No thanks necessary"
+    },
+    {
+      "arabic": "عيد ميلاد سعيد!",
+      "romanized": "Eid milad sa'id!",
+      "english": "Happy Birthday!"
+    },
+    {
+      "arabic": "كم الساعة؟",
+      "romanized": "Kam as-saa'a?",
+      "english": "What time is it?"
+    },
+    {
+      "arabic": "أنا آسف / آسفة",
+      "romanized": "Ana aasif / aasifah",
+      "english": "I am sorry"
+    },
+    {
+      "arabic": "مع السلامة",
+      "romanized": "Ma'a as-salama",
+      "english": "Goodbye"
+    },
+    {
+      "arabic": "أهلاً",
+      "romanized": "Ahlan",
+      "english": "Welcome"
+    },
+    {
+      "arabic": "في أي مكان؟",
+      "romanized": "Fe ayyi makaan?",
+      "english": "Where is it?"
+    },
+    {
+      "arabic": "صباح الخير",
+      "romanized": "Sabah al-khayr",
+      "english": "Good morning"
+    },
+    {
+      "arabic": "مساء الخير",
+      "romanized": "Masaa' al-khayr",
+      "english": "Good evening"
+    },
+    {
+      "arabic": "ليلة سعيدة",
+      "romanized": "Layla sa'ida",
+      "english": "Good night"
+    },
+    {
+      "arabic": "شكلها/شكله",
+      "romanized": "shaklaha/shkluh",
+      "english": "Looks good"
+    },
+    {
+      "arabic": "ما اسمك؟",
+      "romanized": "Ma ismuk? / Ma ismik?",
+      "english": "What is your name? (male/female)"
+    },
+    {
+      "arabic": "اسمي...",
+      "romanized": "Ismi...",
+      "english": "My name is..."
+    },
+    {
+      "arabic": "كيف يمكنني المساعدة؟",
+      "romanized": "Kayfa yumkinuni al-musa'ada?",
+      "english": "How can I help you?"
+    },
+    {
+      "arabic": "فهمت",
+      "romanized": "Fahimt",
+      "english": "I understood"
+    },
+    {
+      "arabic": "لا أفهم",
+      "romanized": "La afham",
+      "english": "I don't understand"
+    },
+    {
+      "arabic": "ماذا تفعل؟",
+      "romanized": "Maadha taf'al?",
+      "english": "What are you doing?"
+    },
+    {
+      "arabic": "أين الحمام؟",
+      "romanized": "Ayna al-hammaam?",
+      "english": "Where is the bathroom?"
+    },
+    {
+      "arabic": "جيد / جيدة",
+      "romanized": "Jayyid / Jayyida",
+      "english": "Good"
+    },
+    {
+      "arabic": "سيئ / سيئة",
+      "romanized": "Sayy' / Sayy'a",
+      "english": "Bad"
+    },
+    {
+      "arabic": "كبير / كبيرة",
+      "romanized": "Kabeer / Kabeera",
+      "english": "Big"
+    },
+    {
+      "arabic": "صغير / صغيرة",
+      "romanized": "Sagheer / Sagheera",
+      "english": "Small"
+    },
+    {
+      "arabic": "جديد / جديدة",
+      "romanized": "Jadeed / Jadeeda",
+      "english": "New"
+    },
+    {
+      "arabic": "قديم / قديمة",
+      "romanized": "Qadeem / Qadeema",
+      "english": "Old"
+    },
+    {
+      "arabic": "كثير / كثيرة",
+      "romanized": "Katheer / Katheera",
+      "english": "Many"
+    },
+    {
+      "arabic": "قليل / قليلة",
+      "romanized": "Qaleel / Qaleela",
+      "english": "Few"
+    },
+    {
+      "arabic": "جميل / جميلة",
+      "romanized": "Jameel / Jameela",
+      "english": "Beautiful"
+    },
+    {
+      "arabic": "قبيح / قبيحة",
+      "romanized": "Qabeeh / Qabeeha",
+      "english": "Ugly"
+    },
+    {
+      "arabic": "ساخن / ساخنة",
+      "romanized": "Saakhin / Saakhna",
+      "english": "Hot"
+    },
+    {
+      "arabic": "بارد / باردة",
+      "romanized": "Barid / Barida",
+      "english": "Cold"
+    },
+    {
+      "arabic": "سريع / سريعة",
+      "romanized": "Saree' / Saree'a",
+      "english": "Fast"
+    },
+    {
+      "arabic": "بطيء / بطيءة",
+      "romanized": "Bateel / Bateela",
+      "english": "Slow"
+    },
+    {
+      "arabic": "كبير / كبيرة",
+      "romanized": "Kabeer / Kabeera",
+      "english": "Tall"
+    },
+    {
+      "arabic": "قصير / قصيرة",
+      "romanized": "Qaseer / Qaseera",
+      "english": "Short"
+    },
+    {
+      "arabic": "طويل / طويلة",
+      "romanized": "Taweel / Taweela",
+      "english": "Long"
+    },
+    {
+      "arabic": "قصير / قصيرة",
+      "romanized": "Qaseer / Qaseera",
+      "english": "Short"
+    },
+    {
+      "arabic": "سمين / سمينة",
+      "romanized": "Sameen / Sameena",
+      "english": "Fat"
+    },
+    {
+      "arabic": "نحيف / نحيفة",
+      "romanized": "Naheef / Naheefa",
+      "english": "Thin"
+    },
+    {
+      "arabic": "سعيد / سعيدة",
+      "romanized": "Sa'eed / Sa'eeda",
+      "english": "Happy"
+    },
+    {
+      "arabic": "حزين / حزينة",
+      "romanized": "Hazeen / Hazeena",
+      "english": "Sad"
+    },
+    {
+      "arabic": "مريض / مريضة",
+      "romanized": "Marid / Mareeda",
+      "english": "Sick"
+    },
+    {
+      "arabic": "صحيح / صحيحة",
+      "romanized": "Saheeh / Saheeha",
+      "english": "Healthy"
+    },
+    {
+      "arabic": "مليء / مليءة",
+      "romanized": "Malee' / Malee'a",
+      "english": "Full"
+    },
+    {
+      "arabic": "فارغ / فارغة",
+      "romanized": "Faaregh / Faaregha",
+      "english": "Empty"
+    },
+    {
+      "arabic": "قوي / قوية",
+      "romanized": "Qawi / Qawia",
+      "english": "Strong"
+    },
+    {
+      "arabic": "ضعيف / ضعيفة",
+      "romanized": "Da'eef / Da'eefa",
+      "english": "Weak"
+    },
+    {
+      "arabic": "غني / غنية",
+      "romanized": "Ghani / Ghania",
+      "english": "Rich"
+    },
+    {
+      "arabic": "فقير / فقيرة",
+      "romanized": "Faqeer / Faqeera",
+      "english": "Poor"
+    },
+    {
+      "arabic": "جيد الحظ",
+      "romanized": "Jayyid al-haz",
+      "english": "Good luck"
+    },
+    {
+      "arabic": "لديك جميلة",
+      "romanized": "Ladayk jameela",
+      "english": "You have a beautiful"
+    },
+    {
+      "arabic": "تحية",
+      "romanized": "Tahiyah",
+      "english": "Greetings"
+    },
+    {
+      "arabic": "لطيف / لطيفة",
+      "romanized": "Lateef / Lateefa",
+      "english": "Nice"
+    },
+    {
+      "arabic": "صديق / صديقة",
+      "romanized": "Sadeeq / Sadeeqa",
+      "english": "Friend"
+    },
+    {
+      "arabic": "أفهمك",
+      "romanized": "Afhemak",
+      "english": "I understand you"
+    },
+    {
+      "arabic": "لا مشكلة",
+      "romanized": "La mushkila",
+      "english": "No problem"
+    }
   ]
 }
