@@ -1,33 +1,18 @@
 import { useState, useEffect } from 'react';
-import FlashCards from '../components/FlashCards';
-import './WordsPage.css'
+import ChooseWordsPage from './ChooseWordsPage';
+import FlashCardsPage from './FlashCardsPage';
 
 const WordsPage = () => {
-    const [flashcards, setFlashcards] = useState([]);
+    const [chosenWordsList, setChosenWordsList] = useState("choose");
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch('/Arabic-Learner-React-JS/arabic/words/commonWords.json');
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const data = await response.json();
-                setFlashcards(data.translations);
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            }
-        };
-
-        fetchData();
-    }, []);
+    const chooseWordsList = (listChoice) => {
+        setChosenWordsList(listChoice);
+    };
 
     return (
         <div className="words-page-container">
-            <h1>Words Practice</h1>
-            <div>
-                <FlashCards flashcards={flashcards} />
-            </div>
+            {chosenWordsList === "choose" && <ChooseWordsPage onChoose={chooseWordsList} />}
+            {chosenWordsList !== "choose" && <FlashCardsPage wordsList={chosenWordsList} />}
         </div>
     );
 };
