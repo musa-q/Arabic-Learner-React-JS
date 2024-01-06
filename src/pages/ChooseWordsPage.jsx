@@ -1,4 +1,8 @@
 import { useState, useEffect } from 'react';
+import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import './ChooseWordsPage.css';
 
 const ChooseWordsPage = ({ onChoose }) => {
     const [fileList, setFileList] = useState([]);
@@ -8,14 +12,6 @@ const ChooseWordsPage = ({ onChoose }) => {
             try {
                 const response = await fetch('/Arabic-Learner-React-JS/arabic/words/index.json');
                 const indexData = await response.json();
-
-                // const files = await Promise.all(
-                //     indexData.files.map(async (fileName) => {
-                //         const fileResponse = await fetch(`/Arabic-Learner-React-JS/arabic/words/${fileName}`);
-                //         const fileData = await fileResponse.json();
-                //         return fileData;
-                //     })
-                // );
 
                 setFileList(indexData.files);
             } catch (error) {
@@ -28,15 +24,15 @@ const ChooseWordsPage = ({ onChoose }) => {
     }, []);
 
     return (
-        <div>
-            <h2>Choose a Word File:</h2>
-            <div className="file-buttons">
+        <div className="choose-words-page-container">
+            <h1>Choose a Word File:</h1>
+            <div className="buttons-list">
                 {fileList.map((file, index) => (
-                    <button key={index} onClick={() => {
+                    <Button className="button p-3" variant="outline-light" type="button" key={index} onClick={() => {
                         onChoose(file.filename);
                     }}>
                         {file.title}
-                    </button>
+                    </Button>
                 ))}
             </div>
         </div>
