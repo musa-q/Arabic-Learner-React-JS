@@ -2,7 +2,6 @@
     {
         "english": "To sleep",
         "arabic": "نام",
-        "type": "verb",
         "conjugations": {
             "present": {
                 "i": "أنام",
@@ -40,7 +39,6 @@
     {
         "english": "To eat",
         "arabic": "أكل",
-        "type": "verb",
         "conjugations": {
             "present": {
                 "i": "آكل",
@@ -68,6 +66,54 @@
                 "she": "تأكل",
                 "they": "يأكلوا",
                 "we": "نأكل"
+            }
+        }
+    },
+    {
+        "english": "to be",
+        "arabic": "كون",
+        "conjugations": {
+            "present": {
+                "i": "أنا",
+                "you_m": "أنت",
+                "you_f": "أنتِ",
+                "he": "هو",
+                "she": "هي",
+                "they": "هم",
+                "we": "نحن"
+            },
+            "past": {
+                "i": "كنت",
+                "you_m": "كنت",
+                "you_f": "كنتي",
+                "he": "كان",
+                "she": "كانت",
+                "they": "كانوا",
+                "we": "كنّا"
+            }
+        }
+    },
+    {
+        "english": "to want",
+        "arabic": "ديّب",
+        "conjugations": {
+            "present": {
+                "i": "بدي ",
+                "you_m": "بدك",
+                "you_f": "بدك",
+                "he": "بده",
+                "she": "بدها",
+                "they": "بدهم",
+                "we": "بدنا"
+            },
+            "past": {
+                "i": "كنت بدي",
+                "you_m": "كنت بدك",
+                "you_f": "كنتي بدِك",
+                "he": "كان بده",
+                "she": "كانت بدها",
+                "they": "كانوا بدهم",
+                "we": "كنّا بدنا"
             }
         }
     }
