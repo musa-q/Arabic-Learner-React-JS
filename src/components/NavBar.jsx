@@ -14,6 +14,15 @@ const MyNavBar = ({ onNavigate }) => {
                         <Nav.Link onClick={() => onNavigate('words')}>Words</Nav.Link>
                         <Nav.Link onClick={() => onNavigate('verbs')}>Verbs</Nav.Link>
                     </Nav>
+                    <div className="d-flex align-items-center">
+                        <span className="me-3">Follow the developer:</span>
+                        <a href="https://www.linkedin.com/in/musa-qureshi/" target="_blank" rel="noopener noreferrer">
+                            <img
+                                src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white"
+                                alt="LinkedIn Badge"
+                            />
+                        </a>
+                    </div>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
