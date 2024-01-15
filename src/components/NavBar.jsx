@@ -13,7 +13,7 @@ const MyNavBar = ({ onNavigate }) => {
                         <Nav.Link onClick={() => onNavigate('home')}>Home</Nav.Link>
                         <Nav.Link onClick={() => onNavigate('wordsflashcard')}>Words flashcards</Nav.Link>
                         <Nav.Link onClick={() => onNavigate('wordspractice')}>Words practice</Nav.Link>
-                        <Nav.Link onClick={() => onNavigate('verbs')}>Verbs</Nav.Link>
+                        <Nav.Link onClick={() => onNavigate('verbs')}>Verbs practice</Nav.Link>
                     </Nav>
                     <div className="d-flex align-items-center">
                         <span className="me-3">Follow the developer:</span>
