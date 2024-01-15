@@ -1,0 +1,61 @@
+{
+    "title": "Lesson 4 - Places",
+    "translations": [
+        {
+            "arabic": "بيت",
+            "english": "House"
+        },
+        {
+            "arabic": "مدرسة",
+            "english": "School"
+        },
+        {
+            "arabic": "جامعة",
+            "english": "University"
+        },
+        {
+            "arabic": "جامع",
+            "english": "Mosque"
+        },
+        {
+            "arabic": "شارع",
+            "english": "Street"
+        },
+        {
+            "arabic": "غرفة",
+            "english": "Room"
+        },
+        {
+            "arabic": "الحمّام",
+            "english": "Bathroom"
+        },
+        {
+            "arabic": "مطعم",
+            "english": "Restaurant"
+        },
+        {
+            "arabic": "وين",
+            "english": "Where"
+        },
+        {
+            "arabic": "كيف حالك",
+            "english": "How are you"
+        },
+        {
+            "arabic": "الجو",
+            "english": "Weather"
+        },
+        {
+            "arabic": "اليوم",
+            "english": "Day"
+        },
+        {
+            "arabic": "الدراسة",
+            "english": "Study"
+        },
+        {
+            "arabic": "الشغل",
+            "english": "Work"
+        }
+    ]
+}
