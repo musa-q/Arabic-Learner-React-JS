@@ -17,6 +17,10 @@
             "filename": "lesson4.json"
         },
         {
+            "title": "Lesson 4 - Places",
+            "filename": "lesson4places.json"
+        },
+        {
             "title": "Lesson 5 - Common Words",
             "filename": "lesson5.json"
         }
