@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import ChooseWordsPage from './ChooseWordsPage';
 import FlashCardsPage from './FlashCardsPage';
 
-const WordsPage = () => {
+// Renders either choose page or flash cards
+const WordsFlashcardsPage = () => {
     const [chosenWordsList, setChosenWordsList] = useState("choose");
 
     const chooseWordsList = (listChoice) => {
@@ -17,4 +18,4 @@ const WordsPage = () => {
     );
 };
 
-export default WordsPage;
+export default WordsFlashcardsPage;

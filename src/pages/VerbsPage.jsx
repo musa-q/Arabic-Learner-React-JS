@@ -2,10 +2,9 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Row from 'react-bootstrap/Row';
-import COl from 'react-bootstrap/Col';
 import Table from 'react-bootstrap/Table';
 import { useEffect, useState } from 'react';
-import './VerbsPage.css';
+import './WordsVerbsPracticePage.css';
 import Col from 'react-bootstrap/Col';
 
 const tenses = ["present", "past", "future"];
@@ -32,7 +31,7 @@ const VerbsPage = () => {
         const pronoun = pronouns[Math.floor(Math.random() * pronouns.length)];
 
         setCorrectAnswer(word.conjugations[tense][pronoun]);
-        console.log(word.conjugations[tense][pronoun]);
+        // console.log(word.conjugations[tense][pronoun]);
         setCurrentConjugation({ word, tense, pronoun });
     };
 
@@ -86,7 +85,7 @@ const VerbsPage = () => {
     }
 
     return (
-        <div className="verbs-page-container">
+        <div className="practice-page-container">
             <h1>Verb Conjugation Practice</h1>
 
             <Card className="practice-container">

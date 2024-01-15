@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import './ChooseWordsPage.css';
 
+// Where choose which words list for flashcards
 const ChooseWordsPage = ({ onChoose }) => {
     const [fileList, setFileList] = useState([]);
 
