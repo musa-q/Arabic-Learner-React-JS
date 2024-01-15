@@ -30,9 +30,14 @@ const VerbsPage = () => {
         const tense = tenses[Math.floor(Math.random() * tenses.length)];
         const pronoun = pronouns[Math.floor(Math.random() * pronouns.length)];
 
-        setCorrectAnswer(word.conjugations[tense][pronoun]);
-        // console.log(word.conjugations[tense][pronoun]);
-        setCurrentConjugation({ word, tense, pronoun });
+        const conjugation = word.conjugations[tense] && word.conjugations[tense][pronoun];
+
+        if (conjugation !== undefined) {
+            setCorrectAnswer(conjugation);
+            setCurrentConjugation({ word, tense, pronoun });
+        } else {
+            getRandomConjugation();
+        }
     };
 
     const checkAnswer = () => {
