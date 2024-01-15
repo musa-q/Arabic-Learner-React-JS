@@ -79,6 +79,13 @@ const VerbsPage = () => {
         fetchData();
     }, []);
 
+    const handleEnterKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            checkAnswer();
+        }
+    };
+
     useEffect(() => {
         if (dataLoaded) {
             nextQuestion();
@@ -117,7 +124,7 @@ const VerbsPage = () => {
                                 name="user-input"
                                 value={currentAnswer}
                                 onChange={(e) => setCurrentAnswer(e.target.value)}
-                                required
+                                onKeyDown={handleEnterKeyPress}
                             />
                             <Button className="con-form-button" variant="primary" type="button" onClick={checkAnswer}>Check</Button>
                             <Button className="con-form-button" variant="secondary" type="button" onClick={nextQuestion}>Next</Button>

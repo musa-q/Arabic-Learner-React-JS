@@ -92,6 +92,13 @@ const WordsPracticePage = () => {
         setRevealAnswer(!revealAnswer);
     }
 
+    const handleEnterKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            checkAnswer();
+        }
+    };
+
     useEffect(() => {
         if (dataLoaded) {
             nextQuestion();
@@ -116,7 +123,7 @@ const WordsPracticePage = () => {
                         )}
                     </div>
                     <div className='bottom-section'>
-                        <form id="conjugation-form" method="POST">
+                        <div id="conjugation-form">
                             <label htmlFor="user-input">Your Answer:</label>
                             <input
                                 type="text"
@@ -124,11 +131,11 @@ const WordsPracticePage = () => {
                                 name="user-input"
                                 value={currentAnswer}
                                 onChange={(e) => setCurrentAnswer(e.target.value)}
-                                required
+                                onKeyDown={handleEnterKeyPress}
                             />
                             <Button className="con-form-button" variant="primary" type="button" onClick={checkAnswer}>Check</Button>
                             <Button className="con-form-button" variant="secondary" type="button" onClick={nextQuestion}>Next</Button>
-                        </form>
+                        </div>
                         <p id="result-message">{resultMessage}</p>
                         {showAnswerButton && (
                             <>
