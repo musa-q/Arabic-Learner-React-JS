@@ -2,38 +2,74 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
 import Table from 'react-bootstrap/Table';
 import { useEffect, useState } from 'react';
 import './WordsVerbsPracticePage.css';
 import Col from 'react-bootstrap/Col';
 
-const tenses = ["present", "past", "future"];
-const pronouns = ["i", "you_m", "you_f", "he", "she", "they", "we"];
-
-const VerbsPage = () => {
+// Practice words by typing
+const WordsPracticePage = () => {
+    const [fileList, setFileList] = useState([]);
+    const [allWords, setAllWords] = useState([]);
+    const [dataLoaded, setDataLoaded] = useState(false);
+    const [revealAnswer, setRevealAnswer] = useState(false);
+    const [showAnswerButton, setShowAnswerButton] = useState(false);
     const [currentAnswer, setCurrentAnswer] = useState("");
     const [correctAnswer, setCorrectAnswer] = useState("");
-    const [verbData, setVerbData] = useState([]);
-    const [currentConjugation, setCurrentConjugation] = useState(null);
     const [resultMessage, setResultMessage] = useState("");
-    const [dataLoaded, setDataLoaded] = useState(false);
-    const [showAnswerButton, setShowAnswerButton] = useState(false);
-    const [revealAnswer, setRevealAnswer] = useState(false);
+    const [currentQuestion, setCurrentQuestion] = useState("");
 
-    const getRandomConjugation = () => {
-        if (!dataLoaded || !verbData.length) {
+    useEffect(() => {
+        const fetchFileList = async () => {
+            try {
+                const response = await fetch('/Arabic-Learner-React-JS/arabic/words/index.json');
+                const indexData = await response.json();
+
+                setFileList(indexData.files);
+            } catch (error) {
+                console.error('Error fetching file list:', error);
+            }
+        };
+
+        fetchFileList();
+    }, []);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const wordsArray = [];
+                for (const file of fileList) {
+                    const response = await fetch(`/Arabic-Learner-React-JS/arabic/words/${file.filename}`);
+                    const wordsData = await response.json();
+                    const translations = wordsData.translations;
+                    wordsArray.push(...translations);
+                }
+
+                setAllWords(prevWords => (prevWords.length > 0 ? prevWords : [...prevWords, ...wordsArray]));
+                setDataLoaded(true);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        if (fileList.length > 0) {
+            fetchData();
+        }
+    }, [fileList]);
+
+    const getRandomWord = () => {
+        if (!dataLoaded || !allWords.length) {
             return;
         }
 
-        const wordIndex = Math.floor(Math.random() * verbData.length);
-        const word = verbData[wordIndex];
-        const tense = tenses[Math.floor(Math.random() * tenses.length)];
-        const pronoun = pronouns[Math.floor(Math.random() * pronouns.length)];
+        const wordIndex = Math.floor(Math.random() * allWords.length);
+        const word = allWords[wordIndex];
 
-        setCorrectAnswer(word.conjugations[tense][pronoun]);
-        // console.log(word.conjugations[tense][pronoun]);
-        setCurrentConjugation({ word, tense, pronoun });
-    };
+        setCorrectAnswer(word.arabic);
+        // console.log(word);
+        setCurrentQuestion(word);
+    }
 
     const checkAnswer = () => {
         if (currentAnswer.trim().toLowerCase() === correctAnswer) {
@@ -45,7 +81,7 @@ const VerbsPage = () => {
     };
 
     const nextQuestion = () => {
-        getRandomConjugation();
+        getRandomWord();
         setCurrentAnswer("");
         setResultMessage("");
         setShowAnswerButton(false);
@@ -55,24 +91,6 @@ const VerbsPage = () => {
     const showAnswerClicked = () => {
         setRevealAnswer(!revealAnswer);
     }
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch('/Arabic-Learner-React-JS/arabic/verbs/all_verbs.json');
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const data = await response.json();
-                setVerbData(data);
-                setDataLoaded(true);
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            }
-        };
-
-        fetchData();
-    }, []);
 
     useEffect(() => {
         if (dataLoaded) {
@@ -86,21 +104,15 @@ const VerbsPage = () => {
 
     return (
         <div className="practice-page-container">
-            <h1>Verb Conjugation Practice</h1>
-
+            <h1>Word Practice</h1>
             <Card className="practice-container">
                 <ListGroup variant="flush">
                     <div className="info-text">
-                        {currentConjugation && (
+                        {currentQuestion && (
                             <>
-                                <Card.Header>{currentConjugation.word.english}: <strong>{currentConjugation.word.arabic}</strong></Card.Header>
-
-                                <ListGroup.Item>
-                                    <Row className='con-info'>
-                                        <Col><Card.Title>Pronoun: {currentConjugation.pronoun}</Card.Title></Col>
-                                        <Col><Card.Title>Tense: {currentConjugation.tense}</Card.Title></Col>
-                                    </Row>
-                                </ListGroup.Item>                            </>
+                                <Card.Header>Translate to Arabic</Card.Header>
+                                <h2 className='pt-4'>{currentQuestion.english}</h2>
+                            </>
                         )}
                     </div>
                     <div className='bottom-section'>
@@ -132,4 +144,4 @@ const VerbsPage = () => {
     );
 };
 
-export default VerbsPage;
+export default WordsPracticePage;
