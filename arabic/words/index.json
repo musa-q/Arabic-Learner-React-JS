@@ -1,12 +1,24 @@
 {
     "files": [
         {
-            "title": "Common Words",
-            "filename": "commonWords.json"
+            "title": "Lesson 2 - The Time",
+            "filename": "lesson2time.json"
         },
         {
-            "title": "Question Words",
-            "filename": "questionWords.json"
+            "title": "Lesson 2 - The Family",
+            "filename": "lesson2family.json"
+        },
+        {
+            "title": "Lesson 3 - Adjectives",
+            "filename": "lesson3.json"
+        },
+        {
+            "title": "Lesson 4 - Question Words",
+            "filename": "lesson4.json"
+        },
+        {
+            "title": "Lesson 5 - Common Words",
+            "filename": "lesson5.json"
         }
     ]
 }
