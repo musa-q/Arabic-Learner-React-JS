@@ -11,7 +11,8 @@ const MyNavBar = ({ onNavigate }) => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link onClick={() => onNavigate('home')}>Home</Nav.Link>
-                        <Nav.Link onClick={() => onNavigate('words')}>Words</Nav.Link>
+                        <Nav.Link onClick={() => onNavigate('wordsflashcard')}>Words flashcards</Nav.Link>
+                        <Nav.Link onClick={() => onNavigate('wordspractice')}>Words practice</Nav.Link>
                         <Nav.Link onClick={() => onNavigate('verbs')}>Verbs</Nav.Link>
                     </Nav>
                     <div className="d-flex align-items-center">

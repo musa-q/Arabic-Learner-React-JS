@@ -8,11 +8,14 @@ const HomePage = ({ onNavigate }) => {
             <br />
             <br />
             <div className="d-grid gap-5">
-                <Button variant="outline-primary" size="lg" onClick={() => onNavigate('words')}>
-                    Go to Words
+                <Button variant="outline-primary" size="lg" onClick={() => onNavigate('wordsflashcard')}>
+                    Go to Words Flashcards
+                </Button>
+                <Button variant="outline-primary" size="lg" onClick={() => onNavigate('wordspractice')}>
+                    Go to Words Practice
                 </Button>
                 <Button variant="outline-primary" size="lg" onClick={() => onNavigate('verbs')}>
-                    Go to Verbs
+                    Go to Verbs Practice
                 </Button>
             </div>
         </div>
