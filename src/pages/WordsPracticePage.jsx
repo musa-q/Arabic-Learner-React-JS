@@ -19,9 +19,6 @@ const WordsPracticePage = () => {
     const [correctAnswer, setCorrectAnswer] = useState("");
     const [resultMessage, setResultMessage] = useState("");
     const [currentQuestion, setCurrentQuestion] = useState("");
-    const [questionCounter, setQuestionCounter] = useState(10);
-    const [incorrectQuestions, setIncorrectQuestions] = useState([]);
-    const [askedQuestions, setAskedQuestions] = useState([]);
 
     useEffect(() => {
         const fetchFileList = async () => {
