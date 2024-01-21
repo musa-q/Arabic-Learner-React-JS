@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import './ChooseWordsPage.css';
 
-// Where choose which words list for flashcards
-const ChooseWordsPage = ({ onChoose, title }) => {
+// Where choose which words list for practice
+const ChoosePracticeWordsPage = ({ onChoose }) => {
     const [fileList, setFileList] = useState([]);
 
     useEffect(() => {
@@ -24,7 +24,7 @@ const ChooseWordsPage = ({ onChoose, title }) => {
 
     return (
         <div className="choose-words-page-container">
-            <h1>{title}</h1>
+            <h1>Choose a Word File:</h1>
             <div className="buttons-list">
                 {fileList.map((file, index) => (
                     <Button className="button p-3" variant="outline-light" type="button" key={index} onClick={() => {
@@ -38,4 +38,4 @@ const ChooseWordsPage = ({ onChoose, title }) => {
     );
 };
 
-export default ChooseWordsPage;
+export default ChoosePracticeWordsPage;
