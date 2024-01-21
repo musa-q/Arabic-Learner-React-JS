@@ -5,7 +5,6 @@ import VerbsPage from './pages/VerbsPage'
 import WordsFlashcardsPage from './pages/WordsFlashcardsPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MyNavBar from './components/NavBar';
-import ChooseWordsPage from './pages/ChooseWordsPage';
 import WordsPracticePage from './pages/WordsPracticePage';
 
 const App = () => {

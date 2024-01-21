@@ -9,7 +9,7 @@ import './WordsVerbsPracticePage.css';
 import Col from 'react-bootstrap/Col';
 
 // Practice words by typing
-const WordsPracticePage = ({ wordsList }) => {
+const WordsPracticeQuestionPage = ({ wordsList }) => {
     const [pageTitle, setPageTitle] = useState(null);
     const [allWords, setAllWords] = useState([]);
     const [dataLoaded, setDataLoaded] = useState(false);
@@ -134,4 +134,4 @@ const WordsPracticePage = ({ wordsList }) => {
     );
 };
 
-export default WordsPracticePage;
+export default WordsPracticeQuestionPage;

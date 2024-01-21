@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import ChooseWordsPage from './ChooseWordsPage';
-import WordsPracticePage from './WordsPractice';
+import WordsPracticeQuestionPage from './WordsPracticeQuestionPage';
 
 // Renders either choose page or flash cards
-const WordsFlashcardsPage = () => {
+const WordsPracticePage = () => {
     const [chosenWordsList, setChosenWordsList] = useState("choose");
 
     const chooseWordsList = (listChoice) => {
@@ -13,9 +13,9 @@ const WordsFlashcardsPage = () => {
     return (
         <div className="words-page-container">
             {chosenWordsList === "choose" && <ChooseWordsPage onChoose={chooseWordsList} title={"Practice words"} />}
-            {chosenWordsList !== "choose" && <WordsPracticePage wordsList={chosenWordsList} />}
+            {chosenWordsList !== "choose" && <WordsPracticeQuestionPage wordsList={chosenWordsList} />}
         </div>
     );
 };
 
-export default WordsFlashcardsPage;
+export default WordsPracticePage;
