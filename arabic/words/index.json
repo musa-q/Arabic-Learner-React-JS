@@ -23,6 +23,10 @@
         {
             "title": "Lesson 5 - Common Words",
             "filename": "lesson5.json"
+        },
+        {
+            "title": "Lesson 6 - Numbers and Other Words",
+            "filename": "lesson6.json"
         }
     ]
 }
