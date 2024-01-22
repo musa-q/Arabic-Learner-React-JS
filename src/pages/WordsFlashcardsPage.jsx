@@ -12,7 +12,7 @@ const WordsFlashcardsPage = () => {
 
     return (
         <div className="words-page-container">
-            {chosenWordsList === "choose" && <ChooseWordsPage onChoose={chooseWordsList} />}
+            {chosenWordsList === "choose" && <ChooseWordsPage onChoose={chooseWordsList} title={"Flashcards"} />}
             {chosenWordsList !== "choose" && <FlashCardsPage wordsList={chosenWordsList} />}
         </div>
     );
