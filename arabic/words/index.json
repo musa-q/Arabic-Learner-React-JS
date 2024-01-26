@@ -27,6 +27,10 @@
         {
             "title": "Lesson 6 - Numbers and Other Words",
             "filename": "lesson6.json"
+        },
+        {
+            "title": "Lesson 7 - Random Words",
+            "filename": "lesson7.json"
         }
     ]
 }
