@@ -1,0 +1,4635 @@
+{
+    "title": "1000 Most Common Words",
+    "translations": [
+        {
+            "arabic": "كتير",
+            "romanized": "kteer",
+            "english": "A lot"
+        },
+        {
+            "arabic": "عن",
+            "romanized": "3ann",
+            "english": "About"
+        },
+        {
+            "arabic": "فوق",
+            "romanized": "fooq",
+            "english": "Above"
+        },
+        {
+            "arabic": "غياب",
+            "romanized": "ghiyaab",
+            "english": "Absence"
+        },
+        {
+            "arabic": "قبل",
+            "romanized": "qibil",
+            "english": "To accept"
+        },
+        {
+            "arabic": "ممثل",
+            "romanized": "mumaththil",
+            "english": "Actor"
+        },
+        {
+            "arabic": "ممثلة",
+            "romanized": "mumaththila",
+            "english": "Actress"
+        },
+        {
+            "arabic": "عنوان",
+            "romanized": "3inwaan",
+            "english": "Address"
+        },
+        {
+            "arabic": "دعاية",
+            "romanized": "di3aayeh",
+            "english": "Advertisement"
+        },
+        {
+            "arabic": "نصيحة",
+            "romanized": "naSiiHa",
+            "english": "Advice"
+        },
+        {
+            "arabic": "نصح",
+            "romanized": "naSaH",
+            "english": "To advise"
+        },
+        {
+            "arabic": "بعد",
+            "romanized": "ba3d",
+            "english": "After"
+        },
+        {
+            "arabic": "ضد",
+            "romanized": "Didd",
+            "english": "Against"
+        },
+        {
+            "arabic": "عمر",
+            "romanized": "3umur",
+            "english": "Age"
+        },
+        {
+            "arabic": "وافق",
+            "romanized": "waafaq",
+            "english": "To agree"
+        },
+        {
+            "arabic": "اتفاق",
+            "romanized": "ittifaaq",
+            "english": "Agreement"
+        },
+        {
+            "arabic": "هوا",
+            "romanized": "hawa",
+            "english": "Air"
+        },
+        {
+            "arabic": "مطار",
+            "romanized": "maTaar",
+            "english": "Airport"
+        },
+        {
+            "arabic": "كل",
+            "romanized": "kull",
+            "english": "All"
+        },
+        {
+            "arabic": "حساسية ",
+            "romanized": "Hasaasiyyeh",
+            "english": "Allergy"
+        },
+        {
+            "arabic": "تقريبا",
+            "romanized": "taqriiban",
+            "english": "Almost"
+        },
+        {
+            "arabic": "كمان",
+            "romanized": "kamaan",
+            "english": "Also"
+        },
+        {
+            "arabic": "دايما",
+            "romanized": "daayman",
+            "english": "Always"
+        },
+        {
+            "arabic": "رهيب",
+            "romanized": "rahiib",
+            "english": "Amazing"
+        },
+        {
+            "arabic": "مبلغ",
+            "romanized": "mablagh",
+            "english": "Amount"
+        },
+        {
+            "arabic": "و",
+            "romanized": "u",
+            "english": "And"
+        },
+        {
+            "arabic": "غضب",
+            "romanized": "ghaDab",
+            "english": "Anger"
+        },
+        {
+            "arabic": "معصب",
+            "romanized": "m3aSSib",
+            "english": "Angry"
+        },
+        {
+            "arabic": "حيوان",
+            "romanized": "Haywaan",
+            "english": "Animal"
+        },
+        {
+            "arabic": "أعلن",
+            "romanized": "a3lan",
+            "english": "To announce"
+        },
+        {
+            "arabic": "أزعج",
+            "romanized": "az3aj",
+            "english": "To annoy"
+        },
+        {
+            "arabic": "\nمتضايق\nمزعوج\n",
+            "romanized": "\nmitDaayiq\nmaz3uuj\n",
+            "english": "Annoyed"
+        },
+        {
+            "arabic": "مزعج",
+            "romanized": "muz3ij",
+            "english": "Annoying"
+        },
+        {
+            "arabic": "جواب",
+            "romanized": "jawaab",
+            "english": "Answer"
+        },
+        {
+            "arabic": "جاوب",
+            "romanized": "jaawab",
+            "english": "To answer"
+        },
+        {
+            "arabic": "رد",
+            "romanized": "radd",
+            "english": "To answer (the phone)/ reply"
+        },
+        {
+            "arabic": "أي",
+            "romanized": "ayy",
+            "english": "Any"
+        },
+        {
+            "arabic": "أي حدا ",
+            "romanized": "Ayy Hada",
+            "english": "Anyone"
+        },
+        {
+            "arabic": "أي إشي",
+            "romanized": "ayy ishiy",
+            "english": "Anything"
+        },
+        {
+            "arabic": "اعتذر",
+            "romanized": "i3tadhar",
+            "english": "To apologize"
+        },
+        {
+            "arabic": "شكل ",
+            "romanized": "shakil",
+            "english": "Appearance/ shape"
+        },
+        {
+            "arabic": "تفاح",
+            "romanized": "tuffaaH",
+            "english": "Apple"
+        },
+        {
+            "arabic": "موعد",
+            "romanized": "maw3id",
+            "english": "Appointment"
+        },
+        {
+            "arabic": "عربي",
+            "romanized": "3arabi",
+            "english": "Arab"
+        },
+        {
+            "arabic": "منطقة",
+            "romanized": "manTiqa",
+            "english": "Area"
+        },
+        {
+            "arabic": "جدال",
+            "romanized": "jidaal",
+            "english": "Argument"
+        },
+        {
+            "arabic": "جيش",
+            "romanized": "jaish",
+            "english": "Army"
+        },
+        {
+            "arabic": "حوالي",
+            "romanized": "Hawaaliy",
+            "english": "Around"
+        },
+        {
+            "arabic": "وصل",
+            "romanized": "wiSil",
+            "english": "Arrive"
+        },
+        {
+            "arabic": "فن",
+            "romanized": "fann",
+            "english": "Art"
+        },
+        {
+            "arabic": "فنان",
+            "romanized": "fannaan",
+            "english": "Artist"
+        },
+        {
+            "arabic": "__ك",
+            "romanized": "ka____",
+            "english": "As"
+        },
+        {
+            "arabic": "سأل",
+            "romanized": "sa’al",
+            "english": "To ask"
+        },
+        {
+            "arabic": "طلب",
+            "romanized": "Talab",
+            "english": "To ask for"
+        },
+        {
+            "arabic": "\nخالة\nعمة\n",
+            "romanized": "\nkhaaleh\n3ammeh\n",
+            "english": "\nAunt (maternal)\nAunt (paternal)\n"
+        },
+        {
+            "arabic": "خريف",
+            "romanized": "khariif",
+            "english": "Autumn"
+        },
+        {
+            "arabic": "موجود",
+            "romanized": "mawjood",
+            "english": "Available"
+        },
+        {
+            "arabic": "تجنب ",
+            "romanized": "tjannab",
+            "english": "To avoid"
+        },
+        {
+            "arabic": "رائع",
+            "romanized": "raa’i3",
+            "english": "Awesome"
+        },
+        {
+            "arabic": "بيبي",
+            "romanized": "baby",
+            "english": "Baby"
+        },
+        {
+            "arabic": "ظهر ",
+            "romanized": "DHahir",
+            "english": "Back"
+        },
+        {
+            "arabic": "سيء",
+            "romanized": "sayyi’",
+            "english": "Bad"
+        },
+        {
+            "arabic": "مخبز",
+            "romanized": "makhbaz",
+            "english": "Bakery"
+        },
+        {
+            "arabic": "رصيد",
+            "romanized": "raSiid",
+            "english": "Balance (finances)"
+        },
+        {
+            "arabic": "موز",
+            "romanized": "mooz",
+            "english": "Banana"
+        },
+        {
+            "arabic": "بنك",
+            "romanized": "bank",
+            "english": "Bank"
+        },
+        {
+            "arabic": "أساسي",
+            "romanized": "asaasiy",
+            "english": "Basic"
+        },
+        {
+            "arabic": "حمام",
+            "romanized": "Hammaam",
+            "english": "Bathroom"
+        },
+        {
+            "arabic": "كان",
+            "romanized": "kaan",
+            "english": "To be "
+        },
+        {
+            "arabic": "قدر",
+            "romanized": "qidir",
+            "english": "To be able"
+        },
+        {
+            "arabic": "غار",
+            "romanized": "ghaar",
+            "english": "To be jealous"
+        },
+        {
+            "arabic": "لحية",
+            "romanized": "lahiyeh",
+            "english": "Beard"
+        },
+        {
+            "arabic": "\nجميل\nحلو\n",
+            "romanized": "\njamiil\nHilou\n",
+            "english": "Beautiful"
+        },
+        {
+            "arabic": "\nعشان\nلإنه\n",
+            "romanized": "\n3ashaan\nla’inno\n",
+            "english": "Because"
+        },
+        {
+            "arabic": "صار",
+            "romanized": "Saar",
+            "english": "Become"
+        },
+        {
+            "arabic": "تخت",
+            "romanized": "takhit",
+            "english": "Bed"
+        },
+        {
+            "arabic": "غرفة النوم",
+            "romanized": "ghurfet an-noom",
+            "english": "Bedroom"
+        },
+        {
+            "arabic": "قبل",
+            "romanized": "qabl",
+            "english": "Before"
+        },
+        {
+            "arabic": "ترجى",
+            "romanized": "trajjaa",
+            "english": "To beg"
+        },
+        {
+            "arabic": "بداية",
+            "romanized": "bidaayeh",
+            "english": "Beginning"
+        },
+        {
+            "arabic": "حزام",
+            "romanized": "Hizaam",
+            "english": "Belt"
+        },
+        {
+            "arabic": "خان",
+            "romanized": "khaan",
+            "english": "To betray"
+        },
+        {
+            "arabic": "خيانة",
+            "romanized": "khiyaaneh",
+            "english": "Betrayal"
+        },
+        {
+            "arabic": "أحسن",
+            "romanized": "aHsan",
+            "english": "Better"
+        },
+        {
+            "arabic": "بين",
+            "romanized": "bayn",
+            "english": "Between"
+        },
+        {
+            "arabic": "كبير",
+            "romanized": "kbiir",
+            "english": "Big"
+        },
+        {
+            "arabic": "بسكليت",
+            "romanized": "baskaleet",
+            "english": "Bike"
+        },
+        {
+            "arabic": "\nحساب\nفاتورة\n",
+            "romanized": "\nHisaab\nfaatuura\n",
+            "english": "\nBill (e.g. in a restaurant)\nBill/ invoice\n"
+        },
+        {
+            "arabic": "عصفور",
+            "romanized": "3aSfuur",
+            "english": "Bird"
+        },
+        {
+            "arabic": "أسود",
+            "romanized": "aswad",
+            "english": "Black"
+        },
+        {
+            "arabic": "لام",
+            "romanized": "laam",
+            "english": "To blame"
+        },
+        {
+            "arabic": "حرام",
+            "romanized": "Hraam",
+            "english": "Blanket"
+        },
+        {
+            "arabic": "بلوزة ",
+            "romanized": "bluuzah",
+            "english": "Blouse"
+        },
+        {
+            "arabic": "أزرق",
+            "romanized": "azraq",
+            "english": "Blue"
+        },
+        {
+            "arabic": "مركب",
+            "romanized": "markab",
+            "english": "Boat"
+        },
+        {
+            "arabic": "جسم",
+            "romanized": "jism",
+            "english": "Body"
+        },
+        {
+            "arabic": "كتاب",
+            "romanized": "kitaab",
+            "english": "Book"
+        },
+        {
+            "arabic": "حد",
+            "romanized": "Hadd",
+            "english": "Border"
+        },
+        {
+            "arabic": "زهقان",
+            "romanized": "zahqaan",
+            "english": "Bored"
+        },
+        {
+            "arabic": "ممل",
+            "romanized": "mumill",
+            "english": "Boring"
+        },
+        {
+            "arabic": "صندوق",
+            "romanized": "Sanduuq",
+            "english": "Box"
+        },
+        {
+            "arabic": "ولد",
+            "romanized": "walad",
+            "english": "Boy"
+        },
+        {
+            "arabic": "استراحة",
+            "romanized": "istiraaHa",
+            "english": "Break "
+        },
+        {
+            "arabic": "فطور",
+            "romanized": "fTuur",
+            "english": "Breakfast"
+        },
+        {
+            "arabic": "عروس",
+            "romanized": "3aruus",
+            "english": "Bride"
+        },
+        {
+            "arabic": "جسر ",
+            "romanized": "jisir",
+            "english": "Bridge"
+        },
+        {
+            "arabic": "جاب",
+            "romanized": "jaab",
+            "english": "To bring"
+        },
+        {
+            "arabic": "أخو",
+            "romanized": "akhu",
+            "english": "Brother"
+        },
+        {
+            "arabic": "فرشاي",
+            "romanized": "furshaay",
+            "english": "Brush"
+        },
+        {
+            "arabic": "بنى",
+            "romanized": "banaa",
+            "english": "To build"
+        },
+        {
+            "arabic": "بناية",
+            "romanized": "binaayeh",
+            "english": "Building"
+        },
+        {
+            "arabic": "باص ",
+            "romanized": "baaS",
+            "english": "Bus"
+        },
+        {
+            "arabic": "مشغول",
+            "romanized": "mashghuul",
+            "english": "Busy"
+        },
+        {
+            "arabic": "بس",
+            "romanized": "bas",
+            "english": "But"
+        },
+        {
+            "arabic": "اشترى",
+            "romanized": "ishtaraa",
+            "english": "To buy"
+        },
+        {
+            "arabic": "رن",
+            "romanized": "rann",
+            "english": "To call (by phone)"
+        },
+        {
+            "arabic": "سمى",
+            "romanized": "sammaa",
+            "english": "To call (name)"
+        },
+        {
+            "arabic": "هدي",
+            "romanized": "hidii",
+            "english": "To calm down"
+        },
+        {
+            "arabic": "جمل",
+            "romanized": "jamal",
+            "english": "Camel"
+        },
+        {
+            "arabic": "كاميرا",
+            "romanized": "kaamiiraa",
+            "english": "Camera"
+        },
+        {
+            "arabic": "لغى",
+            "romanized": "laghaa",
+            "english": "To cancel"
+        },
+        {
+            "arabic": "إلغاء",
+            "romanized": "ilghaa’",
+            "english": "Cancellation"
+        },
+        {
+            "arabic": "سيارة",
+            "romanized": "sayyaara",
+            "english": "Car"
+        },
+        {
+            "arabic": "اهتم",
+            "romanized": "ihtamm",
+            "english": "To care"
+        },
+        {
+            "arabic": "سجادة",
+            "romanized": "sijjaada",
+            "english": "Carpet"
+        },
+        {
+            "arabic": "حمل",
+            "romanized": "Himil",
+            "english": "To carry"
+        },
+        {
+            "arabic": "حال",
+            "romanized": "Haal",
+            "english": "Case"
+        },
+        {
+            "arabic": "\nبس\nقط\n",
+            "romanized": "\nbiss\nqiTT\n",
+            "english": "Cat"
+        },
+        {
+            "arabic": "بقرة",
+            "romanized": "baqara",
+            "english": "Cow"
+        },
+        {
+            "arabic": "مركز",
+            "romanized": "markaz",
+            "english": "Center"
+        },
+        {
+            "arabic": "أكيد",
+            "romanized": "akiid",
+            "english": "Certainly"
+        },
+        {
+            "arabic": "كرسي",
+            "romanized": "kursi",
+            "english": "Chair"
+        },
+        {
+            "arabic": "فرصة",
+            "romanized": "furSa",
+            "english": "Chance"
+        },
+        {
+            "arabic": "صدقة ",
+            "romanized": "Sadaqa",
+            "english": "Charity"
+        },
+        {
+            "arabic": "رخيص",
+            "romanized": "rkhiiS",
+            "english": "Cheap"
+        },
+        {
+            "arabic": "شيك",
+            "romanized": "shayyak",
+            "english": "To check"
+        },
+        {
+            "arabic": "جبنة",
+            "romanized": "jibneh",
+            "english": "Cheese"
+        },
+        {
+            "arabic": "صدر",
+            "romanized": "Sidr",
+            "english": "Chest"
+        },
+        {
+            "arabic": "دجاج",
+            "romanized": "dajaaj",
+            "english": "Chicken"
+        },
+        {
+            "arabic": "طفل ",
+            "romanized": "Tifil",
+            "english": "Child"
+        },
+        {
+            "arabic": "اختيار",
+            "romanized": "ikhtiyaar",
+            "english": "Choice"
+        },
+        {
+            "arabic": "اختار",
+            "romanized": "ikhtaar",
+            "english": "To choose"
+        },
+        {
+            "arabic": "دائرة",
+            "romanized": "daa’ira",
+            "english": "Circle"
+        },
+        {
+            "arabic": "ظرف",
+            "romanized": "DHarf",
+            "english": "Circumstance"
+        },
+        {
+            "arabic": "مدينة",
+            "romanized": "medinah",
+            "english": "City"
+        },
+        {
+            "arabic": "صف",
+            "romanized": "Saff",
+            "english": "Class/ grade"
+        },
+        {
+            "arabic": "نظيف",
+            "romanized": "nDHiif",
+            "english": "Clean"
+        },
+        {
+            "arabic": "نظف",
+            "romanized": "naDHDHaf",
+            "english": "To clean"
+        },
+        {
+            "arabic": "واضح",
+            "romanized": "waaDiH",
+            "english": "Clear"
+        },
+        {
+            "arabic": "ذكي",
+            "romanized": "dhakiy",
+            "english": "Clever"
+        },
+        {
+            "arabic": "قريب",
+            "romanized": "qariib",
+            "english": "\nClose/ near\n"
+        },
+        {
+            "arabic": "خزانة",
+            "romanized": "khazaaneh",
+            "english": "Closet"
+        },
+        {
+            "arabic": "غيمة",
+            "romanized": "ghaymeh",
+            "english": "Cloud"
+        },
+        {
+            "arabic": "قهوة",
+            "romanized": "qahwa",
+            "english": "Coffee"
+        },
+        {
+            "arabic": "بارد",
+            "romanized": "baarid",
+            "english": "Cold"
+        },
+        {
+            "arabic": "زميل",
+            "romanized": "zamiil",
+            "english": "Colleague "
+        },
+        {
+            "arabic": "لون",
+            "romanized": "loon",
+            "english": "Color"
+        },
+        {
+            "arabic": "إجا",
+            "romanized": "ijaa",
+            "english": "Come"
+        },
+        {
+            "arabic": "مريح",
+            "romanized": "muriiH",
+            "english": "Comfortable"
+        },
+        {
+            "arabic": "تعليق",
+            "romanized": "ta3liiq",
+            "english": "Comment"
+        },
+        {
+            "arabic": "سكر",
+            "romanized": "sakkar",
+            "english": "To close"
+        },
+        {
+            "arabic": "مجتمع",
+            "romanized": "mujtama3",
+            "english": "Community"
+        },
+        {
+            "arabic": "شركة",
+            "romanized": "shirkeh",
+            "english": "Company"
+        },
+        {
+            "arabic": "قارن",
+            "romanized": "qaaran",
+            "english": "To compare"
+        },
+        {
+            "arabic": "مقارنة",
+            "romanized": "muqaaraneh",
+            "english": "Comparison"
+        },
+        {
+            "arabic": "شكى",
+            "romanized": "shakaa",
+            "english": "To complain"
+        },
+        {
+            "arabic": "شكوة ",
+            "romanized": "shakwa",
+            "english": "Complaint"
+        },
+        {
+            "arabic": "كامل",
+            "romanized": "kaamil",
+            "english": "Complete (adj.)"
+        },
+        {
+            "arabic": "كمل",
+            "romanized": "kammal",
+            "english": "To complete"
+        },
+        {
+            "arabic": "مجاملة",
+            "romanized": "mujaamala",
+            "english": "Compliment"
+        },
+        {
+            "arabic": "كامبيوتر",
+            "romanized": "kaambyuutir",
+            "english": "Computer"
+        },
+        {
+            "arabic": "استنتج",
+            "romanized": "istantaj",
+            "english": "To conclude/ deduct"
+        },
+        {
+            "arabic": "شرط",
+            "romanized": "sharT",
+            "english": "Condition"
+        },
+        {
+            "arabic": "اعتبر",
+            "romanized": "i3tabar",
+            "english": "To consider"
+        },
+        {
+            "arabic": "قارة",
+            "romanized": "qaarra",
+            "english": "Continent"
+        },
+        {
+            "arabic": "صدفة",
+            "romanized": "Sidfeh",
+            "english": "Coincidence "
+        },
+        {
+            "arabic": "ضل",
+            "romanized": "Dall",
+            "english": "To continue"
+        },
+        {
+            "arabic": "عقد ",
+            "romanized": "3aqid",
+            "english": "Contract"
+        },
+        {
+            "arabic": "سيطرة",
+            "romanized": "sayTara",
+            "english": "Control"
+        },
+        {
+            "arabic": "حديث",
+            "romanized": "Hadiith",
+            "english": "Conversation"
+        },
+        {
+            "arabic": "قنع",
+            "romanized": "qana3",
+            "english": "To convince"
+        },
+        {
+            "arabic": "نسخة",
+            "romanized": "niskha",
+            "english": "Copy"
+        },
+        {
+            "arabic": "زاوية",
+            "romanized": "zaawyeh",
+            "english": "Corner"
+        },
+        {
+            "arabic": "صحيح",
+            "romanized": "SaHiiH",
+            "english": "Correct"
+        },
+        {
+            "arabic": "تكليف",
+            "romanized": "takliif",
+            "english": "Cost"
+        },
+        {
+            "arabic": "كلف",
+            "romanized": "kallaf",
+            "english": "To cost"
+        },
+        {
+            "arabic": "قح",
+            "romanized": "qaHH",
+            "english": "To cough"
+        },
+        {
+            "arabic": "قحة",
+            "romanized": "qaHHa",
+            "english": "Cough"
+        },
+        {
+            "arabic": "\nصوفة \nكنباي \n",
+            "romanized": "\nSoofah\nkanabaay\n",
+            "english": "Couch"
+        },
+        {
+            "arabic": "عد",
+            "romanized": "3add",
+            "english": "To count"
+        },
+        {
+            "arabic": "بلد",
+            "romanized": "balad",
+            "english": "Country"
+        },
+        {
+            "arabic": "محكمة",
+            "romanized": "maHkameh",
+            "english": "Court"
+        },
+        {
+            "arabic": "غطا",
+            "romanized": "ghaTaa",
+            "english": "Cover"
+        },
+        {
+            "arabic": "مجنون",
+            "romanized": "majnuun",
+            "english": "Crazy"
+        },
+        {
+            "arabic": "بكي",
+            "romanized": "bikii",
+            "english": "To cry"
+        },
+        {
+            "arabic": "خيار",
+            "romanized": "khyaar",
+            "english": "Cucumber"
+        },
+        {
+            "arabic": "كأس",
+            "romanized": "ka’s",
+            "english": "Cup"
+        },
+        {
+            "arabic": "علاج",
+            "romanized": "3ilaaj",
+            "english": "Cure"
+        },
+        {
+            "arabic": "زبون",
+            "romanized": "zbuun",
+            "english": "Customer"
+        },
+        {
+            "arabic": "رقصة",
+            "romanized": "raqSa",
+            "english": "Dance"
+        },
+        {
+            "arabic": "رقص",
+            "romanized": "raqaS",
+            "english": "To dance"
+        },
+        {
+            "arabic": "خطر",
+            "romanized": "khaTar",
+            "english": "Danger"
+        },
+        {
+            "arabic": "بنت",
+            "romanized": "bint",
+            "english": "Daughter"
+        },
+        {
+            "arabic": "يوم",
+            "romanized": "yoom",
+            "english": "Day"
+        },
+        {
+            "arabic": "موت",
+            "romanized": "moot",
+            "english": "Death"
+        },
+        {
+            "arabic": "قرر",
+            "romanized": "qarrar",
+            "english": "To decide"
+        },
+        {
+            "arabic": "قرار",
+            "romanized": "qaraar",
+            "english": "Decision"
+        },
+        {
+            "arabic": "شهادة",
+            "romanized": "shahaadeh",
+            "english": "Degree/ diploma"
+        },
+        {
+            "arabic": "طيب",
+            "romanized": "Tayyib",
+            "english": "Delicious"
+        },
+        {
+            "arabic": "تسليم",
+            "romanized": "tasliim",
+            "english": "Delivery"
+        },
+        {
+            "arabic": "دكتور سنان",
+            "romanized": "doktoor snaan",
+            "english": "Dentist"
+        },
+        {
+            "arabic": "نكر",
+            "romanized": "nakar",
+            "english": "To deny"
+        },
+        {
+            "arabic": "قسم ",
+            "romanized": "qisim",
+            "english": "Department"
+        },
+        {
+            "arabic": "صحرا",
+            "romanized": "SaHraa",
+            "english": "Desert"
+        },
+        {
+            "arabic": "استاهل",
+            "romanized": "istaahal",
+            "english": "To deserve"
+        },
+        {
+            "arabic": "تفصيل",
+            "romanized": "tafSiil",
+            "english": "Detail"
+        },
+        {
+            "arabic": "قاموس",
+            "romanized": "qaamuus",
+            "english": "Dictionary"
+        },
+        {
+            "arabic": "مات",
+            "romanized": "maat",
+            "english": "To die"
+        },
+        {
+            "arabic": "\nمختلف\nغير\n",
+            "romanized": "\nmukhtalif\nghayr\n",
+            "english": "\nDifferent\nDifferent from\n"
+        },
+        {
+            "arabic": "صعب ",
+            "romanized": "Sa3ib",
+            "english": "Difficult"
+        },
+        {
+            "arabic": "عشا",
+            "romanized": "3ashaa",
+            "english": "Dinner"
+        },
+        {
+            "arabic": "جهة",
+            "romanized": "jiha",
+            "english": "Direction"
+        },
+        {
+            "arabic": "وسخ",
+            "romanized": "wisikh",
+            "english": "Dirty"
+        },
+        {
+            "arabic": "مصيبة",
+            "romanized": "muSiiba",
+            "english": "Disaster"
+        },
+        {
+            "arabic": "خصم ",
+            "romanized": "khaSim",
+            "english": "Discount"
+        },
+        {
+            "arabic": "ناقش",
+            "romanized": "naaqash",
+            "english": "To discuss"
+        },
+        {
+            "arabic": "نقاش",
+            "romanized": "niqaash",
+            "english": "Discussion"
+        },
+        {
+            "arabic": "مقرف",
+            "romanized": "muqrif",
+            "english": "Disgusting"
+        },
+        {
+            "arabic": "قسم",
+            "romanized": "qasam",
+            "english": "To divide"
+        },
+        {
+            "arabic": "طلاق",
+            "romanized": "Talaaq",
+            "english": "Divorce"
+        },
+        {
+            "arabic": "\nعمل\nسوى\n",
+            "romanized": "\n3imil\nsawwaa\n",
+            "english": "\nTo do\nTo do/ make\n"
+        },
+        {
+            "arabic": "جلى",
+            "romanized": "jalaa",
+            "english": "To do the dishes"
+        },
+        {
+            "arabic": "\nدكتور\nطبيب\nحكيم\n",
+            "romanized": "\ndoktoor\nTabiib\nHakiim\n",
+            "english": "Doctor"
+        },
+        {
+            "arabic": "كلب",
+            "romanized": "kalb",
+            "english": "Dog"
+        },
+        {
+            "arabic": "حمار",
+            "romanized": "Hmaar",
+            "english": "Donkey"
+        },
+        {
+            "arabic": "باب",
+            "romanized": "baab",
+            "english": "Door"
+        },
+        {
+            "arabic": "شك",
+            "romanized": "shakk",
+            "english": "Doubt"
+        },
+        {
+            "arabic": "شك",
+            "romanized": "shakk",
+            "english": "To doubt"
+        },
+        {
+            "arabic": "عجينة",
+            "romanized": "3ajiineh",
+            "english": "Dough"
+        },
+        {
+            "arabic": "رسم",
+            "romanized": "rasam",
+            "english": "To draw"
+        },
+        {
+            "arabic": "جرار",
+            "romanized": "jarraar",
+            "english": "Drawer"
+        },
+        {
+            "arabic": "حلم",
+            "romanized": "Hilim",
+            "english": "Dream"
+        },
+        {
+            "arabic": "حلم ",
+            "romanized": "Hilim",
+            "english": "To dream"
+        },
+        {
+            "arabic": "فستان",
+            "romanized": "fustaan",
+            "english": "Dress"
+        },
+        {
+            "arabic": "شرب",
+            "romanized": "shirib",
+            "english": "To drink"
+        },
+        {
+            "arabic": "ساق",
+            "romanized": "saaq",
+            "english": "To drive"
+        },
+        {
+            "arabic": "خلال",
+            "romanized": "khilaal",
+            "english": "During"
+        },
+        {
+            "arabic": "بطة",
+            "romanized": "baTTa",
+            "english": "Duck"
+        },
+        {
+            "arabic": "غبرة ",
+            "romanized": "ghabara",
+            "english": "Dust"
+        },
+        {
+            "arabic": "بكير",
+            "romanized": "bakkiir",
+            "english": "Early"
+        },
+        {
+            "arabic": "أرض ",
+            "romanized": "arD",
+            "english": "Earth"
+        },
+        {
+            "arabic": "شرق ",
+            "romanized": "sharq",
+            "english": "East"
+        },
+        {
+            "arabic": "سهل ",
+            "romanized": "sahil",
+            "english": "Easy"
+        },
+        {
+            "arabic": "أكل",
+            "romanized": "akal",
+            "english": "To eat"
+        },
+        {
+            "arabic": "فطر",
+            "romanized": "faTar",
+            "english": "To eat breakfast"
+        },
+        {
+            "arabic": "جهد ",
+            "romanized": "jahid",
+            "english": "Effort"
+        },
+        {
+            "arabic": "تمانية ",
+            "romanized": "tamaaniyeh",
+            "english": "Eight"
+        },
+        {
+            "arabic": "كهربائي",
+            "romanized": "kahrabaa’iy",
+            "english": "Electrician"
+        },
+        {
+            "arabic": "فيل",
+            "romanized": "fiil",
+            "english": "Elephant"
+        },
+        {
+            "arabic": "أسنسير ",
+            "romanized": "asinsiir",
+            "english": "Elevator"
+        },
+        {
+            "arabic": "إحداعش ",
+            "romanized": "iHdaa3ish",
+            "english": "Eleven"
+        },
+        {
+            "arabic": "سفارة",
+            "romanized": "safaara",
+            "english": "Embassy"
+        },
+        {
+            "arabic": "عاطفة",
+            "romanized": "3aaTfeh",
+            "english": "Emotion"
+        },
+        {
+            "arabic": "فاضي",
+            "romanized": "faaDiy",
+            "english": "Empty"
+        },
+        {
+            "arabic": "نهاية ",
+            "romanized": "nihaayeh",
+            "english": "End"
+        },
+        {
+            "arabic": "طاقة",
+            "romanized": "Taaqa",
+            "english": "Energy"
+        },
+        {
+            "arabic": "ماكينة",
+            "romanized": "maakiina",
+            "english": "Engine"
+        },
+        {
+            "arabic": "مهندس",
+            "romanized": "muhandis",
+            "english": "Engineer"
+        },
+        {
+            "arabic": "كافي",
+            "romanized": "kaafiy",
+            "english": "Enough"
+        },
+        {
+            "arabic": "\nدخل\nفات\n",
+            "romanized": "\ndakhal\nfaat\n",
+            "english": "\nTo enter\n \n"
+        },
+        {
+            "arabic": "مدخل",
+            "romanized": "madkhal",
+            "english": "Entrance"
+        },
+        {
+            "arabic": "خصوصا",
+            "romanized": "khuSuusan",
+            "english": "Especially"
+        },
+        {
+            "arabic": "حتى",
+            "romanized": "Hattaa",
+            "english": "Even"
+        },
+        {
+            "arabic": "مسا",
+            "romanized": "masaa",
+            "english": "Evening"
+        },
+        {
+            "arabic": "كل",
+            "romanized": "kull",
+            "english": "Every"
+        },
+        {
+            "arabic": "كل",
+            "romanized": "kull",
+            "english": "Everyone"
+        },
+        {
+            "arabic": "كل إشي",
+            "romanized": "kull ishiy",
+            "english": "Everything"
+        },
+        {
+            "arabic": "دليل",
+            "romanized": "daliil",
+            "english": "Evidence"
+        },
+        {
+            "arabic": "بالضبط",
+            "romanized": "biDDabT/ bizzabT",
+            "english": "Exactly"
+        },
+        {
+            "arabic": "مثل",
+            "romanized": "mathal",
+            "english": "Example"
+        },
+        {
+            "arabic": "\nحجة\nعذر\n",
+            "romanized": "\nHijjeh\n3udhur\n",
+            "english": "Excuse"
+        },
+        {
+            "arabic": "توقع",
+            "romanized": "tawaqqa3",
+            "english": "To expect"
+        },
+        {
+            "arabic": "\nتجربة\nخبرة\n",
+            "romanized": "\ntajruba\nkhibra\n",
+            "english": "Experience"
+        },
+        {
+            "arabic": "عين",
+            "romanized": "3ain",
+            "english": "Eye"
+        },
+        {
+            "arabic": "وجه",
+            "romanized": "wijh",
+            "english": "Face"
+        },
+        {
+            "arabic": "واجه",
+            "romanized": "waajah",
+            "english": "To face"
+        },
+        {
+            "arabic": "\nأهل\nعيلة\n",
+            "romanized": "\nahil\n3aileh\n",
+            "english": "Family"
+        },
+        {
+            "arabic": "بعيد",
+            "romanized": "b3iid",
+            "english": "Far"
+        },
+        {
+            "arabic": "\nبسرعة\nسريع\n",
+            "romanized": "\nbsur3a\nsarii3\n",
+            "english": "\nFast (adv.)\nFast (adj.)\n"
+        },
+        {
+            "arabic": "صام",
+            "romanized": "Saam",
+            "english": "To fast"
+        },
+        {
+            "arabic": "ناصح",
+            "romanized": "naaSiH",
+            "english": "Fat"
+        },
+        {
+            "arabic": "أب",
+            "romanized": "ab",
+            "english": "Father"
+        },
+        {
+            "arabic": "خوف",
+            "romanized": "khoof",
+            "english": "Fear"
+        },
+        {
+            "arabic": "خاف",
+            "romanized": "khaaf",
+            "english": "To fear"
+        },
+        {
+            "arabic": "حرارة",
+            "romanized": "Haraara",
+            "english": "Fever"
+        },
+        {
+            "arabic": "قليل",
+            "romanized": "qaliil",
+            "english": "Few"
+        },
+        {
+            "arabic": "خطيب ",
+            "romanized": "khaTiib",
+            "english": "Fiancé"
+        },
+        {
+            "arabic": "خطيبة",
+            "romanized": "khaTiiba",
+            "english": "Fiancée"
+        },
+        {
+            "arabic": "مقاتلة ",
+            "romanized": "mqaataleh",
+            "english": "Fight"
+        },
+        {
+            "arabic": "لقى ",
+            "romanized": "laqaa",
+            "english": "To find"
+        },
+        {
+            "arabic": "إصبع ",
+            "romanized": "iSba3",
+            "english": "Finger"
+        },
+        {
+            "arabic": "خلص ",
+            "romanized": "khalaS",
+            "english": "To finish"
+        },
+        {
+            "arabic": "نار",
+            "romanized": "naar",
+            "english": "Fire"
+        },
+        {
+            "arabic": "أول ",
+            "romanized": "awwal",
+            "english": "First"
+        },
+        {
+            "arabic": "سمك",
+            "romanized": "samak",
+            "english": "Fish"
+        },
+        {
+            "arabic": "خمسة",
+            "romanized": "khamseh",
+            "english": "Five"
+        },
+        {
+            "arabic": "صلح ",
+            "romanized": "SallaH",
+            "english": "To fix/ repair"
+        },
+        {
+            "arabic": "شقة ",
+            "romanized": "shaqqa",
+            "english": "Flat"
+        },
+        {
+            "arabic": "فيضان ",
+            "romanized": "fayaDaan",
+            "english": "Flood"
+        },
+        {
+            "arabic": "طحين",
+            "romanized": "THiin",
+            "english": "Flour"
+        },
+        {
+            "arabic": "\nزهرة\nورد\n",
+            "romanized": "\nzahra\nward\n",
+            "english": "Flower"
+        },
+        {
+            "arabic": "ركز",
+            "romanized": "rakkaz",
+            "english": "To focus"
+        },
+        {
+            "arabic": "تابع",
+            "romanized": "taaba3",
+            "english": "To follow"
+        },
+        {
+            "arabic": "أكل ",
+            "romanized": "akil",
+            "english": "Food"
+        },
+        {
+            "arabic": "كرة القدم",
+            "romanized": "kuret al-qadam",
+            "english": "Football"
+        },
+        {
+            "arabic": "\nل\nإلى\n",
+            "romanized": "\nla\nilaa\n",
+            "english": "For"
+        },
+        {
+            "arabic": "أجنبي ",
+            "romanized": "ajnabiy",
+            "english": "Foreigner"
+        },
+        {
+            "arabic": "غابة ",
+            "romanized": "ghaabeh",
+            "english": "Forest"
+        },
+        {
+            "arabic": "نسي ",
+            "romanized": "nisii",
+            "english": "To forget"
+        },
+        {
+            "arabic": "شوكة ",
+            "romanized": "shookeh",
+            "english": "Fork"
+        },
+        {
+            "arabic": "أربعة",
+            "romanized": "arba3",
+            "english": "Four"
+        },
+        {
+            "arabic": "حر ",
+            "romanized": "Horr",
+            "english": "Free"
+        },
+        {
+            "arabic": "ثلاجة ",
+            "romanized": "thallaajeh",
+            "english": "Fridge"
+        },
+        {
+            "arabic": "\nصاحب\nرفيق\nصديق \n",
+            "romanized": "\nSaaHib\nrfiiq\nSadiiq\n",
+            "english": "Friend"
+        },
+        {
+            "arabic": "من",
+            "romanized": "min",
+            "english": "From"
+        },
+        {
+            "arabic": "فواكه",
+            "romanized": "fawaakeh",
+            "english": "Fruits"
+        },
+        {
+            "arabic": "مليان",
+            "romanized": "malyaan",
+            "english": "Full"
+        },
+        {
+            "arabic": "مضحك",
+            "romanized": "muDHik",
+            "english": "Funny"
+        },
+        {
+            "arabic": "مستقبل",
+            "romanized": "mustaqbal",
+            "english": "Future"
+        },
+        {
+            "arabic": "لعبة",
+            "romanized": "l3ibeh",
+            "english": "Game/ toy"
+        },
+        {
+            "arabic": "كراج ",
+            "romanized": "karaaj",
+            "english": "Garage"
+        },
+        {
+            "arabic": "ثوم",
+            "romanized": "thoom",
+            "english": "Garlic"
+        },
+        {
+            "arabic": "بوابة",
+            "romanized": "bawwaabeh",
+            "english": "Gate"
+        },
+        {
+            "arabic": "عموما",
+            "romanized": "3umuuman",
+            "english": "Generally"
+        },
+        {
+            "arabic": "كريم",
+            "romanized": "kariim",
+            "english": "Generous"
+        },
+        {
+            "arabic": "أخد ",
+            "romanized": "akhad",
+            "english": "To get"
+        },
+        {
+            "arabic": "تحمس",
+            "romanized": "tHammas",
+            "english": "To get excited"
+        },
+        {
+            "arabic": "جاع ",
+            "romanized": "jaa3",
+            "english": "To get hungry"
+        },
+        {
+            "arabic": "تعب ",
+            "romanized": "ti3ib",
+            "english": "To get tired"
+        },
+        {
+            "arabic": "هدية ",
+            "romanized": "hadiyyeh",
+            "english": "Gift"
+        },
+        {
+            "arabic": "بنت",
+            "romanized": "bint",
+            "english": "Girl"
+        },
+        {
+            "arabic": "أعطى ",
+            "romanized": "a3Taa",
+            "english": "To give"
+        },
+        {
+            "arabic": "قزاز ",
+            "romanized": "qazaaz",
+            "english": "Glass"
+        },
+        {
+            "arabic": "راح",
+            "romanized": "raaH",
+            "english": "To go"
+        },
+        {
+            "arabic": "نزل",
+            "romanized": "nizil",
+            "english": "To go down"
+        },
+        {
+            "arabic": "منيح",
+            "romanized": "mniiH",
+            "english": "Good"
+        },
+        {
+            "arabic": "حكومة ",
+            "romanized": "Hukuumeh",
+            "english": "Government "
+        },
+        {
+            "arabic": "عظيم ",
+            "romanized": "3aDHiim",
+            "english": "Great"
+        },
+        {
+            "arabic": "شوى ",
+            "romanized": "shawaa",
+            "english": "To grill"
+        },
+        {
+            "arabic": "أخضر ",
+            "romanized": "akhDar",
+            "english": "Green"
+        },
+        {
+            "arabic": "عريس ",
+            "romanized": "3ariis",
+            "english": "Groom"
+        },
+        {
+            "arabic": "ضيف ",
+            "romanized": "Dayf",
+            "english": "Guest"
+        },
+        {
+            "arabic": "ذنب",
+            "romanized": "dhanb",
+            "english": "Guilt"
+        },
+        {
+            "arabic": "خليج ",
+            "romanized": "khaliij",
+            "english": "Gulf"
+        },
+        {
+            "arabic": "شب ",
+            "romanized": "shabb",
+            "english": "Guy"
+        },
+        {
+            "arabic": "شعر",
+            "romanized": "sha3r",
+            "english": "Hair"
+        },
+        {
+            "arabic": "إيد ",
+            "romanized": "iid",
+            "english": "Hand"
+        },
+        {
+            "arabic": "مبسوط",
+            "romanized": "mabsooT",
+            "english": "Happy"
+        },
+        {
+            "arabic": "قبعة",
+            "romanized": "qbba3a",
+            "english": "Hat"
+        },
+        {
+            "arabic": "كان عنده",
+            "romanized": "kaan 3indo",
+            "english": "To have"
+        },
+        {
+            "arabic": "هو",
+            "romanized": "huweh",
+            "english": "He"
+        },
+        {
+            "arabic": "راس",
+            "romanized": "raas",
+            "english": "Head"
+        },
+        {
+            "arabic": "صداع",
+            "romanized": "Sudaa3",
+            "english": "Headache"
+        },
+        {
+            "arabic": "صحة",
+            "romanized": "SiHHa",
+            "english": "Health"
+        },
+        {
+            "arabic": "سمع",
+            "romanized": "simi3",
+            "english": "To hear"
+        },
+        {
+            "arabic": "قلب",
+            "romanized": "qalb",
+            "english": "Heart"
+        },
+        {
+            "arabic": "ثقيل",
+            "romanized": "thqiil",
+            "english": "Heavy"
+        },
+        {
+            "arabic": "مساعدة ",
+            "romanized": "musaa3adeh",
+            "english": "Help"
+        },
+        {
+            "arabic": "ساعد ",
+            "romanized": "saa3ad",
+            "english": "To help"
+        },
+        {
+            "arabic": "أعشاب ",
+            "romanized": "a3shaab",
+            "english": "Herbs"
+        },
+        {
+            "arabic": "هون",
+            "romanized": "hoon",
+            "english": "Here"
+        },
+        {
+            "arabic": "عالي",
+            "romanized": "3aaliy",
+            "english": "High"
+        },
+        {
+            "arabic": "تاريخ ",
+            "romanized": "taariikh",
+            "english": "History"
+        },
+        {
+            "arabic": "هواية",
+            "romanized": "hiwaayeh",
+            "english": "Hobby"
+        },
+        {
+            "arabic": "بيت",
+            "romanized": "beyt",
+            "english": "Home"
+        },
+        {
+            "arabic": "وطن",
+            "romanized": "waTan",
+            "english": "Homeland"
+        },
+        {
+            "arabic": "صريح",
+            "romanized": "SariiH",
+            "english": "Honest"
+        },
+        {
+            "arabic": "عسل",
+            "romanized": "3asal",
+            "english": "Honey"
+        },
+        {
+            "arabic": "أمل",
+            "romanized": "amal",
+            "english": "Hope"
+        },
+        {
+            "arabic": "حصان ",
+            "romanized": "HSaan",
+            "english": "Horse"
+        },
+        {
+            "arabic": "مستشفى",
+            "romanized": "mustashfaa",
+            "english": "Hospital"
+        },
+        {
+            "arabic": "\nحار\nساخن \n",
+            "romanized": "\nHarr\nSaakhin\n",
+            "english": "Hot"
+        },
+        {
+            "arabic": "فندق",
+            "romanized": "funduq",
+            "english": "Hotel"
+        },
+        {
+            "arabic": "ساعة",
+            "romanized": "saa3a",
+            "english": "Hour"
+        },
+        {
+            "arabic": "كيف",
+            "romanized": "keef",
+            "english": "How"
+        },
+        {
+            "arabic": "مية",
+            "romanized": "miyyeh",
+            "english": "Hundred"
+        },
+        {
+            "arabic": "جوعان ",
+            "romanized": "joo3aan",
+            "english": "Hungry"
+        },
+        {
+            "arabic": "اعصار",
+            "romanized": "i3Saar",
+            "english": "Hurricane"
+        },
+        {
+            "arabic": "زوج",
+            "romanized": "zooj",
+            "english": "Husband"
+        },
+        {
+            "arabic": "فكرة",
+            "romanized": "fikrah",
+            "english": "Idea"
+        },
+        {
+            "arabic": "إذا",
+            "romanized": "idhaa",
+            "english": "If"
+        },
+        {
+            "arabic": "مهم",
+            "romanized": "muhimm",
+            "english": "Important"
+        },
+        {
+            "arabic": "مستحيل",
+            "romanized": "mustaHiil",
+            "english": "Impossible"
+        },
+        {
+            "arabic": "عجب",
+            "romanized": "3ajab",
+            "english": "To impress"
+        },
+        {
+            "arabic": "في",
+            "romanized": "fii",
+            "english": "In"
+        },
+        {
+            "arabic": "قدام",
+            "romanized": "qoddaam",
+            "english": "In front of"
+        },
+        {
+            "arabic": "التهاب",
+            "romanized": "iltihaab",
+            "english": "Inflammation"
+        },
+        {
+            "arabic": "معلومة",
+            "romanized": "ma3luumeh",
+            "english": "Information"
+        },
+        {
+            "arabic": "إبرة",
+            "romanized": "ibrah",
+            "english": "Injection"
+        },
+        {
+            "arabic": "إصابة",
+            "romanized": "iSaaba",
+            "english": "Injury"
+        },
+        {
+            "arabic": "جوا",
+            "romanized": "juwwaa",
+            "english": "Inside"
+        },
+        {
+            "arabic": "تأمين",
+            "romanized": "ta’miin",
+            "english": "Insurance"
+        },
+        {
+            "arabic": "دولي",
+            "romanized": "duwaliy",
+            "english": "International"
+        },
+        {
+            "arabic": "استثمار",
+            "romanized": "istithmaar",
+            "english": "Investment"
+        },
+        {
+            "arabic": "عزم",
+            "romanized": "3azam",
+            "english": "To invite"
+        },
+        {
+            "arabic": "جزيرة",
+            "romanized": "jazeera",
+            "english": "Island"
+        },
+        {
+            "arabic": "جاكيت",
+            "romanized": "jaakeet",
+            "english": "Jacket"
+        },
+        {
+            "arabic": "غيرة",
+            "romanized": "ghiireh",
+            "english": "Jealousy"
+        },
+        {
+            "arabic": "مجوهرات",
+            "romanized": "mujawharaat",
+            "english": "Jewelry"
+        },
+        {
+            "arabic": "شغل",
+            "romanized": "shughul",
+            "english": "Job"
+        },
+        {
+            "arabic": "نكتة",
+            "romanized": "nukteh",
+            "english": "Joke"
+        },
+        {
+            "arabic": "مزح",
+            "romanized": "mazaH",
+            "english": "To joke"
+        },
+        {
+            "arabic": "نط",
+            "romanized": "naTT",
+            "english": "To jump"
+        },
+        {
+            "arabic": "خلى",
+            "romanized": "khallaa",
+            "english": "To keep"
+        },
+        {
+            "arabic": "مفتاح",
+            "romanized": "muftaaH",
+            "english": "Key"
+        },
+        {
+            "arabic": "نوع",
+            "romanized": "noo3",
+            "english": "Kind/ type"
+        },
+        {
+            "arabic": "ملك",
+            "romanized": "malik",
+            "english": "King"
+        },
+        {
+            "arabic": "مملكة",
+            "romanized": "mamlakeh",
+            "english": "Kingdom"
+        },
+        {
+            "arabic": "بوسة",
+            "romanized": "booseh",
+            "english": "Kiss"
+        },
+        {
+            "arabic": "باس",
+            "romanized": "baas",
+            "english": "To kiss"
+        },
+        {
+            "arabic": "مطبخ",
+            "romanized": "maTbakh",
+            "english": "Kitchen"
+        },
+        {
+            "arabic": "عرف",
+            "romanized": "3irif",
+            "english": "To know"
+        },
+        {
+            "arabic": "بحيرة",
+            "romanized": "buHayra",
+            "english": "Lake"
+        },
+        {
+            "arabic": "خروف",
+            "romanized": "kharuuf",
+            "english": "Lamb"
+        },
+        {
+            "arabic": "آخر",
+            "romanized": "aakhir",
+            "english": "Last"
+        },
+        {
+            "arabic": "متأخر",
+            "romanized": "mit’akhkhir",
+            "english": "Late"
+        },
+        {
+            "arabic": "بعدين",
+            "romanized": "ba3diin",
+            "english": "Later"
+        },
+        {
+            "arabic": "ضحك",
+            "romanized": "DiHik",
+            "english": "To laugh"
+        },
+        {
+            "arabic": "قانون",
+            "romanized": "qaanuun",
+            "english": "Law"
+        },
+        {
+            "arabic": "محامي",
+            "romanized": "muHaamiy",
+            "english": "Lawyer"
+        },
+        {
+            "arabic": "تمدد",
+            "romanized": "tmaddad",
+            "english": "To lay"
+        },
+        {
+            "arabic": "كسول",
+            "romanized": "kasuul",
+            "english": "Lazy"
+        },
+        {
+            "arabic": "زعيم",
+            "romanized": "za3iim",
+            "english": "Leader"
+        },
+        {
+            "arabic": "تعلم",
+            "romanized": "t3allam",
+            "english": "To learn"
+        },
+        {
+            "arabic": "ترك",
+            "romanized": "tarak",
+            "english": "To leave"
+        },
+        {
+            "arabic": "يسار",
+            "romanized": "yasaar",
+            "english": "Left"
+        },
+        {
+            "arabic": "رجل",
+            "romanized": "rijl",
+            "english": "Leg"
+        },
+        {
+            "arabic": "طول",
+            "romanized": "Tuul",
+            "english": "Length"
+        },
+        {
+            "arabic": "درس",
+            "romanized": "dars",
+            "english": "Lesson"
+        },
+        {
+            "arabic": "خلى",
+            "romanized": "khallaa",
+            "english": "To let"
+        },
+        {
+            "arabic": "رسالة",
+            "romanized": "risaaleh",
+            "english": "Letter/ message"
+        },
+        {
+            "arabic": "مستوى",
+            "romanized": "mustawaa",
+            "english": "Level"
+        },
+        {
+            "arabic": "طابق",
+            "romanized": "Taabiq",
+            "english": "Level/ floor"
+        },
+        {
+            "arabic": "رخصة",
+            "romanized": "rukhSa",
+            "english": "License"
+        },
+        {
+            "arabic": "كذبة",
+            "romanized": "kidhbeh",
+            "english": "Lie"
+        },
+        {
+            "arabic": "كذب",
+            "romanized": "kadhab",
+            "english": "To lie"
+        },
+        {
+            "arabic": "حياة",
+            "romanized": "Hayaa",
+            "english": "Life"
+        },
+        {
+            "arabic": "خفيف",
+            "romanized": "khafiif",
+            "english": "Light (adj.)"
+        },
+        {
+            "arabic": "ضو",
+            "romanized": "Daww",
+            "english": "Light"
+        },
+        {
+            "arabic": "زي",
+            "romanized": "zayy",
+            "english": "Like/ as"
+        },
+        {
+            "arabic": "حب",
+            "romanized": "Habb",
+            "english": "To like"
+        },
+        {
+            "arabic": "حد",
+            "romanized": "Hadd",
+            "english": "Limit"
+        },
+        {
+            "arabic": "خط",
+            "romanized": "khaTT",
+            "english": "Line"
+        },
+        {
+            "arabic": "أسد",
+            "romanized": "asad",
+            "english": "Lion"
+        },
+        {
+            "arabic": "شفايف",
+            "romanized": "shafaayef",
+            "english": "Lips"
+        },
+        {
+            "arabic": "قائمة",
+            "romanized": "qaa’imeh",
+            "english": "List"
+        },
+        {
+            "arabic": "سمع",
+            "romanized": "simi3",
+            "english": "To listen"
+        },
+        {
+            "arabic": "\nقليل\nشوي\n",
+            "romanized": "\nqaliil\nshwayy\n",
+            "english": "Little"
+        },
+        {
+            "arabic": "صغير",
+            "romanized": "Sghiir",
+            "english": "Little"
+        },
+        {
+            "arabic": "عاش",
+            "romanized": "3aash",
+            "english": "To live"
+        },
+        {
+            "arabic": "محلي",
+            "romanized": "maHalliy",
+            "english": "Local"
+        },
+        {
+            "arabic": "طويل",
+            "romanized": "Tawiil",
+            "english": "Long/ tall"
+        },
+        {
+            "arabic": "نظرة",
+            "romanized": "naTHrah",
+            "english": "Look"
+        },
+        {
+            "arabic": "تطلع",
+            "romanized": "tTalla3",
+            "english": "To look"
+        },
+        {
+            "arabic": "دور",
+            "romanized": "dawwar",
+            "english": "To look for"
+        },
+        {
+            "arabic": "خسر",
+            "romanized": "khisir",
+            "english": "To lose"
+        },
+        {
+            "arabic": "حب",
+            "romanized": "Hubb",
+            "english": "Love"
+        },
+        {
+            "arabic": "حب",
+            "romanized": "Habb",
+            "english": "To love"
+        },
+        {
+            "arabic": "واطي",
+            "romanized": "waaTiy",
+            "english": "Low"
+        },
+        {
+            "arabic": "عمل",
+            "romanized": "3imil",
+            "english": "Make"
+        },
+        {
+            "arabic": "سوى",
+            "romanized": "sawwaa",
+            "english": "Make/ do"
+        },
+        {
+            "arabic": "غلط",
+            "romanized": "ghiliT",
+            "english": "To make a mistake"
+        },
+        {
+            "arabic": "مول",
+            "romanized": "mool",
+            "english": "Mall"
+        },
+        {
+            "arabic": "\nرجل\nزلمة\n",
+            "romanized": "\nrajul\nzalameh\n",
+            "english": "Man"
+        },
+        {
+            "arabic": "مدير",
+            "romanized": "mudiir",
+            "english": "Manager"
+        },
+        {
+            "arabic": "كتير",
+            "romanized": "ktiir",
+            "english": "Many"
+        },
+        {
+            "arabic": "خريطة",
+            "romanized": "khariiTa",
+            "english": "Map"
+        },
+        {
+            "arabic": "سوق",
+            "romanized": "suuq",
+            "english": "Market"
+        },
+        {
+            "arabic": "زواج",
+            "romanized": "zawaaj",
+            "english": "Marriage"
+        },
+        {
+            "arabic": "متزوج",
+            "romanized": "mitzawwej",
+            "english": "Married"
+        },
+        {
+            "arabic": "كمامة",
+            "romanized": "kammaameh",
+            "english": "Mask"
+        },
+        {
+            "arabic": "يمكن",
+            "romanized": "yimkin",
+            "english": "Maybe"
+        },
+        {
+            "arabic": "أنا",
+            "romanized": "ana",
+            "english": "Me"
+        },
+        {
+            "arabic": "لئيم",
+            "romanized": "la’iim",
+            "english": "Mean"
+        },
+        {
+            "arabic": "قصد",
+            "romanized": "qaSad",
+            "english": "To mean"
+        },
+        {
+            "arabic": "قاس",
+            "romanized": "qaas",
+            "english": "To measure"
+        },
+        {
+            "arabic": "لحمة",
+            "romanized": "lahmeh",
+            "english": "Meat"
+        },
+        {
+            "arabic": "دوا",
+            "romanized": "dawaa",
+            "english": "Medicine"
+        },
+        {
+            "arabic": "التقى",
+            "romanized": "iltaqaa",
+            "english": "To meet"
+        },
+        {
+            "arabic": "صداع",
+            "romanized": "Sudaa3",
+            "english": "Migraine"
+        },
+        {
+            "arabic": "حليب",
+            "romanized": "Haliib",
+            "english": "Milk"
+        },
+        {
+            "arabic": "مليون",
+            "romanized": "milyoon",
+            "english": "Million"
+        },
+        {
+            "arabic": "عقل",
+            "romanized": "3aql",
+            "english": "Mind"
+        },
+        {
+            "arabic": "نعنع",
+            "romanized": "na3na3",
+            "english": "Mint"
+        },
+        {
+            "arabic": "مراي",
+            "romanized": "mraay",
+            "english": "Mirror"
+        },
+        {
+            "arabic": "اشتاق",
+            "romanized": "ishtaaq",
+            "english": "To miss"
+        },
+        {
+            "arabic": "غلطة",
+            "romanized": "ghalTa",
+            "english": "Mistake"
+        },
+        {
+            "arabic": "خلط",
+            "romanized": "khalaT",
+            "english": "To mix"
+        },
+        {
+            "arabic": "لحظة",
+            "romanized": "laHDha",
+            "english": "Moment"
+        },
+        {
+            "arabic": "مصاري",
+            "romanized": "maSaari",
+            "english": "Money"
+        },
+        {
+            "arabic": "شهر",
+            "romanized": "shahr",
+            "english": "Month"
+        },
+        {
+            "arabic": "قمر",
+            "romanized": "qamar",
+            "english": "Moon"
+        },
+        {
+            "arabic": "أكتر",
+            "romanized": "aktar",
+            "english": "More"
+        },
+        {
+            "arabic": "صبح ",
+            "romanized": "SubiH",
+            "english": "Morning"
+        },
+        {
+            "arabic": "مسجد",
+            "romanized": "masjid",
+            "english": "Mosque"
+        },
+        {
+            "arabic": "أم",
+            "romanized": "umm",
+            "english": "Mother"
+        },
+        {
+            "arabic": "جبل",
+            "romanized": "jabal",
+            "english": "Mountain"
+        },
+        {
+            "arabic": "فار",
+            "romanized": "faar",
+            "english": "Mouse"
+        },
+        {
+            "arabic": "تم",
+            "romanized": "timm",
+            "english": "Mouth"
+        },
+        {
+            "arabic": "حركة",
+            "romanized": "Harakeh",
+            "english": "Move"
+        },
+        {
+            "arabic": "تحرك",
+            "romanized": "tHarrak",
+            "english": "To move"
+        },
+        {
+            "arabic": "فلم",
+            "romanized": "filim",
+            "english": "Movie"
+        },
+        {
+            "arabic": "متحف",
+            "romanized": "matHaf",
+            "english": "Museum"
+        },
+        {
+            "arabic": "فطر",
+            "romanized": "fiTr",
+            "english": "Mushrooms"
+        },
+        {
+            "arabic": "موسيقى",
+            "romanized": "muusiiqaa",
+            "english": "Music"
+        },
+        {
+            "arabic": "اسم",
+            "romanized": "ism",
+            "english": "Name"
+        },
+        {
+            "arabic": "سمى",
+            "romanized": "sammaa",
+            "english": "To name/ call"
+        },
+        {
+            "arabic": "جنسية",
+            "romanized": "jinsiyyeh",
+            "english": "Nationality"
+        },
+        {
+            "arabic": "طبيعة",
+            "romanized": "Tabii3a",
+            "english": "Nature"
+        },
+        {
+            "arabic": "جنب",
+            "romanized": "janb",
+            "english": "Near"
+        },
+        {
+            "arabic": "رقبة",
+            "romanized": "raqabeh",
+            "english": "Neck"
+        },
+        {
+            "arabic": "حاجة",
+            "romanized": "Haaja",
+            "english": "Need"
+        },
+        {
+            "arabic": "احتاج",
+            "romanized": "iHtaaj",
+            "english": "To need"
+        },
+        {
+            "arabic": "مفاوضة",
+            "romanized": "mufaawaDa",
+            "english": "Negotiation"
+        },
+        {
+            "arabic": "جار ",
+            "romanized": "jaar",
+            "english": "Neighbor"
+        },
+        {
+            "arabic": "أبدا",
+            "romanized": "abadan",
+            "english": "Never"
+        },
+        {
+            "arabic": "جديد",
+            "romanized": "jdiid",
+            "english": "New"
+        },
+        {
+            "arabic": "أخبار",
+            "romanized": "akhbaar",
+            "english": "News"
+        },
+        {
+            "arabic": "جريدة",
+            "romanized": "jariida",
+            "english": "Newspaper"
+        },
+        {
+            "arabic": "لقب ",
+            "romanized": "laqab",
+            "english": "Nickname"
+        },
+        {
+            "arabic": "لطيف",
+            "romanized": "laTiif",
+            "english": "Nice"
+        },
+        {
+            "arabic": "ليل",
+            "romanized": "leil",
+            "english": "Night"
+        },
+        {
+            "arabic": "تسعة",
+            "romanized": "tis3a",
+            "english": "Nine"
+        },
+        {
+            "arabic": "لا",
+            "romanized": "laa",
+            "english": "No"
+        },
+        {
+            "arabic": "إزعاج",
+            "romanized": "iz3aaj",
+            "english": "Noise"
+        },
+        {
+            "arabic": "شمال",
+            "romanized": "shmaal",
+            "english": "North"
+        },
+        {
+            "arabic": "منخار",
+            "romanized": "munkhaar",
+            "english": "Nose"
+        },
+        {
+            "arabic": "دفتر",
+            "romanized": "daftar",
+            "english": "Notebook"
+        },
+        {
+            "arabic": "ولا إشي",
+            "romanized": "walaa ishiy",
+            "english": "Nothing"
+        },
+        {
+            "arabic": "لاحظ",
+            "romanized": "laaHaDH",
+            "english": "To notice"
+        },
+        {
+            "arabic": "\nهلأ\nهسا\n",
+            "romanized": "\nhalla’\nhassaa\n",
+            "english": "Now"
+        },
+        {
+            "arabic": "رقم",
+            "romanized": "raqam",
+            "english": "Number"
+        },
+        {
+            "arabic": "محيط",
+            "romanized": "muHiiT",
+            "english": "Ocean"
+        },
+        {
+            "arabic": "طبعا",
+            "romanized": "Tab3an",
+            "english": "Of course"
+        },
+        {
+            "arabic": "عرض",
+            "romanized": "3arD",
+            "english": "Offer"
+        },
+        {
+            "arabic": "عرض",
+            "romanized": "3araD",
+            "english": "To offer"
+        },
+        {
+            "arabic": "مكتب",
+            "romanized": "maktab",
+            "english": "Office"
+        },
+        {
+            "arabic": "رسمي",
+            "romanized": "rasmiy",
+            "english": "Official"
+        },
+        {
+            "arabic": "غالبا",
+            "romanized": "ghaaliban",
+            "english": "Often"
+        },
+        {
+            "arabic": "زيت",
+            "romanized": "zait",
+            "english": "Oil"
+        },
+        {
+            "arabic": "تمام",
+            "romanized": "tamaam",
+            "english": "Okay"
+        },
+        {
+            "arabic": "كبير",
+            "romanized": "kbiir",
+            "english": "Old (people)"
+        },
+        {
+            "arabic": "قديم",
+            "romanized": "qadiim",
+            "english": "Old (things)"
+        },
+        {
+            "arabic": "زيتون",
+            "romanized": "zaytoon",
+            "english": "Olives"
+        },
+        {
+            "arabic": "على",
+            "romanized": "3alaa",
+            "english": "On"
+        },
+        {
+            "arabic": "مرة",
+            "romanized": "marra",
+            "english": "Once"
+        },
+        {
+            "arabic": "واحد",
+            "romanized": "waaHad",
+            "english": "One"
+        },
+        {
+            "arabic": "بصل",
+            "romanized": "baSal",
+            "english": "Onion"
+        },
+        {
+            "arabic": "بس",
+            "romanized": "bass",
+            "english": "Only"
+        },
+        {
+            "arabic": "فتح",
+            "romanized": "fataH",
+            "english": "To open"
+        },
+        {
+            "arabic": "رأي",
+            "romanized": "ra’y",
+            "english": "Opinion"
+        },
+        {
+            "arabic": "عكس",
+            "romanized": "3aks",
+            "english": "Opposite"
+        },
+        {
+            "arabic": "أو",
+            "romanized": "aw",
+            "english": "Or"
+        },
+        {
+            "arabic": "برتقال",
+            "romanized": "burtuqaal",
+            "english": "Orange"
+        },
+        {
+            "arabic": "منظمة",
+            "romanized": "mnaDHDHama",
+            "english": "Organization"
+        },
+        {
+            "arabic": "برا",
+            "romanized": "barraa",
+            "english": "Out"
+        },
+        {
+            "arabic": "حال ",
+            "romanized": "Haal",
+            "english": "Own"
+        },
+        {
+            "arabic": "وجع",
+            "romanized": "waja3",
+            "english": "Pain"
+        },
+        {
+            "arabic": "نخلة",
+            "romanized": "nakhleh",
+            "english": "Palm"
+        },
+        {
+            "arabic": "ورقة",
+            "romanized": "waraqa",
+            "english": "Paper"
+        },
+        {
+            "arabic": "حديقة",
+            "romanized": "Hadiiqa",
+            "english": "Park/ garden"
+        },
+        {
+            "arabic": "صاف",
+            "romanized": "Saaf",
+            "english": "To park"
+        },
+        {
+            "arabic": "صف ",
+            "romanized": "Saff",
+            "english": "Parking"
+        },
+        {
+            "arabic": "جزء",
+            "romanized": "juzu’",
+            "english": "Part"
+        },
+        {
+            "arabic": "شريك",
+            "romanized": "shriik",
+            "english": "Partner"
+        },
+        {
+            "arabic": "حفلة",
+            "romanized": "Hafleh",
+            "english": "Party"
+        },
+        {
+            "arabic": "ماضي",
+            "romanized": "maaDiy",
+            "english": "Past"
+        },
+        {
+            "arabic": "دفع",
+            "romanized": "dafa3",
+            "english": "To pay"
+        },
+        {
+            "arabic": "دفعة",
+            "romanized": "duf3a",
+            "english": "Payment"
+        },
+        {
+            "arabic": "قلم",
+            "romanized": "qalam",
+            "english": "Pen"
+        },
+        {
+            "arabic": "قرش",
+            "romanized": "qirsh",
+            "english": "Penny"
+        },
+        {
+            "arabic": "ناس",
+            "romanized": "naas",
+            "english": "People"
+        },
+        {
+            "arabic": "نسبة",
+            "romanized": "nisbeh",
+            "english": "Percentage"
+        },
+        {
+            "arabic": "عطر",
+            "romanized": "3uTur",
+            "english": "Perfume"
+        },
+        {
+            "arabic": "تصريح",
+            "romanized": "taSriiH",
+            "english": "Permit"
+        },
+        {
+            "arabic": "شخص",
+            "romanized": "shakhS",
+            "english": "Person"
+        },
+        {
+            "arabic": "تليفون",
+            "romanized": "tiliifoon",
+            "english": "Phone"
+        },
+        {
+            "arabic": "صورة",
+            "romanized": "Suura",
+            "english": "Photo"
+        },
+        {
+            "arabic": "قطعة",
+            "romanized": "qiT3a",
+            "english": "Piece"
+        },
+        {
+            "arabic": "حمامة",
+            "romanized": "Hamaameh",
+            "english": "Pigeon"
+        },
+        {
+            "arabic": "حبة",
+            "romanized": "Habbeh",
+            "english": "Pill"
+        },
+        {
+            "arabic": "مخدة",
+            "romanized": "mkhaddeh",
+            "english": "Pillow"
+        },
+        {
+            "arabic": "زهري",
+            "romanized": "zahriy",
+            "english": "Pink"
+        },
+        {
+            "arabic": "مكان",
+            "romanized": "makaan",
+            "english": "Place"
+        },
+        {
+            "arabic": "خطة",
+            "romanized": "khuTTa",
+            "english": "Plan"
+        },
+        {
+            "arabic": "طيارة",
+            "romanized": "Tayyaara",
+            "english": "Plane"
+        },
+        {
+            "arabic": "كوكب",
+            "romanized": "kawkab",
+            "english": "Planet"
+        },
+        {
+            "arabic": "بلاستر",
+            "romanized": "blaastir",
+            "english": "Plaster"
+        },
+        {
+            "arabic": "كيس",
+            "romanized": "kiis",
+            "english": "Plastic bag"
+        },
+        {
+            "arabic": "صحن",
+            "romanized": "SaHin",
+            "english": "Plate"
+        },
+        {
+            "arabic": "لعب",
+            "romanized": "li3ib",
+            "english": "To play"
+        },
+        {
+            "arabic": "ملعب",
+            "romanized": "mal3ab",
+            "english": "Playground"
+        },
+        {
+            "arabic": "لو سمحت ",
+            "romanized": "law samaHt",
+            "english": "Please"
+        },
+        {
+            "arabic": "جمع",
+            "romanized": "jami3",
+            "english": "Plural"
+        },
+        {
+            "arabic": "شرطة",
+            "romanized": "shurTa",
+            "english": "Police"
+        },
+        {
+            "arabic": "شرطي",
+            "romanized": "shurTiy",
+            "english": "Policeman"
+        },
+        {
+            "arabic": "مؤدب",
+            "romanized": "mu’addab",
+            "english": "Polite"
+        },
+        {
+            "arabic": "سياسي",
+            "romanized": "siyaasiy",
+            "english": "Politician "
+        },
+        {
+            "arabic": "سياسة",
+            "romanized": "siyaasa",
+            "english": "Politics"
+        },
+        {
+            "arabic": "فقير",
+            "romanized": "faqiir",
+            "english": "Poor"
+        },
+        {
+            "arabic": "مشهور",
+            "romanized": "mashuur",
+            "english": "Popular"
+        },
+        {
+            "arabic": "أجل",
+            "romanized": "ajjal",
+            "english": "To postpone"
+        },
+        {
+            "arabic": "بطاطا",
+            "romanized": "baTaaTaa",
+            "english": "Potato"
+        },
+        {
+            "arabic": "تدريب",
+            "romanized": "tadriib",
+            "english": "Practice"
+        },
+        {
+            "arabic": "تدرب",
+            "romanized": "tdarrab",
+            "english": "To practice"
+        },
+        {
+            "arabic": "صلاة",
+            "romanized": "Salaa",
+            "english": "Prayer"
+        },
+        {
+            "arabic": "حامل",
+            "romanized": "Haamil",
+            "english": "Pregnant"
+        },
+        {
+            "arabic": "جهز",
+            "romanized": "jahhaz",
+            "english": "To prepare"
+        },
+        {
+            "arabic": "قدم",
+            "romanized": "qaddam",
+            "english": "To present"
+        },
+        {
+            "arabic": "رئيس",
+            "romanized": "ra’iis",
+            "english": "President"
+        },
+        {
+            "arabic": "كبس",
+            "romanized": "kabas",
+            "english": "To press"
+        },
+        {
+            "arabic": "سعر",
+            "romanized": "si3r",
+            "english": "Price"
+        },
+        {
+            "arabic": "أمير",
+            "romanized": "amiir",
+            "english": "Prince"
+        },
+        {
+            "arabic": "أميرة",
+            "romanized": "amiira",
+            "english": "Princess"
+        },
+        {
+            "arabic": "جائزة",
+            "romanized": "jaa’iza",
+            "english": "Prize"
+        },
+        {
+            "arabic": "على الأغلب",
+            "romanized": "3alal-aghlab",
+            "english": "Probably"
+        },
+        {
+            "arabic": "مشكلة",
+            "romanized": "mushkileh",
+            "english": "Problem"
+        },
+        {
+            "arabic": "إنتاج",
+            "romanized": "intaaj",
+            "english": "Production"
+        },
+        {
+            "arabic": "برنامج",
+            "romanized": "barnaamij",
+            "english": "Program"
+        },
+        {
+            "arabic": "مشروع",
+            "romanized": "mashruu3",
+            "english": "Project"
+        },
+        {
+            "arabic": "وعد",
+            "romanized": "wa3id",
+            "english": "Promise"
+        },
+        {
+            "arabic": "وعد",
+            "romanized": "wa3ad",
+            "english": "To promise"
+        },
+        {
+            "arabic": "فخور",
+            "romanized": "fakhuur",
+            "english": "Proud"
+        },
+        {
+            "arabic": "هدف",
+            "romanized": "hadaf",
+            "english": "Purpose/ goal"
+        },
+        {
+            "arabic": "شنطة",
+            "romanized": "shanTa",
+            "english": "Purse"
+        },
+        {
+            "arabic": "حط",
+            "romanized": "HaTT",
+            "english": "To put"
+        },
+        {
+            "arabic": "ملكة",
+            "romanized": "malika",
+            "english": "Queen"
+        },
+        {
+            "arabic": "سؤال",
+            "romanized": "su’aal",
+            "english": "Question"
+        },
+        {
+            "arabic": "مطر",
+            "romanized": "maTar",
+            "english": "Rain"
+        },
+        {
+            "arabic": "قوس قزح",
+            "romanized": "qaws qazaH",
+            "english": "Rainbow"
+        },
+        {
+            "arabic": "نادرا",
+            "romanized": "naadiran",
+            "english": "Rarely"
+        },
+        {
+            "arabic": "ردة فعل",
+            "romanized": "Raddat fi3l",
+            "english": "Reaction"
+        },
+        {
+            "arabic": "قرأ",
+            "romanized": "qara’",
+            "english": "To Read"
+        },
+        {
+            "arabic": "جاهز",
+            "romanized": "jaahiz",
+            "english": "Ready"
+        },
+        {
+            "arabic": "حقيقي",
+            "romanized": "Haqiiqiy",
+            "english": "Real"
+        },
+        {
+            "arabic": "عنجد",
+            "romanized": "3anjadd",
+            "english": "Really"
+        },
+        {
+            "arabic": "سبب",
+            "romanized": "sabab",
+            "english": "Reason"
+        },
+        {
+            "arabic": "استقبال",
+            "romanized": "istiqbaal",
+            "english": "Reception"
+        },
+        {
+            "arabic": "شفاء",
+            "romanized": "shifaa’",
+            "english": "Recovery"
+        },
+        {
+            "arabic": "أحمر",
+            "romanized": "aHmar",
+            "english": "Red"
+        },
+        {
+            "arabic": "رفض",
+            "romanized": "rafaD",
+            "english": "To refuse"
+        },
+        {
+            "arabic": "منطقة",
+            "romanized": "manTiqa",
+            "english": "Region"
+        },
+        {
+            "arabic": "ندم",
+            "romanized": "nidim",
+            "english": "To regret"
+        },
+        {
+            "arabic": "علاقة",
+            "romanized": "3alaaqa",
+            "english": "Relationship"
+        },
+        {
+            "arabic": "قريب",
+            "romanized": "qariib",
+            "english": "Relative"
+        },
+        {
+            "arabic": "دين",
+            "romanized": "diin",
+            "english": "Religion"
+        },
+        {
+            "arabic": "ضل",
+            "romanized": "Dall",
+            "english": "To remain/ stay"
+        },
+        {
+            "arabic": "تذكر",
+            "romanized": "tdhakkar",
+            "english": "To remember"
+        },
+        {
+            "arabic": "شال",
+            "romanized": "shaal",
+            "english": "To remove sth away"
+        },
+        {
+            "arabic": "استأجر",
+            "romanized": "ista’jar",
+            "english": "To rent"
+        },
+        {
+            "arabic": "عاد",
+            "romanized": "3aad",
+            "english": "To repeat"
+        },
+        {
+            "arabic": "تقرير",
+            "romanized": "taqriir",
+            "english": "Report"
+        },
+        {
+            "arabic": "جمهورية",
+            "romanized": "jumhuriyyeh",
+            "english": "Republic"
+        },
+        {
+            "arabic": "حجز",
+            "romanized": "Hajaz",
+            "english": "To reserve"
+        },
+        {
+            "arabic": "رجع",
+            "romanized": "riji3",
+            "english": "To return"
+        },
+        {
+            "arabic": "رز",
+            "romanized": "rozz",
+            "english": "Rice"
+        },
+        {
+            "arabic": "غني",
+            "romanized": "ghanaa",
+            "english": "Rich"
+        },
+        {
+            "arabic": "ركب",
+            "romanized": "rikib",
+            "english": "To ride"
+        },
+        {
+            "arabic": "يمين",
+            "romanized": "yamiin",
+            "english": "Right (direction)"
+        },
+        {
+            "arabic": "صحيح",
+            "romanized": "SaHiiH",
+            "english": "Right/ correct"
+        },
+        {
+            "arabic": "خاتم",
+            "romanized": "khaatim",
+            "english": "Ring"
+        },
+        {
+            "arabic": "نهر",
+            "romanized": "nahr",
+            "english": "River"
+        },
+        {
+            "arabic": "طريق",
+            "romanized": "Tariiq",
+            "english": "Road"
+        },
+        {
+            "arabic": "حجر",
+            "romanized": "Hajar",
+            "english": "Rock"
+        },
+        {
+            "arabic": "غرفة",
+            "romanized": "ghurfeh",
+            "english": "Room"
+        },
+        {
+            "arabic": "ركض",
+            "romanized": "rakaD",
+            "english": "To run"
+        },
+        {
+            "arabic": "حزين",
+            "romanized": "Haziin",
+            "english": "Sad"
+        },
+        {
+            "arabic": "سلطة",
+            "romanized": "salaTa",
+            "english": "Salad"
+        },
+        {
+            "arabic": "راتب",
+            "romanized": "raatib",
+            "english": "Salary"
+        },
+        {
+            "arabic": "ملح",
+            "romanized": "miliH",
+            "english": "Salt"
+        },
+        {
+            "arabic": "نفس",
+            "romanized": "nafs",
+            "english": "Same"
+        },
+        {
+            "arabic": "حكى",
+            "romanized": "Hakaa",
+            "english": "Say"
+        },
+        {
+            "arabic": "قال",
+            "romanized": "qaal",
+            "english": "Say/ tell"
+        },
+        {
+            "arabic": "خايف",
+            "romanized": "khaayef",
+            "english": "Scared"
+        },
+        {
+            "arabic": "لفحة",
+            "romanized": "lafHa",
+            "english": "Scarf"
+        },
+        {
+            "arabic": "جدول",
+            "romanized": "jadwal",
+            "english": "Schedule"
+        },
+        {
+            "arabic": "مدرسة",
+            "romanized": "madraseh",
+            "english": "School"
+        },
+        {
+            "arabic": "حك",
+            "romanized": "Hakk",
+            "english": "To scratch"
+        },
+        {
+            "arabic": "مفك",
+            "romanized": "mafakk",
+            "english": "Screwdriver"
+        },
+        {
+            "arabic": "بحر",
+            "romanized": "baHar",
+            "english": "Sea"
+        },
+        {
+            "arabic": "فصل",
+            "romanized": "faSl",
+            "english": "Season"
+        },
+        {
+            "arabic": "ثانية",
+            "romanized": "thaaniyeh",
+            "english": "Second"
+        },
+        {
+            "arabic": "سر",
+            "romanized": "sirr",
+            "english": "Secret"
+        },
+        {
+            "arabic": "شاف",
+            "romanized": "shaaf",
+            "english": "To see"
+        },
+        {
+            "arabic": "بياع",
+            "romanized": "bayyaa3",
+            "english": "Seller"
+        },
+        {
+            "arabic": "\nبعت\nودى\n",
+            "romanized": "\nba3at\nwaddaa\n",
+            "english": "To send"
+        },
+        {
+            "arabic": "جملة",
+            "romanized": "jumleh",
+            "english": "Sentence"
+        },
+        {
+            "arabic": "خدمة",
+            "romanized": "khidmah",
+            "english": "Service"
+        },
+        {
+            "arabic": "سبعة",
+            "romanized": "sab3a",
+            "english": "Seven"
+        },
+        {
+            "arabic": "هي",
+            "romanized": "hiyyeh",
+            "english": "She"
+        },
+        {
+            "arabic": "غنمة",
+            "romanized": "ghanameh",
+            "english": "Sheep"
+        },
+        {
+            "arabic": "سفينة",
+            "romanized": "safiina",
+            "english": "Ship"
+        },
+        {
+            "arabic": "قميص",
+            "romanized": "qamiiS",
+            "english": "Shirt"
+        },
+        {
+            "arabic": "\nكندرة \nبوت\n",
+            "romanized": "\nkundara\nboot\n",
+            "english": "Shoes"
+        },
+        {
+            "arabic": "دكان",
+            "romanized": "dukkaan",
+            "english": "Shop"
+        },
+        {
+            "arabic": "تسوق",
+            "romanized": "tasawwuq",
+            "english": "Shopping"
+        },
+        {
+            "arabic": "قصير",
+            "romanized": "qaSiir",
+            "english": "Short"
+        },
+        {
+            "arabic": "لازم",
+            "romanized": "laazim",
+            "english": "Should"
+        },
+        {
+            "arabic": "كتف",
+            "romanized": "kitif",
+            "english": "Shoulder"
+        },
+        {
+            "arabic": "فرجى",
+            "romanized": "farjaa",
+            "english": "To show"
+        },
+        {
+            "arabic": "مريض",
+            "romanized": "mariiD",
+            "english": "Sick person"
+        },
+        {
+            "arabic": "مرض",
+            "romanized": "maraD",
+            "english": "Sickness"
+        },
+        {
+            "arabic": "جهة",
+            "romanized": "jiha",
+            "english": "Side"
+        },
+        {
+            "arabic": "من",
+            "romanized": "min",
+            "english": "Since"
+        },
+        {
+            "arabic": "غنى",
+            "romanized": "ghannaa",
+            "english": "To sing"
+        },
+        {
+            "arabic": "مغني",
+            "romanized": "mughanniy",
+            "english": "Singer"
+        },
+        {
+            "arabic": "مفرد",
+            "romanized": "mufrad",
+            "english": "Singular"
+        },
+        {
+            "arabic": "أخت",
+            "romanized": "ukht",
+            "english": "Sister"
+        },
+        {
+            "arabic": "قاعد",
+            "romanized": "qaa3ad",
+            "english": "To sit"
+        },
+        {
+            "arabic": "ستة",
+            "romanized": "sitteh",
+            "english": "Six"
+        },
+        {
+            "arabic": "قياس",
+            "romanized": "qyaas",
+            "english": "Size"
+        },
+        {
+            "arabic": "سماء",
+            "romanized": "samaa’",
+            "english": "Sky"
+        },
+        {
+            "arabic": "نام",
+            "romanized": "naam",
+            "english": "To sleep"
+        },
+        {
+            "arabic": "نعسان",
+            "romanized": "na3saan",
+            "english": "Sleepy"
+        },
+        {
+            "arabic": "صغير",
+            "romanized": "Sghiir",
+            "english": "Small"
+        },
+        {
+            "arabic": "ذكي",
+            "romanized": "dhakiy",
+            "english": "Smart"
+        },
+        {
+            "arabic": "ريحة",
+            "romanized": "riiHa",
+            "english": "Smell"
+        },
+        {
+            "arabic": "شم",
+            "romanized": "shamm",
+            "english": "To smell"
+        },
+        {
+            "arabic": "ابتسامة",
+            "romanized": "ibtisaameh",
+            "english": "Smile"
+        },
+        {
+            "arabic": "حية",
+            "romanized": "Hayyeh",
+            "english": "Snake"
+        },
+        {
+            "arabic": "ثلج",
+            "romanized": "thalj",
+            "english": "Snow/ ice"
+        },
+        {
+            "arabic": "___ف",
+            "romanized": "fa___",
+            "english": "So"
+        },
+        {
+            "arabic": "جربان",
+            "romanized": "jurbaan",
+            "english": "Socks"
+        },
+        {
+            "arabic": "جندي",
+            "romanized": "jundiy",
+            "english": "Soldier"
+        },
+        {
+            "arabic": "حل",
+            "romanized": "Hall",
+            "english": "Solution"
+        },
+        {
+            "arabic": "حل",
+            "romanized": "Hall",
+            "english": "To solve"
+        },
+        {
+            "arabic": "إشي",
+            "romanized": "ishiy",
+            "english": "Something"
+        },
+        {
+            "arabic": "\nأحيانا\nمرات\n",
+            "romanized": "\naHyaanan\nmarraat\n",
+            "english": "Sometimes"
+        },
+        {
+            "arabic": "ابن",
+            "romanized": "ibn",
+            "english": "Son"
+        },
+        {
+            "arabic": "أغنية",
+            "romanized": "oghniyyeh",
+            "english": "Song"
+        },
+        {
+            "arabic": "آسف",
+            "romanized": "Aasif",
+            "english": "Sorry"
+        },
+        {
+            "arabic": "شربة",
+            "romanized": "shoraba",
+            "english": "Soup"
+        },
+        {
+            "arabic": "جنوب",
+            "romanized": "januub",
+            "english": "South"
+        },
+        {
+            "arabic": "حكى",
+            "romanized": "Hakaa",
+            "english": "To speak"
+        },
+        {
+            "arabic": "صرف",
+            "romanized": "Saraf",
+            "english": "To spend money"
+        },
+        {
+            "arabic": "وفر",
+            "romanized": "waffar",
+            "english": "To save money"
+        },
+        {
+            "arabic": "معلقة",
+            "romanized": "ma3laqa",
+            "english": "Spoon"
+        },
+        {
+            "arabic": "رياضة",
+            "romanized": "riyaaDa",
+            "english": "Sport"
+        },
+        {
+            "arabic": "بخاخ",
+            "romanized": "bakhkhaakh",
+            "english": "Spray"
+        },
+        {
+            "arabic": "ربيع",
+            "romanized": "rabii3",
+            "english": "Spring"
+        },
+        {
+            "arabic": "مربع",
+            "romanized": "murabba3",
+            "english": "Square"
+        },
+        {
+            "arabic": "ختم",
+            "romanized": "khitim",
+            "english": "Stamp"
+        },
+        {
+            "arabic": "وقف",
+            "romanized": "wiqif",
+            "english": "To stand"
+        },
+        {
+            "arabic": "نجمة",
+            "romanized": "nijma",
+            "english": "Star"
+        },
+        {
+            "arabic": "بلش",
+            "romanized": "ballash",
+            "english": "To start"
+        },
+        {
+            "arabic": "وقف",
+            "romanized": "waqqaf",
+            "english": "To stop"
+        },
+        {
+            "arabic": "محطة",
+            "romanized": "maHaTTa",
+            "english": "Station"
+        },
+        {
+            "arabic": "سرق",
+            "romanized": "saraq",
+            "english": "To steal"
+        },
+        {
+            "arabic": "لسا",
+            "romanized": "lissaa",
+            "english": "Still"
+        },
+        {
+            "arabic": "معدة",
+            "romanized": "mi3deh",
+            "english": "Stomach"
+        },
+        {
+            "arabic": "مغص",
+            "romanized": "maghiS",
+            "english": "Stomach-ache"
+        },
+        {
+            "arabic": "عاصفة",
+            "romanized": "3aasifeh",
+            "english": "Storm"
+        },
+        {
+            "arabic": "قصة",
+            "romanized": "qiSSa",
+            "english": "Story"
+        },
+        {
+            "arabic": "شارع",
+            "romanized": "shaari3",
+            "english": "Street"
+        },
+        {
+            "arabic": "طالب",
+            "romanized": "Taalib",
+            "english": "Student"
+        },
+        {
+            "arabic": "درس",
+            "romanized": "daras",
+            "english": "To study"
+        },
+        {
+            "arabic": "غبي",
+            "romanized": "ghabiy",
+            "english": "Stupid"
+        },
+        {
+            "arabic": "أسلوب",
+            "romanized": "osloob",
+            "english": "Style"
+        },
+        {
+            "arabic": "نجح",
+            "romanized": "najaH",
+            "english": "To succeed"
+        },
+        {
+            "arabic": "ناجح",
+            "romanized": "naajiH",
+            "english": "Successful"
+        },
+        {
+            "arabic": "فجأة",
+            "romanized": "faj’a",
+            "english": "Suddenly"
+        },
+        {
+            "arabic": "سكر",
+            "romanized": "sukkar",
+            "english": "Sugar"
+        },
+        {
+            "arabic": "اقترح",
+            "romanized": "iqtaraH",
+            "english": "To suggest"
+        },
+        {
+            "arabic": "اقتراح",
+            "romanized": "iqtiraaH",
+            "english": "Suggestion"
+        },
+        {
+            "arabic": "بدلة",
+            "romanized": "badleh",
+            "english": "Suit"
+        },
+        {
+            "arabic": "صيف",
+            "romanized": "Sayf",
+            "english": "Summer"
+        },
+        {
+            "arabic": "شمس",
+            "romanized": "shams",
+            "english": "Sun"
+        },
+        {
+            "arabic": "دعم",
+            "romanized": "da3am",
+            "english": "To support"
+        },
+        {
+            "arabic": "أكيد",
+            "romanized": "akiid",
+            "english": "Sure"
+        },
+        {
+            "arabic": "عملية",
+            "romanized": "3amaliyyeh",
+            "english": "Surgery"
+        },
+        {
+            "arabic": "مفاجأة",
+            "romanized": "mufaaja’a",
+            "english": "Surprise"
+        },
+        {
+            "arabic": "فاجأ",
+            "romanized": "faaja’",
+            "english": "To surprise"
+        },
+        {
+            "arabic": "ظن",
+            "romanized": "DHann",
+            "english": "To suspect/ think"
+        },
+        {
+            "arabic": "حلو",
+            "romanized": "Hilou",
+            "english": "Sweet (adj.)"
+        },
+        {
+            "arabic": "حلويات",
+            "romanized": "Halawiyyaat",
+            "english": "Sweets"
+        },
+        {
+            "arabic": "سباحة",
+            "romanized": "sibaaHa",
+            "english": "Swimming"
+        },
+        {
+            "arabic": "مسبح",
+            "romanized": "masbaH",
+            "english": "Swimming pool"
+        },
+        {
+            "arabic": "عرض",
+            "romanized": "3araD",
+            "english": "Symptom"
+        },
+        {
+            "arabic": "نظام",
+            "romanized": "niDHaam",
+            "english": "System"
+        },
+        {
+            "arabic": "طاولة",
+            "romanized": "Taawleh",
+            "english": "Table"
+        },
+        {
+            "arabic": "أخد",
+            "romanized": "akhad",
+            "english": "To take"
+        },
+        {
+            "arabic": "صور",
+            "romanized": "Sawwar",
+            "english": "To take a picture"
+        },
+        {
+            "arabic": "تحمم",
+            "romanized": "tHammam",
+            "english": "To take shower"
+        },
+        {
+            "arabic": "موهبة",
+            "romanized": "mawhiba",
+            "english": "Talent"
+        },
+        {
+            "arabic": "حكي",
+            "romanized": "Haki",
+            "english": "Talk (n.)"
+        },
+        {
+            "arabic": "حكى",
+            "romanized": "Hakaa",
+            "english": "To talk "
+        },
+        {
+            "arabic": "ذاق",
+            "romanized": "dhaaq",
+            "english": "To taste"
+        },
+        {
+            "arabic": "ضريبة",
+            "romanized": "Dariibeh",
+            "english": "TAX"
+        },
+        {
+            "arabic": "تاكسي ",
+            "romanized": "taaksi",
+            "english": "Taxi"
+        },
+        {
+            "arabic": "شاي",
+            "romanized": "shaay",
+            "english": "Tea"
+        },
+        {
+            "arabic": "علم",
+            "romanized": "3allam",
+            "english": "To teach"
+        },
+        {
+            "arabic": "مدرس",
+            "romanized": "mudarris",
+            "english": "Teacher"
+        },
+        {
+            "arabic": "تلفزيون",
+            "romanized": "tilfizyoon",
+            "english": "Television"
+        },
+        {
+            "arabic": "حكى",
+            "romanized": "Hakaa",
+            "english": "To tell "
+        },
+        {
+            "arabic": "حرارة",
+            "romanized": "Haraara",
+            "english": "Temperature"
+        },
+        {
+            "arabic": "مؤقت",
+            "romanized": "mu’aqqat",
+            "english": "Temporary"
+        },
+        {
+            "arabic": "عشرة",
+            "romanized": "3ashara",
+            "english": "Ten"
+        },
+        {
+            "arabic": "شكر",
+            "romanized": "shukur",
+            "english": "Thanks"
+        },
+        {
+            "arabic": "شكر ",
+            "romanized": "shakar",
+            "english": "To thank"
+        },
+        {
+            "arabic": "إنه",
+            "romanized": "inno",
+            "english": "That"
+        },
+        {
+            "arabic": "الأحسن",
+            "romanized": "alaHsan",
+            "english": "The best"
+        },
+        {
+            "arabic": "هناك",
+            "romanized": "honaak",
+            "english": "There"
+        },
+        {
+            "arabic": "هم",
+            "romanized": "hummeh",
+            "english": "They"
+        },
+        {
+            "arabic": "شغلة",
+            "romanized": "shaghleh",
+            "english": "Thing"
+        },
+        {
+            "arabic": "فكر",
+            "romanized": "fakkar",
+            "english": "To think"
+        },
+        {
+            "arabic": "عطشان",
+            "romanized": "3aTshaan",
+            "english": "Thirsty"
+        },
+        {
+            "arabic": "\nهاد\nهاي\n",
+            "romanized": "\nhaad\nhaay\n",
+            "english": "\nThis (m)\nThis (f)\n"
+        },
+        {
+            "arabic": "ألف",
+            "romanized": "alf",
+            "english": "Thousand"
+        },
+        {
+            "arabic": "تلاتة",
+            "romanized": "talaateh",
+            "english": "Three"
+        },
+        {
+            "arabic": "زور",
+            "romanized": "zoor",
+            "english": "Throat"
+        },
+        {
+            "arabic": "خلال ",
+            "romanized": "khilaal",
+            "english": "Through"
+        },
+        {
+            "arabic": "رمى ",
+            "romanized": "ramaa",
+            "english": "To throw"
+        },
+        {
+            "arabic": "رعد ",
+            "romanized": "ra3id",
+            "english": "Thunder"
+        },
+        {
+            "arabic": "ربط ",
+            "romanized": "rabaT",
+            "english": "To tie"
+        },
+        {
+            "arabic": "وقت",
+            "romanized": "waqt",
+            "english": "Time"
+        },
+        {
+            "arabic": "تعبان",
+            "romanized": "ta3baan",
+            "english": "Tired"
+        },
+        {
+            "arabic": "محرمة ",
+            "romanized": "maHrameh",
+            "english": "Tissue"
+        },
+        {
+            "arabic": "\nإلى\nل\n",
+            "romanized": "\nilaa\nla___\n",
+            "english": "To"
+        },
+        {
+            "arabic": "اليوم",
+            "romanized": "al-yoom",
+            "english": "Today"
+        },
+        {
+            "arabic": "\nمع بعض\nسوا \n",
+            "romanized": "\nma3 ba3D\nsawaa\n",
+            "english": "Together"
+        },
+        {
+            "arabic": "بندورة ",
+            "romanized": "bandoora",
+            "english": "Tomato"
+        },
+        {
+            "arabic": "لسان",
+            "romanized": "lisaan",
+            "english": "Tongue"
+        },
+        {
+            "arabic": "كمان",
+            "romanized": "kamaan",
+            "english": "Too"
+        },
+        {
+            "arabic": "سن",
+            "romanized": "sinn",
+            "english": "Tooth"
+        },
+        {
+            "arabic": "سايح ",
+            "romanized": "saayeH",
+            "english": "Tourist"
+        },
+        {
+            "arabic": "تجارة",
+            "romanized": "tijaara",
+            "english": "Trade"
+        },
+        {
+            "arabic": "تقليد ",
+            "romanized": "taqliid",
+            "english": "Tradition"
+        },
+        {
+            "arabic": "قطار",
+            "romanized": "qiTaar",
+            "english": "Train"
+        },
+        {
+            "arabic": "حول",
+            "romanized": "Hawwal",
+            "english": "To transfer"
+        },
+        {
+            "arabic": "ترجم",
+            "romanized": "tarjam",
+            "english": "To translate"
+        },
+        {
+            "arabic": "ترجمة ",
+            "romanized": "tarjameh",
+            "english": "Translation"
+        },
+        {
+            "arabic": "سافر",
+            "romanized": "saafar",
+            "english": "To travel"
+        },
+        {
+            "arabic": "صنية ",
+            "romanized": "Saniyyeh",
+            "english": "Tray"
+        },
+        {
+            "arabic": "شجرة",
+            "romanized": "shajara",
+            "english": "Tree"
+        },
+        {
+            "arabic": "مثلث ",
+            "romanized": " mthallath",
+            "english": "Triangle"
+        },
+        {
+            "arabic": " رحلة مشوار  ",
+            "romanized": "raHlehmishwaar ",
+            "english": "Trip"
+        },
+        {
+            "arabic": "بنطلون ",
+            "romanized": " banTaloon",
+            "english": "Trousers"
+        },
+        {
+            "arabic": "حقيقة",
+            "romanized": " haqeeqa",
+            "english": "Truth"
+        },
+        {
+            "arabic": "وقف ",
+            "romanized": " waqqaf",
+            "english": "To turn sth off"
+        },
+        {
+            "arabic": "شغل",
+            "romanized": " shaghghal",
+            "english": "To turn sth on"
+        },
+        {
+            "arabic": "مسلسل",
+            "romanized": " musalsal",
+            "english": "TV show"
+        },
+        {
+            "arabic": "عشرين",
+            "romanized": " 3ishreen",
+            "english": "Twenty"
+        },
+        {
+            "arabic": "مرتين",
+            "romanized": " marrtayn",
+            "english": "Twice"
+        },
+        {
+            "arabic": "اتنين",
+            "romanized": " itnayn",
+            "english": "Two"
+        },
+        {
+            "arabic": "بشع",
+            "romanized": " bishi3",
+            "english": "Ugly"
+        },
+        {
+            "arabic": "\nخال\nعم\n",
+            "romanized": " khaal3amm",
+            "english": "\nUncle (maternal)\nUncle (paternal)\n"
+        },
+        {
+            "arabic": "تحت",
+            "romanized": " taHt",
+            "english": "Under"
+        },
+        {
+            "arabic": "فهم",
+            "romanized": "fihim",
+            "english": "To understand"
+        },
+        {
+            "arabic": "جامعة ",
+            "romanized": " jaami3a",
+            "english": "University"
+        },
+        {
+            "arabic": "لحتى",
+            "romanized": "laHattaa",
+            "english": "Until"
+        },
+        {
+            "arabic": "عاجل",
+            "romanized": "3aajil",
+            "english": "Urgent"
+        },
+        {
+            "arabic": "استعمل",
+            "romanized": "ista3mal",
+            "english": "To use"
+        },
+        {
+            "arabic": "مستعمل",
+            "romanized": "musta3mal",
+            "english": "Used"
+        },
+        {
+            "arabic": "مفيد",
+            "romanized": "mufiid",
+            "english": "Useful"
+        },
+        {
+            "arabic": "عادة",
+            "romanized": "3aadatan",
+            "english": "Usually"
+        },
+        {
+            "arabic": "وادي",
+            "romanized": "waadiy",
+            "english": "Valley"
+        },
+        {
+            "arabic": "خضراوات ",
+            "romanized": "khuDraawaat",
+            "english": "Vegetables"
+        },
+        {
+            "arabic": "كتير",
+            "romanized": "ktiir",
+            "english": "Very"
+        },
+        {
+            "arabic": "منظر",
+            "romanized": "manDHar",
+            "english": "View"
+        },
+        {
+            "arabic": "قرية ",
+            "romanized": "qaryeh",
+            "english": "Village"
+        },
+        {
+            "arabic": "فيروس ",
+            "romanized": "fayruus",
+            "english": "Virus"
+        },
+        {
+            "arabic": "زيارة",
+            "romanized": "zyaara",
+            "english": "Visit"
+        },
+        {
+            "arabic": "زار",
+            "romanized": "zaar",
+            "english": "To visit"
+        },
+        {
+            "arabic": "صوت",
+            "romanized": "Soot",
+            "english": "Voice"
+        },
+        {
+            "arabic": "استنى ",
+            "romanized": "istannaa",
+            "english": "To wait"
+        },
+        {
+            "arabic": "نادل ",
+            "romanized": "naadil",
+            "english": "Waiter"
+        },
+        {
+            "arabic": "صحي",
+            "romanized": "SiHi",
+            "english": "To wake up"
+        },
+        {
+            "arabic": "مشى",
+            "romanized": "mashaa",
+            "english": "To walk"
+        },
+        {
+            "arabic": "حيط ",
+            "romanized": "HayT",
+            "english": "Wall"
+        },
+        {
+            "arabic": "محفظة ",
+            "romanized": "maHfaDHa",
+            "english": "Wallet"
+        },
+        {
+            "arabic": "كان بده",
+            "romanized": "kaan biddo",
+            "english": "To want"
+        },
+        {
+            "arabic": "حرب",
+            "romanized": "Harb",
+            "english": "War"
+        },
+        {
+            "arabic": "غسل",
+            "romanized": "ghasal",
+            "english": "To wash"
+        },
+        {
+            "arabic": "حضر ",
+            "romanized": "HiDir",
+            "english": "To watch"
+        },
+        {
+            "arabic": "ساعة",
+            "romanized": "saa3a",
+            "english": "Watch"
+        },
+        {
+            "arabic": "ماي",
+            "romanized": "maay",
+            "english": "Water"
+        },
+        {
+            "arabic": "طريقة",
+            "romanized": "Tariiqa",
+            "english": "Way"
+        },
+        {
+            "arabic": "احنا",
+            "romanized": "iHnaa",
+            "english": "We"
+        },
+        {
+            "arabic": "ضعيف",
+            "romanized": "D3iif",
+            "english": "Weak"
+        },
+        {
+            "arabic": "جو",
+            "romanized": "jaww",
+            "english": "Weather"
+        },
+        {
+            "arabic": "موقع ",
+            "romanized": "mawqi3",
+            "english": "Website"
+        },
+        {
+            "arabic": "عرس ",
+            "romanized": "3urus",
+            "english": "Wedding"
+        },
+        {
+            "arabic": "أسبوع ",
+            "romanized": "usbuu3",
+            "english": "Week"
+        },
+        {
+            "arabic": "غريب",
+            "romanized": "ghariib",
+            "english": "Weird"
+        },
+        {
+            "arabic": "أهلا",
+            "romanized": "ahlan",
+            "english": "Welcome"
+        },
+        {
+            "arabic": "تمام",
+            "romanized": "tamaam",
+            "english": "Well"
+        },
+        {
+            "arabic": "غرب ",
+            "romanized": "gharb",
+            "english": "West"
+        },
+        {
+            "arabic": "شو",
+            "romanized": "shou",
+            "english": "What"
+        },
+        {
+            "arabic": "متى",
+            "romanized": "mataa",
+            "english": "When"
+        },
+        {
+            "arabic": "إلي ",
+            "romanized": "illiy",
+            "english": "Which"
+        },
+        {
+            "arabic": "لما",
+            "romanized": "lammaa",
+            "english": "While"
+        },
+        {
+            "arabic": "أبيض",
+            "romanized": "abyaD",
+            "english": "White"
+        },
+        {
+            "arabic": "مين",
+            "romanized": "miin",
+            "english": "Who"
+        },
+        {
+            "arabic": "زوجة",
+            "romanized": "zoojeh",
+            "english": "Wife"
+        },
+        {
+            "arabic": "رح",
+            "romanized": "raH",
+            "english": "Will"
+        },
+        {
+            "arabic": "فاز",
+            "romanized": "faaz",
+            "english": "To win"
+        },
+        {
+            "arabic": "ريح ",
+            "romanized": "riiH",
+            "english": "Wind"
+        },
+        {
+            "arabic": "شباك",
+            "romanized": "shibbaak",
+            "english": "Window"
+        },
+        {
+            "arabic": "شتا",
+            "romanized": "shitaa",
+            "english": "Winter"
+        },
+        {
+            "arabic": "تمنى ",
+            "romanized": "tmannaa",
+            "english": "To wish/ hope"
+        },
+        {
+            "arabic": "مع",
+            "romanized": "ma3",
+            "english": "With"
+        },
+        {
+            "arabic": "بدون",
+            "romanized": "biduun",
+            "english": "Without"
+        },
+        {
+            "arabic": "مرة",
+            "romanized": "mara",
+            "english": "Woman"
+        },
+        {
+            "arabic": "كلمة",
+            "romanized": "kilmeh",
+            "english": "Word"
+        },
+        {
+            "arabic": "شغل",
+            "romanized": "shughul",
+            "english": "Work"
+        },
+        {
+            "arabic": "عامل",
+            "romanized": "3aamil",
+            "english": "Worker"
+        },
+        {
+            "arabic": "عالم",
+            "romanized": "3aalam",
+            "english": "World"
+        },
+        {
+            "arabic": "قلقان",
+            "romanized": "qalqaan",
+            "english": "Worried"
+        },
+        {
+            "arabic": "أسوأ",
+            "romanized": "aswaa’",
+            "english": "Worse"
+        },
+        {
+            "arabic": "كتب",
+            "romanized": "katab",
+            "english": "To write"
+        },
+        {
+            "arabic": "غلط",
+            "romanized": "ghalaT",
+            "english": "Wrong"
+        },
+        {
+            "arabic": "آه",
+            "romanized": "aah",
+            "english": "Yeah"
+        },
+        {
+            "arabic": "سنة",
+            "romanized": "saneh",
+            "english": "Year"
+        },
+        {
+            "arabic": "أصفر",
+            "romanized": "aSfar",
+            "english": "Yellow"
+        },
+        {
+            "arabic": "نعم",
+            "romanized": "na3m",
+            "english": "Yes"
+        },
+        {
+            "arabic": "صغير",
+            "romanized": "Sghiir",
+            "english": "Young"
+        }
+    ]
+}

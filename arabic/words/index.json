@@ -1,6 +1,10 @@
 {
     "files": [
         {
+            "title": "1000 Most Common Words",
+            "filename": "thousandWords.json"
+        },
+        {
             "title": "Lesson 2 - The Time",
             "filename": "lesson2time.json"
         },
@@ -29,8 +33,12 @@
             "filename": "lesson6.json"
         },
         {
-            "title": "Lesson 7 - Random Words",
+            "title": "Lesson 7 - Random Words 1",
             "filename": "lesson7.json"
+        },
+        {
+            "title": "Lesson 8 - Random Words 2",
+            "filename": "lesson8.json"
         }
     ]
 }
