@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './FlashCards.css';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
