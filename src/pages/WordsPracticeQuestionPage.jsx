@@ -1,12 +1,11 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
-import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
-import Table from 'react-bootstrap/Table';
 import { useEffect, useState } from 'react';
 import './WordsVerbsPracticePage.css';
-import Col from 'react-bootstrap/Col';
+import { ReactTransliterate } from "react-transliterate";
+import "react-transliterate/dist/index.css";
+
 
 // Practice words by typing
 const WordsPracticeQuestionPage = ({ wordsList }) => {
@@ -23,15 +22,11 @@ const WordsPracticeQuestionPage = ({ wordsList }) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                // const wordsArray = [];
                 const response = await fetch(`/Arabic-Learner-React-JS/arabic/words/${wordsList}`);
                 const wordsData = await response.json();
-                // const translations = wordsData.translations;
-                // wordsArray.push(...translations);
                 setAllWords(wordsData.translations);
                 setPageTitle(wordsData.title);
 
-                // setAllWords(prevWords => (prevWords.length > 0 ? prevWords : [...prevWords, ...wordsArray]));
                 setDataLoaded(true);
             } catch (error) {
                 console.error('Error fetching data:', error);
@@ -50,7 +45,6 @@ const WordsPracticeQuestionPage = ({ wordsList }) => {
         const word = allWords[wordIndex];
 
         setCorrectAnswer(word.arabic);
-        // console.log(word);
         setCurrentQuestion(word);
     }
 
@@ -108,13 +102,16 @@ const WordsPracticeQuestionPage = ({ wordsList }) => {
                     <div className='bottom-section'>
                         <div id="conjugation-form">
                             <label htmlFor="user-input">Your Answer:</label>
-                            <input
+                            <ReactTransliterate
                                 type="text"
                                 id="user-input"
                                 name="user-input"
-                                value={currentAnswer}
-                                onChange={(e) => setCurrentAnswer(e.target.value)}
                                 onKeyDown={handleEnterKeyPress}
+                                value={currentAnswer}
+                                onChangeText={(e) => {
+                                    setCurrentAnswer(e);
+                                }}
+                                lang="ar"
                             />
                             <Button className="con-form-button" variant="primary" type="button" onClick={checkAnswer}>Check</Button>
                             <Button className="con-form-button" variant="secondary" type="button" onClick={nextQuestion}>Next</Button>

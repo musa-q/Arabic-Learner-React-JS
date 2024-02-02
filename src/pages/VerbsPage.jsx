@@ -2,10 +2,12 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Row from 'react-bootstrap/Row';
-import Table from 'react-bootstrap/Table';
 import { useEffect, useState } from 'react';
 import './WordsVerbsPracticePage.css';
 import Col from 'react-bootstrap/Col';
+import { ReactTransliterate } from "react-transliterate";
+import "react-transliterate/dist/index.css";
+
 
 const tenses = ["present", "past", "future"];
 const pronouns = ["i", "you_m", "you_f", "he", "she", "they", "we"];
@@ -118,13 +120,16 @@ const VerbsPage = () => {
                     <div className='bottom-section'>
                         <form id="conjugation-form" method="POST">
                             <label htmlFor="user-input">Your Answer:</label>
-                            <input
+                            <ReactTransliterate
                                 type="text"
                                 id="user-input"
                                 name="user-input"
-                                value={currentAnswer}
-                                onChange={(e) => setCurrentAnswer(e.target.value)}
                                 onKeyDown={handleEnterKeyPress}
+                                value={currentAnswer}
+                                onChangeText={(e) => {
+                                    setCurrentAnswer(e);
+                                }}
+                                lang="ar"
                             />
                             <Button className="con-form-button" variant="primary" type="button" onClick={checkAnswer}>Check</Button>
                             <Button className="con-form-button" variant="secondary" type="button" onClick={nextQuestion}>Next</Button>
