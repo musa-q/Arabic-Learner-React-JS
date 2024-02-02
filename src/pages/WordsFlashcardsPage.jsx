@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import ChooseWordsPage from './ChooseWordsPage';
 import FlashCardsPage from './FlashCardsPage';
 
