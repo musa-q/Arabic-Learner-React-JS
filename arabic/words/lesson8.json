@@ -145,6 +145,126 @@
             "arabic": "جامعة",
             "romanized": "Jam'iyya",
             "english": "University"
+        },
+        {
+            "arabic": "زارني",
+            "romanized": "Zaarni",
+            "english": "Visited me"
+        },
+        {
+            "arabic": "اصير",
+            "romanized": "Asir",
+            "english": "Become"
+        },
+        {
+            "arabic": "نصبر",
+            "romanized": "Nasbir",
+            "english": "We wait"
+        },
+        {
+            "arabic": "رأي",
+            "romanized": "Ra'y",
+            "english": "Opinion"
+        },
+        {
+            "arabic": "مواد",
+            "romanized": "Mawaad",
+            "english": "Subjects"
+        },
+        {
+            "arabic": "اللي",
+            "romanized": "Alli",
+            "english": "That/Which"
+        },
+        {
+            "arabic": "بعض",
+            "romanized": "Ba'd",
+            "english": "Some"
+        },
+        {
+            "arabic": "مفيد",
+            "romanized": "Mufeed",
+            "english": "Useful"
+        },
+        {
+            "arabic": "زي",
+            "romanized": "Zay",
+            "english": "Like"
+        },
+        {
+            "arabic": "البرمجة",
+            "romanized": "Al-Barmaja",
+            "english": "Programming"
+        },
+        {
+            "arabic": "رياضيات",
+            "romanized": "Riyadhiyyat",
+            "english": "Mathematics"
+        },
+        {
+            "arabic": "بفهم",
+            "romanized": "Bifham",
+            "english": "I understand"
+        },
+        {
+            "arabic": "اشي",
+            "romanized": "Ashi",
+            "english": "Thing"
+        },
+        {
+            "arabic": "أكثر",
+            "romanized": "Akthar",
+            "english": "More"
+        },
+        {
+            "arabic": "العكس",
+            "romanized": "Al-Aks",
+            "english": "Opposite"
+        },
+        {
+            "arabic": "عقل",
+            "romanized": "Aql",
+            "english": "Mind"
+        },
+        {
+            "arabic": "تعلم",
+            "romanized": "Ta'allam",
+            "english": "Learn"
+        },
+        {
+            "arabic": "تحل",
+            "romanized": "Tahall",
+            "english": "Solve"
+        },
+        {
+            "arabic": "المشاكل",
+            "romanized": "Al-Mashaakil",
+            "english": "Problems"
+        },
+        {
+            "arabic": "مجرد",
+            "romanized": "Mujarrad",
+            "english": "Just"
+        },
+        {
+            "arabic": "أدوات",
+            "romanized": "Adwaat",
+            "english": "Tools"
+        },
+        {
+            "arabic": "بتستخدمها",
+            "romanized": "Btistakhdimha",
+            "english": "You use them"
+        },
+        {
+            "arabic": "بفضل",
+            "romanized": "Bifadl",
+            "english": "Thanks to"
+        },
+        {
+            "arabic": "منطقي",
+            "romanized": "Mantaqi",
+            "english": "Logical"
         }
     ]
 }
