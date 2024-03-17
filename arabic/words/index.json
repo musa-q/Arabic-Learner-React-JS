@@ -1,44 +1,92 @@
 {
     "files": [
         {
-            "title": "1000 Most Common Words",
-            "filename": "thousandWords.json"
+            "title": "General",
+            "filename": "General.json"
         },
         {
-            "title": "Lesson 2 - The Time",
-            "filename": "lesson2time.json"
+            "title": "Personal",
+            "filename": "Personal.json"
         },
         {
-            "title": "Lesson 2 - The Family",
-            "filename": "lesson2family.json"
+            "title": "Nature",
+            "filename": "Nature.json"
         },
         {
-            "title": "Lesson 3 - Adjectives",
-            "filename": "lesson3.json"
+            "title": "Occupations",
+            "filename": "Occupations.json"
         },
         {
-            "title": "Lesson 4 - Question Words",
-            "filename": "lesson4.json"
+            "title": "Family",
+            "filename": "Family.json"
         },
         {
-            "title": "Lesson 4 - Places",
-            "filename": "lesson4places.json"
+            "title": "Time",
+            "filename": "Time.json"
         },
         {
-            "title": "Lesson 5 - Common Words",
-            "filename": "lesson5.json"
+            "title": "Emotions",
+            "filename": "Emotions.json"
         },
         {
-            "title": "Lesson 6 - Numbers and Other Words",
-            "filename": "lesson6.json"
+            "title": "Food",
+            "filename": "Food.json"
         },
         {
-            "title": "Lesson 7 - Random Words",
-            "filename": "lesson7.json"
+            "title": "Numbers",
+            "filename": "Numbers.json"
         },
         {
-            "title": "Lesson 8 - Conversation Words",
-            "filename": "lesson8.json"
+            "title": "School and Education",
+            "filename": "School and Education.json"
+        },
+        {
+            "title": "Health",
+            "filename": "Health.json"
+        },
+        {
+            "title": "Weather",
+            "filename": "Weather.json"
+        },
+        {
+            "title": "Transportation",
+            "filename": "Transportation.json"
+        },
+        {
+            "title": "Colors",
+            "filename": "Colors.json"
+        },
+        {
+            "title": "Verbs",
+            "filename": "Verbs.json"
+        },
+        {
+            "title": "Feelings",
+            "filename": "Feelings.json"
+        },
+        {
+            "title": "Events",
+            "filename": "Events.json"
+        },
+        {
+            "title": "Relationships",
+            "filename": "Relationships.json"
+        },
+        {
+            "title": "Physical",
+            "filename": "Physical.json"
+        },
+        {
+            "title": "Intellectual",
+            "filename": "Intellectual.json"
+        },
+        {
+            "title": "Social",
+            "filename": "Social.json"
+        },
+        {
+            "title": "Miscellaneous",
+            "filename": "Miscellaneous.json"
         }
     ]
 }
