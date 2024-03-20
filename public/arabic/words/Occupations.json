@@ -1,1 +1,75 @@
-{"title": "Occupations", "translations": [{"arabic": "ممثل", "romanized": "mumaththil", "english": "Actor"}, {"arabic": "ممثلة", "romanized": "mumaththila", "english": "Actress"}, {"arabic": "فنان", "romanized": "fannaan", "english": "Artist"}, {"arabic": "\nدكتور\nطبيب\nحكيم\n", "romanized": "\ndoktoor\nTabiib\nHakiim\n", "english": "Doctor"}, {"arabic": "كهربائي", "romanized": "kahrabaa’iy", "english": "Electrician"}, {"arabic": "مهندس", "romanized": "muhandis", "english": "Engineer"}, {"arabic": "محامي", "romanized": "muHaamiy", "english": "Lawyer"}, {"arabic": "مدير", "romanized": "mudiir", "english": "Manager"}, {"arabic": "شرطي", "romanized": "shurTiy", "english": "Policeman"}, {"arabic": "سياسي", "romanized": "siyaasiy", "english": "Politician "}, {"arabic": "مغني", "romanized": "mughanniy", "english": "Singer"}, {"arabic": "مدرس", "romanized": "mudarris", "english": "Teacher"}, {"arabic": "نادل ", "romanized": "naadil", "english": "Waiter"}]}
+{
+    "title": "Occupations",
+    "translations": [
+        {
+            "arabic": "ممثل",
+            "romanized": "mumaththil",
+            "english": "Actor"
+        },
+        {
+            "arabic": "ممثلة",
+            "romanized": "mumaththila",
+            "english": "Actress"
+        },
+        {
+            "arabic": "فنان",
+            "romanized": "fannaan",
+            "english": "Artist"
+        },
+        {
+            "arabic": "دكتور",
+            "romanized": "doktoor",
+            "english": "Doctor"
+        },
+        {
+            "arabic": "كهربائي",
+            "romanized": "kahrabaa’iy",
+            "english": "Electrician"
+        },
+        {
+            "arabic": "فنان",
+            "romanized": "fannaan",
+            "english": "Artist"
+        },
+        {
+            "arabic": "مهندس",
+            "romanized": "muhandis",
+            "english": "Engineer"
+        },
+        {
+            "arabic": "محامي",
+            "romanized": "muHaamiy",
+            "english": "Lawyer"
+        },
+        {
+            "arabic": "مدير",
+            "romanized": "mudiir",
+            "english": "Manager"
+        },
+        {
+            "arabic": "شرطي",
+            "romanized": "shurTiy",
+            "english": "Policeman"
+        },
+        {
+            "arabic": "سياسي",
+            "romanized": "siyaasiy",
+            "english": "Politician "
+        },
+        {
+            "arabic": "مغني",
+            "romanized": "mughanniy",
+            "english": "Singer"
+        },
+        {
+            "arabic": "مدرس",
+            "romanized": "mudarris",
+            "english": "Teacher"
+        },
+        {
+            "arabic": "نادل ",
+            "romanized": "naadil",
+            "english": "Waiter"
+        }
+    ]
+}

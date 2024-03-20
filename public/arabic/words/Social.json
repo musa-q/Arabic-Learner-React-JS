@@ -1,1 +1,50 @@
-{"title": "Social", "translations": [{"arabic": "عزم", "romanized": "3azam", "english": "To invite"}, {"arabic": "التقى", "romanized": "iltaqaa", "english": "To meet"}, {"arabic": "فرجى", "romanized": "farjaa", "english": "To show"}, {"arabic": "حكي", "romanized": "Haki", "english": "Talk (n.)"}, {"arabic": "قال", "romanized": "qaal", "english": "Say/ tell"}, {"arabic": "شكر", "romanized": "shukur", "english": "Thanks"}, {"arabic": "أهلا", "romanized": "ahlan", "english": "Welcome"}]}
+{
+    "title": "Social",
+    "translations": [
+        {
+            "arabic": "عزم",
+            "romanized": "3azam",
+            "english": "To invite"
+        },
+        {
+            "arabic": "التقى",
+            "romanized": "iltaqaa",
+            "english": "To meet"
+        },
+        {
+            "arabic": "رد",
+            "romanized": "radd",
+            "english": "To answer (the phone)/ reply"
+        },
+        {
+            "arabic": "فرجى",
+            "romanized": "farjaa",
+            "english": "To show"
+        },
+        {
+            "arabic": "كامبيوتر",
+            "romanized": "kaambyuutir",
+            "english": "Computer"
+        },
+        {
+            "arabic": "حكي",
+            "romanized": "Haki",
+            "english": "Talk (n.)"
+        },
+        {
+            "arabic": "قال",
+            "romanized": "qaal",
+            "english": "Say/ tell"
+        },
+        {
+            "arabic": "شكر",
+            "romanized": "shukur",
+            "english": "Thanks"
+        },
+        {
+            "arabic": "أهلا",
+            "romanized": "ahlan",
+            "english": "Welcome"
+        }
+    ]
+}
