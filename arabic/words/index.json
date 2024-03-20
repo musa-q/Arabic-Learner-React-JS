@@ -1,92 +1,80 @@
 {
     "files": [
         {
-            "title": "General",
-            "filename": "General.json"
-        },
-        {
-            "title": "Personal",
-            "filename": "Personal.json"
-        },
-        {
-            "title": "Nature",
-            "filename": "Nature.json"
-        },
-        {
-            "title": "Occupations",
-            "filename": "Occupations.json"
-        },
-        {
-            "title": "Family",
-            "filename": "Family.json"
-        },
-        {
-            "title": "Time",
-            "filename": "Time.json"
-        },
-        {
-            "title": "Emotions",
-            "filename": "Emotions.json"
-        },
-        {
-            "title": "Food",
-            "filename": "Food.json"
-        },
-        {
-            "title": "Numbers",
-            "filename": "Numbers.json"
-        },
-        {
-            "title": "School and Education",
-            "filename": "School and Education.json"
-        },
-        {
-            "title": "Health",
-            "filename": "Health.json"
-        },
-        {
-            "title": "Weather",
-            "filename": "Weather.json"
-        },
-        {
-            "title": "Transportation",
-            "filename": "Transportation.json"
-        },
-        {
             "title": "Colors",
             "filename": "Colors.json"
-        },
-        {
-            "title": "Verbs",
-            "filename": "Verbs.json"
         },
         {
             "title": "Feelings",
             "filename": "Feelings.json"
         },
         {
-            "title": "Events",
-            "filename": "Events.json"
+            "title": "Food",
+            "filename": "Food.json"
         },
         {
-            "title": "Relationships",
-            "filename": "Relationships.json"
-        },
-        {
-            "title": "Physical",
-            "filename": "Physical.json"
+            "title": "Health",
+            "filename": "Health.json"
         },
         {
             "title": "Intellectual",
             "filename": "Intellectual.json"
         },
         {
+            "title": "Miscellaneous",
+            "filename": "Miscellaneous.json"
+        },
+        {
+            "title": "Nature",
+            "filename": "Nature.json"
+        },
+        {
+            "title": "Numbers",
+            "filename": "Numbers.json"
+        },
+        {
+            "title": "Objects",
+            "filename": "Objects.json"
+        },
+        {
+            "title": "Occupations",
+            "filename": "Occupations.json"
+        },
+        {
+            "title": "People",
+            "filename": "People.json"
+        },
+        {
+            "title": "Personal",
+            "filename": "Personal.json"
+        },
+        {
+            "title": "Physical",
+            "filename": "Physical.json"
+        },
+        {
+            "title": "Places",
+            "filename": "Places.json"
+        },
+        {
+            "title": "School and Work",
+            "filename": "School and Work.json"
+        },
+        {
             "title": "Social",
             "filename": "Social.json"
         },
         {
-            "title": "Miscellaneous",
-            "filename": "Miscellaneous.json"
+            "title": "Time",
+            "filename": "Time.json"
+        },
+        {
+            "title": "Transportation",
+            "filename": "Transportation.json"
+        },
+        {
+            "title": "Verbs",
+            "filename": "Verbs.json"
         }
     ]
 }
