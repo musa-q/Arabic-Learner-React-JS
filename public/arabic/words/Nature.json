@@ -1,1 +1,185 @@
-{"title": "Nature", "translations": [{"arabic": "خريف", "romanized": "khariif", "english": "Autumn"}, {"arabic": "جمل", "romanized": "jamal", "english": "Camel"}, {"arabic": "غيمة", "romanized": "ghaymeh", "english": "Cloud"}, {"arabic": "أرض ", "romanized": "arD", "english": "Earth"}, {"arabic": "شرق ", "romanized": "sharq", "english": "East"}, {"arabic": "\nزهرة\nورد\n", "romanized": "\nzahra\nward\n", "english": "Flower"}, {"arabic": "غابة ", "romanized": "ghaabeh", "english": "Forest"}, {"arabic": "خليج ", "romanized": "khaliij", "english": "Gulf"}, {"arabic": "بحيرة", "romanized": "buHayra", "english": "Lake"}, {"arabic": "خروف", "romanized": "kharuuf", "english": "Lamb"}, {"arabic": "قمر", "romanized": "qamar", "english": "Moon"}, {"arabic": "جبل", "romanized": "jabal", "english": "Mountain"}, {"arabic": "شمال", "romanized": "shmaal", "english": "North"}, {"arabic": "محيط", "romanized": "muHiiT", "english": "Ocean"}, {"arabic": "صداع", "romanized": "Sudaa3", "english": "Migraine"}, {"arabic": "قوس قزح", "romanized": "qaws qazaH", "english": "Rainbow"}, {"arabic": "نهر", "romanized": "nahr", "english": "River"}, {"arabic": "حجر", "romanized": "Hajar", "english": "Rock"}, {"arabic": "بحر", "romanized": "baHar", "english": "Sea"}, {"arabic": "سماء", "romanized": "samaa’", "english": "Sky"}, {"arabic": "ربيع", "romanized": "rabii3", "english": "Spring"}, {"arabic": "عاصفة", "romanized": "3aasifeh", "english": "Storm"}, {"arabic": "صيف", "romanized": "Sayf", "english": "Summer"}, {"arabic": "شمس", "romanized": "shams", "english": "Sun"}, {"arabic": "وادي", "romanized": "waadiy", "english": "Valley"}, {"arabic": "ريح ", "romanized": "riiH", "english": "Wind"}, {"arabic": "شتا", "romanized": "shitaa", "english": "Winter"}, {"arabic": "أصفر", "romanized": "aSfar", "english": "Yellow"}]}
+{
+    "title": "Nature",
+    "translations": [
+        {
+            "arabic": "خريف",
+            "romanized": "khariif",
+            "english": "Autumn"
+        },
+        {
+            "arabic": "جمل",
+            "romanized": "jamal",
+            "english": "Camel"
+        },
+        {
+            "arabic": "غيمة",
+            "romanized": "ghaymeh",
+            "english": "Cloud"
+        },
+        {
+            "arabic": "أرض ",
+            "romanized": "arD",
+            "english": "Earth"
+        },
+        {
+            "arabic": "شرق ",
+            "romanized": "sharq",
+            "english": "East"
+        },
+        {
+            "arabic": "ورد",
+            "romanized": "ward",
+            "english": "Flower"
+        },
+        {
+            "arabic": "غابة ",
+            "romanized": "ghaabeh",
+            "english": "Forest"
+        },
+        {
+            "arabic": "خليج ",
+            "romanized": "khaliij",
+            "english": "Gulf"
+        },
+        {
+            "arabic": "بحيرة",
+            "romanized": "buHayra",
+            "english": "Lake"
+        },
+        {
+            "arabic": "خروف",
+            "romanized": "kharuuf",
+            "english": "Lamb"
+        },
+        {
+            "arabic": "قمر",
+            "romanized": "qamar",
+            "english": "Moon"
+        },
+        {
+            "arabic": "جبل",
+            "romanized": "jabal",
+            "english": "Mountain"
+        },
+        {
+            "arabic": "شمال",
+            "romanized": "shmaal",
+            "english": "North"
+        },
+        {
+            "arabic": "محيط",
+            "romanized": "muHiiT",
+            "english": "Ocean"
+        },
+        {
+            "arabic": "قوس قزح",
+            "romanized": "qaws qazaH",
+            "english": "Rainbow"
+        },
+        {
+            "arabic": "نهر",
+            "romanized": "nahr",
+            "english": "River"
+        },
+        {
+            "arabic": "حجر",
+            "romanized": "Hajar",
+            "english": "Rock"
+        },
+        {
+            "arabic": "بحر",
+            "romanized": "baHar",
+            "english": "Sea"
+        },
+        {
+            "arabic": "سماء",
+            "romanized": "samaa’",
+            "english": "Sky"
+        },
+        {
+            "arabic": "ربيع",
+            "romanized": "rabii3",
+            "english": "Spring"
+        },
+        {
+            "arabic": "عاصفة",
+            "romanized": "3aasifeh",
+            "english": "Storm"
+        },
+        {
+            "arabic": "حيوان",
+            "romanized": "Haywaan",
+            "english": "Animal"
+        },
+        {
+            "arabic": "صيف",
+            "romanized": "Sayf",
+            "english": "Summer"
+        },
+        {
+            "arabic": "شمس",
+            "romanized": "shams",
+            "english": "Sun"
+        },
+        {
+            "arabic": "حيوان",
+            "romanized": "Haywaan",
+            "english": "Animal"
+        },
+        {
+            "arabic": "عصفور",
+            "romanized": "3aSfuur",
+            "english": "Bird"
+        },
+        {
+            "arabic": "وادي",
+            "romanized": "waadiy",
+            "english": "Valley"
+        },
+        {
+            "arabic": "ريح ",
+            "romanized": "riiH",
+            "english": "Wind"
+        },
+        {
+            "arabic": "شتا",
+            "romanized": "shitaa",
+            "english": "Winter"
+        },
+        {
+            "arabic": "بارد",
+            "romanized": "baarid",
+            "english": "Cold"
+        },
+        {
+            "arabic": "حار",
+            "romanized": "Harr",
+            "english": "Hot (like weather)"
+        },
+        {
+            "arabic": "ثلج",
+            "romanized": "thalj",
+            "english": "Snow/ ice"
+        },
+        {
+            "arabic": "عاصفة",
+            "romanized": "3aasifeh",
+            "english": "Storm"
+        },
+        {
+            "arabic": "شمس",
+            "romanized": "shams",
+            "english": "Sun"
+        },
+        {
+            "arabic": "جو",
+            "romanized": "jaww",
+            "english": "Weather"
+        },
+        {
+            "arabic": "ريح ",
+            "romanized": "riiH",
+            "english": "Wind"
+        }
+    ]
+}
