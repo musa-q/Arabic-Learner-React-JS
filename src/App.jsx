@@ -6,6 +6,7 @@ import WordsFlashcardsPage from './pages/WordsFlashcardsPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MyNavBar from './components/NavBar';
 import WordsPracticePage from './pages/WordsPracticePage';
+import './components/Scrollbar.css'
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState('home');
