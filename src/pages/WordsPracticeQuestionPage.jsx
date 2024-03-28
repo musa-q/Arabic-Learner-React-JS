@@ -105,9 +105,9 @@ const WordsPracticeQuestionPage = ({ wordsList }) => {
                         <strong className="me-auto">Keyboard Shortcuts</strong>
                     </Toast.Header>
                     <Toast.Body>
-                        Enter to check answer/move to next question
+                        Enter: check answer/move to next question
                         <br />
-                        Control to reveal the answer
+                        Ctrl: reveal the answer
                     </Toast.Body>
                 </Toast>
             </ToastContainer>
