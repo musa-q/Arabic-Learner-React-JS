@@ -72,7 +72,11 @@ const WordsPracticeQuestionPage = ({ wordsList }) => {
     const handleEnterKeyPress = (e) => {
         if (e.key === 'Enter') {
             e.preventDefault();
-            checkAnswer();
+            if (resultMessage === "Correct!") {
+                nextQuestion();
+            } else {
+                checkAnswer();
+            }
         }
     };
 
