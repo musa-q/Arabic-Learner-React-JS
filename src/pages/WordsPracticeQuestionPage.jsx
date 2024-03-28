@@ -81,7 +81,7 @@ const WordsPracticeQuestionPage = ({ wordsList }) => {
             }
         } else if (e.ctrlKey) {
             e.preventDefault();
-            if (resultMessage !== "Correct!") {
+            if (resultMessage !== "Incorrect. Try again.") {
                 setRevealAnswer(true);
             }
         }
