@@ -5,6 +5,8 @@ import { useEffect, useState } from 'react';
 import './WordsVerbsPracticePage.css';
 import { ReactTransliterate } from "react-transliterate";
 import "react-transliterate/dist/index.css";
+import Toast from 'react-bootstrap/Toast';
+import ToastContainer from 'react-bootstrap/ToastContainer';
 
 
 // Practice words by typing
@@ -77,6 +79,11 @@ const WordsPracticeQuestionPage = ({ wordsList }) => {
             } else {
                 checkAnswer();
             }
+        } else if (e.ctrlKey) {
+            e.preventDefault();
+            if (resultMessage !== "Correct!") {
+                setRevealAnswer(true);
+            }
         }
     };
 
@@ -92,6 +99,19 @@ const WordsPracticeQuestionPage = ({ wordsList }) => {
 
     return (
         <div className="practice-page-container">
+            <ToastContainer position="bottom-end" className="p-3 toast-container" style={{ zIndex: 1, display: window.innerWidth > 768 ? 'block' : 'none' }}>
+                <Toast>
+                    <Toast.Header>
+                        <strong className="me-auto">Keyboard Shortcuts</strong>
+                    </Toast.Header>
+                    <Toast.Body>
+                        Enter to check answer/move to next question
+                        <br />
+                        Control to reveal the answer
+                    </Toast.Body>
+                </Toast>
+            </ToastContainer>
+
             <h1>{pageTitle}</h1>
             <Card className="practice-container">
                 <ListGroup variant="flush">
