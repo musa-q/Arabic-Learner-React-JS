@@ -51,7 +51,7 @@ const WordsPracticeQuestionPage = ({ wordsList }) => {
     }
 
     const checkAnswer = () => {
-        if (currentAnswer.trim().toLowerCase() === correctAnswer) {
+        if (currentAnswer.trim().toLowerCase() === correctAnswer.trim().toLowerCase()) {
             setResultMessage("Correct!");
         } else {
             setResultMessage("Incorrect. Try again.");
