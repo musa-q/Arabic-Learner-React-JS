@@ -43,7 +43,7 @@ const VerbsPage = () => {
     };
 
     const checkAnswer = () => {
-        if (currentAnswer.trim().toLowerCase() === correctAnswer) {
+        if (currentAnswer.trim().toLowerCase() === correctAnswer.trim().toLowerCase()) {
             setResultMessage("Correct!");
         } else {
             setResultMessage("Incorrect. Try again.");
@@ -88,6 +88,11 @@ const VerbsPage = () => {
                 nextQuestion();
             } else {
                 checkAnswer();
+            }
+        } else if (e.ctrlKey) {
+            e.preventDefault();
+            if (resultMessage === "Incorrect. Try again.") {
+                setRevealAnswer(true);
             }
         }
     };
