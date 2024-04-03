@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 import HomePage from './pages/HomePage'
 import VerbsPage from './pages/VerbsPage'
 import WordsFlashcardsPage from './pages/WordsFlashcardsPage';
