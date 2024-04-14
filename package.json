@@ -1,10 +1,10 @@
 {
   "homepage": "myarabiclearner.com",
-  "name": "arabic-learner",
+  "name": "my-arabic-learner",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build && cp CNAME build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
