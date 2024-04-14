@@ -1,0 +1,13 @@
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 35px;
+    margin-right: 10px;
+}
+
+.nav-title {
+    font-size: 25px;
+}
