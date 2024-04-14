@@ -1,0 +1,45 @@
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-container {
+    font-size: 75px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.homepage-logo {
+    max-width: 100%;
+    max-height: 400px;
+    margin-bottom: 20px;
+}
+
+.button-container-left,
+.button-container-right {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.button-container-left button,
+.button-container-right button {
+    margin: 10px 5px;
+    width: 45%;
+    height: 80px;
+}
+
+@media (max-width: 768px) {
+
+    .button-container-left,
+    .button-container-right {
+        width: 100%;
+    }
+
+    .button-container-left button,
+    .button-container-right button {
+        margin: 5px 0;
+    }
+}

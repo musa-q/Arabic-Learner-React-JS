@@ -1,0 +1,95 @@
+{
+    "title": "Health",
+    "translations": [
+        {
+            "arabic": "حساسية ",
+            "romanized": "Hasaasiyyeh",
+            "english": "Allergy"
+        },
+        {
+            "arabic": "بارد",
+            "romanized": "baarid",
+            "english": "Cold"
+        },
+        {
+            "arabic": "قح",
+            "romanized": "qaHH",
+            "english": "To cough"
+        },
+        {
+            "arabic": "دكتور سنان",
+            "romanized": "doktoor snaan",
+            "english": "Dentist"
+        },
+        {
+            "arabic": "\nدكتور\nطبيب\nحكيم\n",
+            "romanized": "\ndoktoor\nTabiib\nHakiim\n",
+            "english": "Doctor"
+        },
+        {
+            "arabic": "حرارة",
+            "romanized": "Haraara",
+            "english": "Fever"
+        },
+        {
+            "arabic": "صداع",
+            "romanized": "Sudaa3",
+            "english": "Migraine"
+        },
+        {
+            "arabic": "تعب ",
+            "romanized": "ti3ib",
+            "english": "To get tired"
+        },
+        {
+            "arabic": "شفاء",
+            "romanized": "shifaa’",
+            "english": "Recovery"
+        },
+        {
+            "arabic": "وجع",
+            "romanized": "waja3",
+            "english": "Pain"
+        },
+        {
+            "arabic": "مرض",
+            "romanized": "maraD",
+            "english": "Sickness"
+        },
+        {
+            "arabic": "صحة",
+            "romanized": "SiHHa",
+            "english": "Health"
+        },
+        {
+            "arabic": "صداع",
+            "romanized": "Sudaa3",
+            "english": "Migraine"
+        },
+        {
+            "arabic": "مستشفى",
+            "romanized": "mustashfaa",
+            "english": "Hospital"
+        },
+        {
+            "arabic": "دوا",
+            "romanized": "dawaa",
+            "english": "Medicine"
+        },
+        {
+            "arabic": "مرض",
+            "romanized": "maraD",
+            "english": "Sickness"
+        },
+        {
+            "arabic": "عملية",
+            "romanized": "3amaliyyeh",
+            "english": "Surgery"
+        },
+        {
+            "arabic": "عرض",
+            "romanized": "3araD",
+            "english": "Symptom"
+        }
+    ]
+}
