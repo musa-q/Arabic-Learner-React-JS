@@ -24,7 +24,7 @@ const WordsPracticeQuestionPage = ({ wordsList }) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`/Arabic-Learner-React-JS/arabic/words/${wordsList}`);
+                const response = await fetch(`/arabic/words/${wordsList}`);
                 const wordsData = await response.json();
                 setAllWords(wordsData.translations);
                 setPageTitle(wordsData.title);

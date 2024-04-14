@@ -66,7 +66,7 @@ const VerbsPage = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('/Arabic-Learner-React-JS/arabic/verbs/all_verbs.json');
+                const response = await fetch('/arabic/verbs/all_verbs.json');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }

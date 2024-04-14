@@ -9,7 +9,7 @@ const FlashCardsPage = ({ wordsList }) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`/Arabic-Learner-React-JS/arabic/words/${wordsList}`);
+                const response = await fetch(`/arabic/words/${wordsList}`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }

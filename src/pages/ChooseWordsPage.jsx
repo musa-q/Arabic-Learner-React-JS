@@ -9,7 +9,7 @@ const ChooseWordsPage = ({ onChoose, title }) => {
     useEffect(() => {
         const fetchFileList = async () => {
             try {
-                const response = await fetch('/Arabic-Learner-React-JS/arabic/words/index.json');
+                const response = await fetch('/arabic/words/index.json');
                 const indexData = await response.json();
 
                 setFileList(indexData.files);
