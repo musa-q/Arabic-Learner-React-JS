@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import './HomePage.css';
 import '../fonts.css';
 import AppFeedback from '../components/AppFeedback';
+import logo from '/logo_main.png';
 
 const HomePage = ({ onNavigate }) => {
     const [show, setShow] = useState(false);
@@ -12,9 +13,7 @@ const HomePage = ({ onNavigate }) => {
 
     return (
         <div className="home-page-container">
-            <div className="title-container aref-ruqaa-bold gold">
-                متعلم عربي
-            </div>
+            <img src={logo} alt="Logo" className="homepage-logo" />
             <div className="button-container-left">
                 <Button variant="outline-light" size="lg" onClick={() => onNavigate('wordsflashcard')}>
                     Words Flashcards

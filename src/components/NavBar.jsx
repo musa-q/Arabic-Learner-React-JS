@@ -10,7 +10,7 @@ const MyNavBar = ({ onNavigate }) => {
             <Container>
                 <Navbar.Brand onClick={() => onNavigate('home')}>
                     <div className='aref-ruqaa-regular gold nav-title logo-container'>
-                        <img src={logo} alt="Logo" className="logo" />
+                        <img src={logo} alt="Logo" className="nav-logo" />
                         متعلم عربي
                     </div>
                 </Navbar.Brand>
