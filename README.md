@@ -1,4 +1,4 @@
-# Arabic Learner
+# My Arabic Learner
 
 App to learn Arabic in the Jordanian dialect.
 
