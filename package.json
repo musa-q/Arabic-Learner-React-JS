@@ -1,7 +1,6 @@
 {
-  "homepage": "https://musa-q.github.io/Arabic-Learner-React-JS",
-  "name": "arabic-learner",
-  "private": true,
+  "homepage": "myarabiclearner.com",
+  "name": "my-arabic-learner",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
