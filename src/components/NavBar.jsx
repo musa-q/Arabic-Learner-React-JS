@@ -1,12 +1,19 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import logo from '/logo_main.png';
+import './NavBar.css';
 
 const MyNavBar = ({ onNavigate }) => {
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container>
-                <Navbar.Brand onClick={() => onNavigate('home')}>Arabic Learner</Navbar.Brand>
+                <Navbar.Brand onClick={() => onNavigate('home')}>
+                    <div className='aref-ruqaa-regular gold nav-title logo-container'>
+                        <img src={logo} alt="Logo" className="logo" />
+                        متعلم عربي
+                    </div>
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">

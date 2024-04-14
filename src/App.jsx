@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MyNavBar from './components/NavBar';
 import WordsPracticePage from './pages/WordsPracticePage';
 import './components/Scrollbar.css'
+import './App.css'
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState('home');
@@ -15,7 +16,7 @@ const App = () => {
   };
 
   return (
-    <div className="dark-background" data-bs-theme="dark">
+    <div className="dark-background light" data-bs-theme="dark">
       <MyNavBar onNavigate={navigateToPage} />
       {currentPage === 'home' && <HomePage onNavigate={navigateToPage} />}
       {currentPage === 'verbs' && <VerbsPage />}
