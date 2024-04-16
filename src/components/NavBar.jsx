@@ -11,7 +11,7 @@ const MyNavBar = ({ onNavigate }) => {
                 <Navbar.Brand onClick={() => onNavigate('home')}>
                     <div className='aref-ruqaa-regular gold nav-title logo-container'>
                         <img src={logo} alt="Logo" className="nav-logo" />
-                        متعلمي عربي
+                        متعلمو العربية
                     </div>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
