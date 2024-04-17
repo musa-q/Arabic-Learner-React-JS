@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import HomePage from './pages/HomePage'
 import VerbsPage from './pages/VerbsPage'
 import WordsFlashcardsPage from './pages/WordsFlashcardsPage';
@@ -11,14 +11,6 @@ import Logger from './components/Logger';
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState('start');
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setCurrentPage('home');
-    }, 500);
-
-    return () => clearTimeout(timeout);
-  }, []);
 
   const navigateToPage = (page) => {
     setCurrentPage(page);

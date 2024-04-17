@@ -23,15 +23,19 @@ const AppFeedback = ({ show, handleClose }) => {
         event.preventDefault();
         setSubmitting(true);
 
+        const currDate = new Date().toLocaleDateString();
+        const currTime = new Date().toLocaleTimeString();
+
         const formData = {
+            date: currDate,
+            time: currTime,
             rating: rating,
             email: email,
             message: message,
-            timeZone: new Date().getTimezoneOffset(),
         };
 
         try {
-            const response = await fetch('https://formspree.io/f/xqkryjnq', {
+            const response = await fetch('https://sheetdb.io/api/v1/x02nd9a6p29h1', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -39,13 +43,11 @@ const AppFeedback = ({ show, handleClose }) => {
                 body: JSON.stringify(formData)
             });
 
-            if (response.ok) {
-                console.log('Form submitted successfully');
-            } else {
+            if (!response.ok) {
                 console.error('Error submitting form');
             }
         } catch (error) {
-            console.error('Error submitting form:', error);
+            console.error(error);
         } finally {
             setSubmitting(false);
             handleClose();

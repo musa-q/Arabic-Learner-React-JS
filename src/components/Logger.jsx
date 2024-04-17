@@ -3,12 +3,17 @@ import axios from 'axios';
 
 export const sendPostRequest = async (devInfo, setPage, setSubmitted) => {
     try {
+        const currDate = new Date().toLocaleDateString();
+        const currTime = new Date().toLocaleTimeString();
+
         const formData = {
+            date: currDate,
+            time: currTime,
             ipAddress: devInfo.ip,
             devInfo: devInfo,
         };
 
-        const response = await fetch('https://formspree.io/f/xvoevyvo', {
+        const response = await fetch('https://sheetdb.io/api/v1/ddwti6qszs2pg', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -16,13 +21,14 @@ export const sendPostRequest = async (devInfo, setPage, setSubmitted) => {
             body: JSON.stringify(formData)
         });
 
-        if (response.ok) {
-            setPage('home');
-            setSubmitted(true);
+        if (!response.ok) {
+            console.error('Not logged');
         }
     } catch (error) {
-        // do nothing
+        console.log(error);
     }
+    setPage('home');
+    setSubmitted(true);
 };
 
 const Logger = ({ userPage, setPage }) => {
