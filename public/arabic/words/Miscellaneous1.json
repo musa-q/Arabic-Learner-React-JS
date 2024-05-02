@@ -2,6 +2,11 @@
     "title": "Miscellaneous 1",
     "translations": [
         {
+            "arabic": "يمكن",
+            "romanized": "yimkin",
+            "english": "Maybe"
+        },
+        {
             "arabic": "مقارنة",
             "romanized": "muqaaraneh",
             "english": "Comparison"

@@ -85,6 +85,14 @@
             "filename": "Time.json"
         },
         {
+            "title": "Days of the Week",
+            "filename": "DaysOfTheWeek.json"
+        },
+        {
+            "title": "Months",
+            "filename": "Months.json"
+        },
+        {
             "title": "Transportation",
             "filename": "Transportation.json"
         },

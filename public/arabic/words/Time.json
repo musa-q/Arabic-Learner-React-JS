@@ -2,59 +2,9 @@
     "title": "Time",
     "translations": [
         {
-            "arabic": "بعد الظهر",
-            "romanized": "Ba'd Al-Dhuhr",
-            "english": "Afternoon"
-        },
-        {
-            "arabic": "عيد ميلاد",
-            "romanized": "Eid Milad",
-            "english": "Birthday"
-        },
-        {
-            "arabic": "يوم",
-            "romanized": "yoom",
-            "english": "Day"
-        },
-        {
-            "arabic": "مسا",
-            "romanized": "masaa",
-            "english": "Evening"
-        },
-        {
-            "arabic": "أجازة",
-            "romanized": "Ajaza",
-            "english": "Holiday"
-        },
-        {
-            "arabic": "ساعة",
-            "romanized": "saa3a",
-            "english": "Hour"
-        },
-        {
-            "arabic": "يناير",
-            "romanized": "Yanayir",
-            "english": "January"
-        },
-        {
-            "arabic": "يوليو",
-            "romanized": "Yulyu",
-            "english": "July"
-        },
-        {
-            "arabic": "يونيو",
-            "romanized": "Yuniu",
-            "english": "June"
-        },
-        {
-            "arabic": "مارس",
-            "romanized": "Maris",
-            "english": "March"
-        },
-        {
-            "arabic": "يمكن",
-            "romanized": "yimkin",
-            "english": "Maybe"
+            "arabic": "ثانية",
+            "romanized": "thaaniyeh",
+            "english": "Second"
         },
         {
             "arabic": "دقيقة",
@@ -62,69 +12,9 @@
             "english": "Minute"
         },
         {
-            "arabic": "االثنين",
-            "romanized": "Al-Ithnayn",
-            "english": "Monday"
-        },
-        {
-            "arabic": "صبح ",
-            "romanized": "SubiH",
-            "english": "Morning"
-        },
-        {
-            "arabic": "الظهر",
-            "romanized": "Al-Dhuhr",
-            "english": "Noon"
-        },
-        {
-            "arabic": "نوفمبر",
-            "romanized": "Novambar",
-            "english": "November"
-        },
-        {
-            "arabic": "أكتوبر",
-            "romanized": "Aktubar",
-            "english": "October"
-        },
-        {
-            "arabic": "السبت",
-            "romanized": "Al-Sabt",
-            "english": "Saturday"
-        },
-        {
-            "arabic": "ثانية",
-            "romanized": "thaaniyeh",
-            "english": "Second"
-        },
-        {
-            "arabic": "سبتمبر",
-            "romanized": "Septambar",
-            "english": "September"
-        },
-        {
-            "arabic": "ربيع",
-            "romanized": "rabii3",
-            "english": "Spring"
-        },
-        {
-            "arabic": "صيف",
-            "romanized": "Sayf",
-            "english": "Summer"
-        },
-        {
-            "arabic": "ألحد",
-            "romanized": "Al-Ahad",
-            "english": "Sunday"
-        },
-        {
-            "arabic": "الخميس",
-            "romanized": "Al-Khamis",
-            "english": "Thursday"
-        },
-        {
-            "arabic": "أحيانا",
-            "romanized": "aHyaanan",
-            "english": "Sometimes"
+            "arabic": "ساعة",
+            "romanized": "saa3a",
+            "english": "Hour"
         },
         {
             "arabic": "اليوم",
@@ -137,19 +27,24 @@
             "english": "Tomorrow"
         },
         {
-            "arabic": "أسبوع ",
+            "arabic": "امبارح",
+            "romanized": "Ambareh",
+            "english": "Yesterday"
+        },
+        {
+            "arabic": "يوم",
+            "romanized": "yoom",
+            "english": "Day"
+        },
+        {
+            "arabic": "أسبوع",
             "romanized": "usbuu3",
             "english": "Week"
         },
         {
-            "arabic": "األربعاء",
-            "romanized": "Al-Arba'a",
-            "english": "Wednesday"
-        },
-        {
-            "arabic": "شتا",
-            "romanized": "shitaa",
-            "english": "Winter"
+            "arabic": "شهر",
+            "romanized": "shahr",
+            "english": "Month"
         },
         {
             "arabic": "سنة",
@@ -157,9 +52,59 @@
             "english": "Year"
         },
         {
-            "arabic": "امبارح",
-            "romanized": "Ambareh",
-            "english": "Yesterday"
+            "arabic": "صبح ",
+            "romanized": "SubiH",
+            "english": "Morning"
+        },
+        {
+            "arabic": "الظهر",
+            "romanized": "Al-Dhuhr",
+            "english": "Noon"
+        },
+        {
+            "arabic": "بعد الظهر",
+            "romanized": "Ba'd Al-Dhuhr",
+            "english": "Afternoon"
+        },
+        {
+            "arabic": "مسا",
+            "romanized": "masaa",
+            "english": "Evening"
+        },
+        {
+            "arabic": "أجازة",
+            "romanized": "Ajaza",
+            "english": "Holiday"
+        },
+        {
+            "arabic": "عيد ميلاد",
+            "romanized": "Eid Milad",
+            "english": "Birthday"
+        },
+        {
+            "arabic": "ربيع",
+            "romanized": "rabii3",
+            "english": "Spring"
+        },
+        {
+            "arabic": "صيف",
+            "romanized": "Sayf",
+            "english": "Summer"
+        },
+        {
+            "arabic": "خريف",
+            "romanized": "Khareef",
+            "english": "Autumn/Fall"
+        },
+        {
+            "arabic": "شتا",
+            "romanized": "shitaa",
+            "english": "Winter"
+        },
+        {
+            "arabic": "أحيانا",
+            "romanized": "aHyaanan",
+            "english": "Sometimes"
         }
     ]
 }

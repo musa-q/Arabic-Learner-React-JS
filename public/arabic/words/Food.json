@@ -27,9 +27,24 @@
             "english": "Coffee"
         },
         {
+            "arabic": "فطور",
+            "romanized": "FuTuur",
+            "english": "Breakfast"
+        },
+        {
+            "arabic": "غدا",
+            "romanized": "Ghada",
+            "english": "Lunch"
+        },
+        {
             "arabic": "عشا",
             "romanized": "3ashaa",
             "english": "Dinner"
+        },
+        {
+            "arabic": "حلى",
+            "romanized": "Hala",
+            "english": "Dessert"
         },
         {
             "arabic": "سمك",
@@ -85,11 +100,6 @@
             "arabic": "حساب",
             "romanized": "Hisaab",
             "english": "Bill"
-        },
-        {
-            "arabic": "ذاق",
-            "romanized": "dhaaq",
-            "english": "To taste"
         },
         {
             "arabic": "ذاق",
