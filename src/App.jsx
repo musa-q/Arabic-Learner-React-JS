@@ -8,6 +8,7 @@ import WordsPracticePage from './pages/WordsPracticePage';
 import './components/Scrollbar.css'
 import './App.css'
 import Logger from './components/Logger';
+import {Helmet} from "react-helmet";
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState('start');
@@ -18,6 +19,21 @@ const App = () => {
 
   return (
     <div className="dark-background light" data-bs-theme="dark">
+      <Helmet>
+        <title>My Arabic Learner</title>
+        <meta name="description" content="Ahlan wa Sahlan! This is your platform to learn and practice Arabic in the Levantine dialect. Explore our tools to improve your vocabulary and grammar!" />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "My Arabic Learner",
+            "url": "https://www.myarabiclearner.com",
+            "description": "Ahlan wa Sahlan! This is your platform to learn and practice Arabic in the Levantine dialect. Explore our tools to improve your vocabulary and grammar!"
+          }
+          `}
+        </script>
+      </Helmet>
       <MyNavBar onNavigate={navigateToPage} />
       <Logger userPage={currentPage} setPage={setCurrentPage} />
       {currentPage === 'home' && <HomePage onNavigate={navigateToPage} />}
