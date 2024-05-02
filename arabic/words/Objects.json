@@ -30,6 +30,11 @@
             "arabic": "فرشاي",
             "romanized": "furshaay",
             "english": "Brush"
+        },
+        {
+            "arabic": "كتاب",
+            "romanized": "kitaab",
+            "english": "Book"
         }
     ]
 }
