@@ -1,3 +1,4 @@
+import arabic_reshaper
 import json
 import csv
 import os
@@ -7,11 +8,11 @@ class ArabicCSVsManager:
         self.path = os.getcwd()
         self.arabicFolderPath = os.path.join("public", "arabic")
 
-        self.wordsListsFileName = os.path.join(self.path, "WordsLists.csv")
-        self.verbsConjugationFileName = os.path.join(self.path, "VerbsConjugation.csv")
+        self.wordsListsFilePath = os.path.join(self.arabicFolderPath, "WordsLists.csv")
+        self.verbsConjugationFilePath = os.path.join(self.arabicFolderPath, "VerbsConjugation.csv")
 
-        self.wordsListsPath = os.path.join(self.arabicFolderPath, "words")
-        self.verbsConjugationPath = os.path.join(self.arabicFolderPath, "verbs", "all_verbs.json")
+        self.wordsListsFolderPath = os.path.join(self.arabicFolderPath, "words")
+        self.verbsConjugationJsonPath = os.path.join(self.arabicFolderPath, "verbs", "all_verbs.json")
 
         self.emptyConjugation = {
             "i": "",
@@ -23,11 +24,66 @@ class ArabicCSVsManager:
             "we": ""
         }
 
+    def wordsListCSVMaker(self):
+        with open(os.path.join(self.wordsListsFolderPath, "index.json"), 'r', encoding='utf-8') as json_file:
+            listFiles = json.load(json_file)["files"]
+
+        with open(self.wordsListsFilePath, 'w', newline='', encoding='utf-8') as csvfile:
+            writer = csv.writer(csvfile)
+
+            for fileObj in listFiles:
+                with open(os.path.join(self.wordsListsFolderPath, fileObj["filename"])) as wordsFile:
+                    word_data = json.load(wordsFile)["translations"]
+
+                    writer.writerow([fileObj["title"], fileObj["filename"]])
+
+                    for word in word_data:
+                        writer.writerow([word["arabic"], word["romanized"], word["english"]])
+
+                    writer.writerow([])
+
+
+    def updateWordsFiles(self):
+        all_files = {}
+
+        with open(self.wordsListsFilePath, 'r', encoding='utf-8') as csvfile:
+            reader = csv.reader(csvfile)
+            for indx, row in enumerate(reader):
+                if len(row) == 2:
+                    filename = row[1]
+                    word_file_data = {
+                        "title": row[0],
+                        "translations": []
+                    }
+                    continue
+
+                elif len(row) == 0:
+                    all_files[filename] = word_file_data
+                    continue
+
+                else:
+                    word_file_data["translations"].append(
+                        {
+                            "arabic": row[0],
+                            "romanized": row[1],
+                            "english": row[2]
+                        }
+                    )
+        return all_files
+
+
+    def updateAllWordsFile(self):
+        all_file_data = self.updateWordsFiles()
+        for filename in all_file_data:
+            with open(os.path.join(self.wordsListsFolderPath, filename), 'w', newline='', encoding='utf-8') as f:
+                f.write(json.dumps(all_file_data[filename], ensure_ascii = False))
+
+
     def verbsListCSVMaker(self):
-        with open(self.verbsConjugationPath, 'r', encoding='utf-8') as json_file:
+        with open(self.verbsConjugationJsonPath, 'r', encoding='utf-8') as json_file:
             data = json.load(json_file)
 
-        with open(os.path.join(self.arabicFolderPath, self.verbsConjugationFileName), 'w', newline='', encoding='utf-8') as csvfile:
+        with open(self.verbsConjugationFilePath, 'w', newline='', encoding='utf-8') as csvfile:
             writer = csv.writer(csvfile)
 
             for verb_data in data:
@@ -43,48 +99,58 @@ class ArabicCSVsManager:
                     writer.writerow([past, present, future, pronoun])
 
                 writer.writerow([])
-                writer.writerow([])
 
-    def csvToJson(self, csv_path):
+    def csvToJson(self):
+        pronoun_mapping = {
+            3: "i",
+            4: "you_m",
+            5: "you_f",
+            6: "he",
+            7: "she",
+            8: "they",
+            9: "we"
+        }
         data = []
-        with open(csv_path, 'r', encoding='utf-8') as csvfile:
+
+        with open(self.verbsConjugationFilePath, 'r', encoding='utf-8') as csvfile:
             reader = csv.reader(csvfile)
-            for row in reader:
+            for indx, row in enumerate(reader):
+                csvLine = indx + 1
+
+                if (csvLine - 1) % 11 == 0:
+                    verb_data = {
+                        "english": row[0],
+                        "arabic": arabic_reshaper.reshape(row[1]),
+                        "conjugations": {
+                            "present": {},
+                            "past": {},
+                            "future": {}
+                            }
+                        }
+
+                if (csvLine - 2) % 11 == 0: # Row heading for tenses
+                    continue
+
+                for map_index, pronoun in pronoun_mapping.items():
+                    if (csvLine - map_index) % 11 == 0:
+                        verb_data["conjugations"]["past"][pronoun] = arabic_reshaper.reshape(row[0])
+                        verb_data["conjugations"]["present"][pronoun] = arabic_reshaper.reshape(row[1])
+                        verb_data["conjugations"]["future"][pronoun] = arabic_reshaper.reshape(row[2])
+
                 if len(row) == 0:
-                    continue
-                if row[0] == "Past":
-                    continue
-                if len(row) == 1:  # New verb entry
-                    verb_data = {"english": row[0], "arabic": row[1], "conjugations": {"present": {}, "past": {}, "future": {}}}
                     data.append(verb_data)
-                else:
-                    verb_data["conjugations"]["past"]["i"] = row[0]
-                    verb_data["conjugations"]["present"]["i"] = row[1]
-                    verb_data["conjugations"]["future"]["i"] = row[2]
-                    verb_data["conjugations"]["past"]["you_m"] = row[3]
-                    verb_data["conjugations"]["present"]["you_m"] = row[4]
-                    verb_data["conjugations"]["future"]["you_m"] = row[5]
-                    verb_data["conjugations"]["past"]["you_f"] = row[6]
-                    verb_data["conjugations"]["present"]["you_f"] = row[7]
-                    verb_data["conjugations"]["future"]["you_f"] = row[8]
-                    verb_data["conjugations"]["past"]["he"] = row[9]
-                    verb_data["conjugations"]["present"]["he"] = row[10]
-                    verb_data["conjugations"]["future"]["he"] = row[11]
-                    verb_data["conjugations"]["past"]["she"] = row[12]
-                    verb_data["conjugations"]["present"]["she"] = row[13]
-                    verb_data["conjugations"]["future"]["she"] = row[14]
-                    verb_data["conjugations"]["past"]["they"] = row[15]
-                    verb_data["conjugations"]["present"]["they"] = row[16]
-                    verb_data["conjugations"]["future"]["they"] = row[17]
-                    verb_data["conjugations"]["past"]["we"] = row[18]
-                    verb_data["conjugations"]["present"]["we"] = row[19]
-                    verb_data["conjugations"]["future"]["we"] = row[20]
+                    continue
 
         return data
 
-manager = ArabicCSVsManager()
-json_data = manager.csvToJson("VerbsConjugation.csv")
-print(json.dumps(json_data, indent=4, ensure_ascii=False))
+    def updateVerbsConjugationFile(self):
+        json_data = self.csvToJson()
+        with open(self.verbsConjugationJsonPath, 'w', newline='', encoding='utf-8') as f:
+            f.write(json.dumps(json_data, ensure_ascii = False))
+
 
 # manager = ArabicCSVsManager()
+# manager.wordsListCSVMaker()
+# manager.updateAllWordsFile()
 # manager.verbsListCSVMaker()
+# manager.updateVerbsConjugationFile()
