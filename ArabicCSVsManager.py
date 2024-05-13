@@ -1,6 +1,7 @@
 import arabic_reshaper
 import json
 import csv
+import sys
 import os
 
 class ArabicCSVsManager:
@@ -149,8 +150,24 @@ class ArabicCSVsManager:
             f.write(json.dumps(json_data, ensure_ascii = False))
 
 
-# manager = ArabicCSVsManager()
-# manager.wordsListCSVMaker()
-# manager.updateAllWordsFile()
-# manager.verbsListCSVMaker()
-# manager.updateVerbsConjugationFile()
+if __name__ == "__main__":
+    action_map = {
+        "wordscsv": ArabicCSVsManager().wordsListCSVMaker,
+        "updatewords": ArabicCSVsManager().updateAllWordsFile,
+        "verbscsv": ArabicCSVsManager().verbsListCSVMaker,
+        "updateverbs": ArabicCSVsManager().updateVerbsConjugationFile
+    }
+
+    if len(sys.argv) != 2:
+        print("Usage: python script_name.py <action>")
+        print("Available actions:")
+        print(" - wordscsv")
+        print(" - updatewords")
+        print(" - verbscsv")
+        print(" - updateverbs")
+    else:
+        action = sys.argv[1]
+        if action not in action_map:
+            print("Invalid action. Please choose one of the available actions.")
+        else:
+            action_map[action]()
