@@ -50,16 +50,16 @@ class ArabicCSVsManager:
         with open(self.wordsListsFilePath, 'r', encoding='utf-8') as csvfile:
             reader = csv.reader(csvfile)
             for indx, row in enumerate(reader):
-                if len(row) == 2:
+                if len(row) == 0 or len(row[0]) == 0:
+                    all_files[filename] = word_file_data
+                    continue
+
+                elif len(row) == 2 or (len(row) == 3 and len(row[2]) == 0):
                     filename = row[1]
                     word_file_data = {
                         "title": row[0],
                         "translations": []
                     }
-                    continue
-
-                elif len(row) == 0:
-                    all_files[filename] = word_file_data
                     continue
 
                 else:
@@ -78,6 +78,13 @@ class ArabicCSVsManager:
         for filename in all_file_data:
             with open(os.path.join(self.wordsListsFolderPath, filename), 'w', newline='', encoding='utf-8') as f:
                 f.write(json.dumps(all_file_data[filename], ensure_ascii = False))
+
+        index_data = {"files": []}
+        for filename, word_data in all_file_data.items():
+            index_data["files"].append({"title": word_data["title"], "filename": filename})
+
+        with open(os.path.join(self.wordsListsFolderPath, "index.json"), 'w', encoding='utf-8') as index_file:
+            json.dump(index_data, index_file, ensure_ascii=False)
 
 
     def verbsListCSVMaker(self):
