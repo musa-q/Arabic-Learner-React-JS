@@ -1,3 +1,26 @@
+Common Phrases,CommonPhrases.json,
+الجاي,el-jaay,The next / upcoming
+ما بعرف,maa ba'aref,I don't know
+يمكن,yimkin,Maybe
+شو رأيك,shoo ra'ayak,What's your opinion?
+شو هاكيت,shoo hakayt,What did you say?
+ليش هيك,leesh heik,Why is it like that?
+بأفكر,baafakker,I'm thinking / considering
+شو بتحين,shoo bethyeen,What do you want?
+خليني,khaleeni,Let me ...
+ليش عملت هيك,leesh amalt heik,Why did you do it like that
+عشاني,ashaani,For me / because of me
+لا تحتم,laa thahtam,Don't care
+كل هواء,kol hawa,"Eat air (slang for ""get lost"")"
+ولا أشي,wala ishi,Nothing
+أيش في,aish fee,What's in it? / what's going on?
+تعال معي,ta'aal ma'ai,Come with me
+روح من هون,rooh min hoon,Go from here
+تحكيش معي,taHkeesh ma'ai,Don't talk to me
+اصقت,oskut,shut up
+انسرف,insarif,Go away / go from here
+سد نعاك,sidd ni'ak,shut your mouth
+,,
 Personal Pronouns,PersonalPronouns.json,
 أنا,ana,I
 إنتَ,inta,You (M)
@@ -19,49 +42,11 @@ Quantifiers,Quantifiers.json,
 عدة,3idda,Several
 كتير,kteer,Many
 ,,
-Everyday Verbs,EverydayVerbs.json,
-مشي,mshi,To walk
-حكي,Hki,To talk
-أكل,akul,To eat
-شرب,shrab,To drink
-نام,naam,To sleep
-جري,jri,To run
-قرأ,qra,To read
-كتب,ktub,To write
-استمع,stami3,To listen
-طبخ,Tbakh,To cook
-نظف,nZif,To clean
-لعب,l3ab,To play
-عمل,3mal,To work
-درس,drus,To study
-,,
-Action Verbs,ActionVerbs.json,
-قفز,qafaza,To jump
-رقص,raqasa,To dance
-سبح,sabaḥa,To swim
-غنى,ghanā,To sing
-تحدث,taḥaddath,To speak
-ضحك,ḍaḥika,To laugh
-عانق,ʿānaqa,To hug
-طير,ṭayyara,To fly
-مشى,mashā,To walk
-دفع,dafaʿ,To push
-سحب,saḥaba,To pull
-جرى,jarā,To run
-تخطى,takhṭa,To skip
-صرخ,ṣarakh,To shout
-درس,darasa,To study
-حكى,ḥakā,To talk
-بكى,bakā,To cry
-صنع,ṣanaʿa,To make
-علم,ʿalima,To teach
-تعلم,taʿallama,To learn
-,,
 Indefinite Pronouns,IndefinitePronouns.json,
 كل شي,kull shi,Everything
 ولا شي,wala shi,Nothing
 شي,shi,Something
-اي شي,ayya shi ,Anything
+اي شي,ayya shi,Anything
 كل حدا,kull waHad,Everyone
 واحد,waHd,Someone (M)
 وحدة,wHda,Someone (F)
@@ -95,14 +80,14 @@ Question Words,QuestionWords.json,
 ,,
 Greetings,Greetings.json,
 مرحبا,marHaba,Hello
-كيف حالك ,keef Haalak? / keef Haalik?,How are you?
+كيف حالك,keef Haalak? / keef Haalik?,How are you?
 مع السلامة,ma3 al-salaama,Goodbye (remaining person)
 خاطرك,khaTrak,Goodbye (leaving person)
 صباح الخير,SabaH el-kheer,Good morning
 صباح النور,SabaH el-noor,Good morning (reply)
 مساء الخير,masaa' el-kheer,Good evening
 مساء النور,masaa' el-noor,Good evening (reply)
-تصبح على خير,tiSbaH 3ala kheer ,Good night
+تصبح على خير,tiSbaH 3ala kheer,Good night
 أهلا وسهلا,ahlan wa sahlan,Welcome
 ,,
 Polite Expressions,PoliteExpressions.json,
@@ -446,3 +431,41 @@ Directions,Directions.json,
 عبر,abur,Across
 قريب,qareeb,Near
 بعيد,ba3eed,Far
+,,
+Everyday Verbs,EverydayVerbs.json,
+مشي,mshi,To walk
+حكي,Hki,To talk
+أكل,akul,To eat
+شرب,shrab,To drink
+نام,naam,To sleep
+جري,jri,To run
+قرأ,qra,To read
+كتب,ktub,To write
+استمع,stami3,To listen
+طبخ,Tbakh,To cook
+نظف,nZif,To clean
+لعب,l3ab,To play
+عمل,3mal,To work
+درس,drus,To study
+,,
+Action Verbs,ActionVerbs.json,
+قفز,qafaza,To jump
+رقص,raqasa,To dance
+سبح,sabaḥa,To swim
+غنى,ghanā,To sing
+تحدث,taḥaddath,To speak
+ضحك,ḍaḥika,To laugh
+عانق,ʿānaqa,To hug
+طير,ṭayyara,To fly
+مشى,mashā,To walk
+دفع,dafaʿ,To push
+سحب,saḥaba,To pull
+جرى,jarā,To run
+تخطى,takhṭa,To skip
+صرخ,ṣarakh,To shout
+درس,darasa,To study
+حكى,ḥakā,To talk
+بكى,bakā,To cry
+صنع,ṣanaʿa,To make
+علم,ʿalima,To teach
+تعلم,taʿallama,To learn
