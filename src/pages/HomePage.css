@@ -33,6 +33,10 @@
 }
 
 @media (max-width: 768px) {
+    .homepage-logo {
+        max-width: 100%;
+        max-height: 300px;
+    }
 
     .button-container-left,
     .button-container-right {
