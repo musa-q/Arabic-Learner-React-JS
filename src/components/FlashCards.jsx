@@ -8,11 +8,17 @@ import ToggleButton from 'react-bootstrap/ToggleButton';
 
 const FlashCards = ({ flashcards }) => {
     const [flippedCards, setFlippedCards] = useState(Array(flashcards.length).fill(false));
-    const [radioValue, setRadioValue] = useState('1');
+    const [langRadioValue, setLangRadioValue] = useState('1');
+    const [translitRadioValue, setTranslitRadioValue] = useState('true');
 
-    const radios = [
+    const langRadios = [
         { name: 'Arabic', value: '1' },
         { name: 'English', value: '2' },
+    ];
+
+    const translitRadios = [
+        { name: 'On', value: 'true' },
+        { name: 'Off', value: 'false' },
     ];
 
     const flipCard = (index) => {
@@ -23,8 +29,12 @@ const FlashCards = ({ flashcards }) => {
         });
     };
 
+    const changeTransliteration = (val) => {
+        setTranslitRadioValue(val);
+    };
+
     const changeLanguage = (val) => {
-        setRadioValue(val);
+        setLangRadioValue(val);
 
         let newFlipped;
         if (val === '1') {
@@ -36,39 +46,84 @@ const FlashCards = ({ flashcards }) => {
         setFlippedCards(newFlipped);
     };
 
+    const AllToggleButtons = ({ langRadios, translitRadios, langRadioValue, translitRadioValue, changeLanguage, changeTransliteration }) => (
+        <>
+            <div className='list-toggle-button'>
+                <div className='full-toggle-button'>
+                    <span>Language:</span>
+                    <ButtonGroup>
+                        {langRadios.map((langRadio, idx) => (
+                            <ToggleButton
+                                key={idx}
+                                id={`lang-radio-${idx}`}
+                                type="radio"
+                                variant={idx % 2 ? 'outline-danger' : 'outline-success'}
+                                name="lang-radio"
+                                value={langRadio.value}
+                                checked={langRadioValue === langRadio.value}
+                                onChange={(e) => changeLanguage(e.currentTarget.value)}
+                            >
+                                {langRadio.name}
+                            </ToggleButton>
+                        ))}
+                    </ButtonGroup>
+                </div>
+                <div className='full-toggle-button'>
+                    <span>Transliteration:</span>
+                    <ButtonGroup>
+                        {translitRadios.map((translitRadio, translitIdx) => (
+                            <ToggleButton
+                                key={translitIdx}
+                                id={`transliteration-radio-${translitIdx}`}
+                                type="radio"
+                                variant={translitRadio.value === 'true' ? 'outline-success' : 'outline-danger'}
+                                name="transliteration-radio"
+                                value={translitRadio.value}
+                                checked={translitRadioValue === translitRadio.value}
+                                onChange={(e) => changeTransliteration(e.currentTarget.value)}
+                            >
+                                {translitRadio.name}
+                            </ToggleButton>
+                        ))}
+                    </ButtonGroup>
+                </div>
+            </div>
+        </>
+    );
+
+
     return (
         <>
-            <br />
-            <ButtonGroup>
-                {radios.map((radio, idx) => (
-                    <ToggleButton
-                        key={idx}
-                        id={`radio-${idx}`}
-                        type="radio"
-                        variant={idx % 2 ? 'outline-success' : 'outline-danger'}
-                        name="radio"
-                        value={radio.value}
-                        checked={radioValue === radio.value}
-                        onChange={(e) => changeLanguage(e.currentTarget.value)}
-                    >
-                        {radio.name}
-                    </ToggleButton>
-                ))}
-            </ButtonGroup>
+            <AllToggleButtons
+                langRadios={langRadios}
+                translitRadios={translitRadios}
+                langRadioValue={langRadioValue}
+                translitRadioValue={translitRadioValue}
+                changeLanguage={changeLanguage}
+                changeTransliteration={changeTransliteration}
+            />
             <Row xs={1} md={2} className="g-4">
                 {flashcards.map((flashcard, index) => (
                     <Col key={index}>
                         <div
-                            className={`flashcard ${flippedCards[index] ? 'flipped' : ''}`}
+                            className={`flashcard${flippedCards[index] ? ' flipped' : ''}`}
                             onClick={() => flipCard(index)}
                         >
                             <Card>
                                 <div className="card-front">
-                                    <Card.Title>{flashcard.arabic}</Card.Title>
+                                    {translitRadioValue === 'true' ? (
+                                        <>
+                                            <Card.Title className='front-card-title'>{flashcard.arabic}</Card.Title>
+                                            <Card.Text>{flashcard.romanized}</Card.Text>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <Card.Title className='front-card-title large'>{flashcard.arabic}</Card.Title>
+                                        </>
+                                    )}
                                 </div>
                                 <div className="card-back">
-                                    <Card.Title>{flashcard.english}</Card.Title>
-                                    <Card.Text>{flashcard.romanized}</Card.Text>
+                                    <Card.Title className='back-card-title'>{flashcard.english}</Card.Title>
                                 </div>
                             </Card>
                         </div>
