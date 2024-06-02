@@ -17,9 +17,10 @@ Common Phrases,CommonPhrases.json,
 تعال معي,ta'aal ma'ai,Come with me
 روح من هون,rooh min hoon,Go from here
 تحكيش معي,taHkeesh ma'ai,Don't talk to me
-اصقت,oskut,shut up
-انسرف,insarif,Go away / go from here
-سد نعاك,sidd ni'ak,shut your mouth
+من فضلك,min faḍlak,Please
+أريد,ureed,I want
+لا أفهم,la afham,I don't understand
+كيف صحتك,keef ṣiHtak,How's your health?
 ,,
 Personal Pronouns,PersonalPronouns.json,
 أنا,ana,I
@@ -468,4 +469,3 @@ Action Verbs,ActionVerbs.json,
 بكى,bakā,To cry
 صنع,ṣanaʿa,To make
 علم,ʿalima,To teach
-تعلم,taʿallama,To learn
