@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from '/logo_main.png';
+import logo from '/logo_main.svg';
 import './NavBar.css';
 
 const MyNavBar = ({ onNavigate }) => {

@@ -5,7 +5,7 @@ import ToastContainer from 'react-bootstrap/ToastContainer';
 import './HomePage.css';
 import '../fonts.css';
 import AppFeedback from '../components/AppFeedback';
-import logo from '/logo_main.png';
+import logo from '/logo_main.svg';
 
 const HomePage = ({ onNavigate }) => {
     const [showFeedbackToast, setShowFeedbackToast] = useState(false);
