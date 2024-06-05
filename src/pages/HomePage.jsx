@@ -31,15 +31,15 @@ const HomePage = ({ onNavigate }) => {
             <img src={logo} alt="Logo" className="homepage-logo" />
             <div className="button-container-left">
                 <Button variant="outline-light" size="lg" onClick={() => onNavigate('wordsflashcard')}>
-                    Words Flashcards
+                    Flashcards
                 </Button>
                 <Button variant="outline-light" size="lg" onClick={() => onNavigate('wordspractice')}>
-                    Words Practice
+                    Vocab Quiz
                 </Button>
             </div>
             <div className="button-container-right">
                 <Button variant="outline-light" size="lg" onClick={() => onNavigate('verbs')}>
-                    Verbs Practice
+                    Conjugation Quiz
                 </Button>
                 <Button variant="outline-light" size="lg" onClick={handleShowModal}>
                     Feedback

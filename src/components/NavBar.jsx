@@ -18,9 +18,9 @@ const MyNavBar = ({ onNavigate }) => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link onClick={() => onNavigate('home')}>Home</Nav.Link>
-                        <Nav.Link onClick={() => onNavigate('wordsflashcard')}>Words flashcards</Nav.Link>
-                        <Nav.Link onClick={() => onNavigate('wordspractice')}>Words practice</Nav.Link>
-                        <Nav.Link onClick={() => onNavigate('verbs')}>Verbs practice</Nav.Link>
+                        <Nav.Link onClick={() => onNavigate('wordsflashcard')}>Flashcards</Nav.Link>
+                        <Nav.Link onClick={() => onNavigate('wordspractice')}>Vocab Quiz</Nav.Link>
+                        <Nav.Link onClick={() => onNavigate('verbs')}>Conjugation Quiz</Nav.Link>
                     </Nav>
                     <div className="d-flex align-items-center">
                         <span className="me-3">Follow the developer:</span>
