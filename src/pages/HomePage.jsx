@@ -10,6 +10,7 @@ import logo from '/logo_main.svg';
 const HomePage = ({ onNavigate }) => {
     const [showFeedbackToast, setShowFeedbackToast] = useState(false);
     const [showFeedbackModal, setShowFeedbackModal] = useState(false);
+    const [imageLoaded, setImageLoaded] = useState(false);
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -26,9 +27,27 @@ const HomePage = ({ onNavigate }) => {
     };
     const handleCloseModal = () => setShowFeedbackModal(false);
 
+    const handleImageLoad = () => {
+        setImageLoaded(true);
+    };
+
     return (
         <div className="home-page-container">
-            <img src={logo} alt="Logo" className="homepage-logo" />
+            {!imageLoaded &&
+                <div className="homepage-logo homepage-logo-placeholder gold">
+                    <h1>My Arabic Learner</h1>
+                    <h2>متعلمو العربية</h2>
+                </div>}
+
+            <img
+                src={logo}
+                alt="Logo"
+                className="homepage-logo"
+                loading="lazy"
+                onLoad={handleImageLoad}
+                style={{ display: imageLoaded ? 'block' : 'none' }}
+            />
+
             <div className="button-container-left">
                 <Button variant="outline-light" size="lg" onClick={() => onNavigate('wordsflashcard')}>
                     Flashcards

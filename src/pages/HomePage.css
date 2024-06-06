@@ -18,6 +18,23 @@
     margin-bottom: 20px;
 }
 
+.homepage-logo-placeholder {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #343a3f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.homepage-logo-placeholder h1,
+.homepage-logo-placeholder h2 {
+    margin: 0;
+}
+
 .button-container-left,
 .button-container-right {
     display: flex;
