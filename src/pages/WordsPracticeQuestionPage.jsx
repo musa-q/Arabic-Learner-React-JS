@@ -50,8 +50,28 @@ const WordsPracticeQuestionPage = ({ wordsList }) => {
         setCurrentQuestion(word);
     }
 
+    const removeDiacritics = (word) => {
+        return word.replace(/[\u0617-\u061A\u064B-\u0652\u0670]/g, '');
+    }
+
+    const normaliseText = (word) => {
+        word = removeDiacritics(word);
+        word = word.replace(/(آ|إ|أ)/g, 'ا');
+        word = word.replace(/(ة)/g, 'ه');
+        word = word.replace(/(ئ|ؤ)/g, 'ء');
+        word = word.replace(/(ى)/g, 'ي');
+        return word;
+    }
+
+    const processText = (word) => {
+        return word.trim().toLowerCase();
+    }
+
     const checkAnswer = () => {
-        if (currentAnswer.trim().toLowerCase() === correctAnswer.trim().toLowerCase()) {
+        var guess = processText(currentAnswer);
+        var answer = processText(correctAnswer);
+
+        if (guess === answer || guess === removeDiacritics(answer) || guess === normaliseText(answer)) {
             setResultMessage("Correct!");
         } else {
             setResultMessage("Incorrect. Try again.");
