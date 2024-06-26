@@ -1,6 +1,29 @@
 # Arabic CSV files
 public/arabic/*.csv
 
+# Virtual environment
+venv/
+
+# SQLite database file
+*.sqlite
+
+# Environment variables file
+.env
+
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# IDE or editor specific files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Flask migrations
+server/migrations/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
