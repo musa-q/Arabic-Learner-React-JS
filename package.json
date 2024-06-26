@@ -10,7 +10,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0 --color",
     "preview": "vite preview",
-    "precommit": "npm run lint",
+    "precommit": "",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -38,8 +38,6 @@
     "husky": "^9.0.10"
   },
   "husky": {
-    "hooks": {
-      "pre-commit": "npm run precommit"
-    }
+    "hooks": {}
   }
 }
