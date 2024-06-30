@@ -1,1 +1,28 @@
-from server.models import db
+from .models import db, User, Verb, VerbConjugation, VocabWord, VocabCategory
+
+class Utils:
+    def __init__(self) -> None:
+        self.list_tenses = ['past', 'present', 'future']
+        self.list_pronouns = ["i", "you_m", "you_f", "he", "she", "they", "we"]
+
+    def get_verb_id_from_english(self, verb_input: str):
+        verb = Verb.query.filter((Verb.english_verb == verb_input) | (Verb.arabic_verb == verb_input)).first()
+        if verb:
+            return verb.id
+        return None
+
+    def get_category_id_from_category_name(self, category_input: str):
+        category = VocabCategory.query.filter(VocabCategory.category_name == category_input).first()
+        if category:
+            return category.id
+        return None
+
+    def check_is_tense(self, tense_input: str) -> bool:
+        if tense_input in self.list_tenses:
+            return True
+        return False
+
+    def check_is_pronoun(self, pronoun_input: str) -> bool:
+        if pronoun_input in self.list_pronouns:
+            return True
+        return False

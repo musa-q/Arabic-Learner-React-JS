@@ -1,5 +1,6 @@
 # Arabic CSV files
 public/arabic/*.csv
+*.db
 
 # Virtual environment
 venv/
