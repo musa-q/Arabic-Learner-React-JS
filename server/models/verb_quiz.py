@@ -11,6 +11,8 @@ class VerbConjugationQuiz(db.Model):
     user = db.relationship('User', backref=db.backref('verb_conjugation_quizzes', lazy=True))
     questions = db.relationship('VerbConjugationQuizQuestion', backref='quiz', lazy=True)
 
+    __table_args__ = (db.UniqueConstraint('user_id', 'date_taken', name='uq_user_date'),)
+
     def __repr__(self):
         return f'<VerbConjugationQuiz {self.id} - User {self.user_id}>'
 
@@ -19,6 +21,7 @@ class VerbConjugationQuizQuestion(db.Model):
     quiz_id = db.Column(db.Integer, db.ForeignKey('verb_conjugation_quiz.id'), nullable=False)
     verb_conjugation_id = db.Column(db.Integer, db.ForeignKey('verb_conjugation.id'), nullable=False)
     is_correct = db.Column(db.Boolean, nullable=False)
+    is_answered = db.Column(db.Boolean, nullable=False)
 
     verb_conjugation = db.relationship('VerbConjugation', backref=db.backref('quiz_questions', lazy=True))
 

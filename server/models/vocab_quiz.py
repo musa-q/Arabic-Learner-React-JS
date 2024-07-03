@@ -13,6 +13,8 @@ class VocabQuiz(db.Model):
     category = db.relationship('VocabCategory', backref=db.backref('quizzes', lazy=True))
     questions = db.relationship('VocabQuizQuestion', backref='quiz', lazy=True)
 
+    __table_args__ = (db.UniqueConstraint('user_id', 'date_taken', name='uq_user_date'),)
+
     def __repr__(self):
         return f'<VocabQuiz {self.id} - User {self.user_id} - Category {self.category_id}>'
 
@@ -21,6 +23,7 @@ class VocabQuizQuestion(db.Model):
     quiz_id = db.Column(db.Integer, db.ForeignKey('vocab_quiz.id'), nullable=False)
     word_id = db.Column(db.Integer, db.ForeignKey('vocab_word.id'), nullable=False)
     is_correct = db.Column(db.Boolean, nullable=False)
+    is_answered = db.Column(db.Boolean, nullable=False)
 
     word = db.relationship('VocabWord', backref=db.backref('quiz_questions', lazy=True))
 
