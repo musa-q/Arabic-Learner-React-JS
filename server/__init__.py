@@ -14,11 +14,12 @@ def create_app():
     db.init_app(app)
     migrate = Migrate(app, db)
 
-    from .views import home_bp, testing_bp, users_bp, quiz_bp
+    from .views import home_bp, testing_bp, users_bp, quiz_bp, flashcards_bp
     app.register_blueprint(home_bp)
     app.register_blueprint(testing_bp, url_prefix='/testing')
     app.register_blueprint(users_bp, url_prefix='/user')
     app.register_blueprint(quiz_bp, url_prefix='/quiz')
+    app.register_blueprint(flashcards_bp, url_prefix='/flashcards')
 
     with app.app_context():
         db.create_all()
