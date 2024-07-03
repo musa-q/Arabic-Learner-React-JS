@@ -43,6 +43,8 @@ class QuizUtils:
 
         if quiz_type == 'VocabQuiz':
             next_question_obj = VocabQuizQuestion.query.filter_by(quiz_id=current_quiz.id, is_answered=False).first()
+            if not next_question_obj:
+                return None, None
             next_question = {
                 'english': next_question_obj.word.english,
                 'question_id': next_question_obj.id,
@@ -51,6 +53,8 @@ class QuizUtils:
             }
         elif quiz_type == 'VerbConjugationQuiz':
             next_question_obj = VerbConjugationQuizQuestion.query.filter_by(quiz_id=current_quiz.id, is_answered=False).first()
+            if not next_question_obj:
+                return None, None
             next_question = {
                 'tense': next_question_obj.verb_conjugation.tense,
                 'pronoun': next_question_obj.verb_conjugation.pronoun,
@@ -63,16 +67,23 @@ class QuizUtils:
         return next_question_obj, next_question
 
     def answer_current_quiz_question(self, quiz_type: str, user_id: int, user_answer: str):
+        current_quiz = self.get_current_quiz(quiz_type, user_id)
+        if not current_quiz:
+            return False
         current_question_obj, _ = self.get_next_question(quiz_type, user_id)
+        if not current_question_obj:
+            return None
 
         try:
             current_question_obj.is_answered =  True
             if quiz_type == 'VocabQuiz':
                 if (user_answer == current_question_obj.word.arabic):
                     current_question_obj.is_correct = True
+                    current_quiz.score += 1
             elif quiz_type == 'VerbConjugationQuiz':
                 if (user_answer == current_question_obj.verb_conjugation.conjugation):
                     current_question_obj.is_correct = True
+                    current_quiz.score += 1
 
             db.session.commit()
             return True

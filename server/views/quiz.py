@@ -179,22 +179,63 @@ def view_verb_conjugation_quiz(quiz_id):
 
 @quiz_bp.route('/users/<int:user_id>/current-vocab-quizzes', methods=['GET'])
 def view_current_user_vocab_quizzes(user_id):
-    quiz = quiz_utils.get_current_quiz('VocabQuiz', user_id)
-    quizzes_list = {
-        'id': quiz.id,
-        'category_id': quiz.category_id,
-        'category_name': quiz.category.category_name,
-        'score': quiz.score,
-        'total_questions': quiz.total_questions,
-        'date_taken': quiz.date_taken.isoformat()
-    }
-    return jsonify(quizzes_list), 200
+    data = request.get_json()
+    quiz_type = data.get('quiz_type', 'VocabQuiz')
+    quiz = quiz_utils.get_current_quiz(quiz_type, user_id)
+    if quiz_type == 'VocabQuiz':
+        questions = VocabQuizQuestion.query.filter_by(quiz_id=quiz.id).all()
+        questions_list = [{
+            'id': question.id,
+            'word_id': question.word_id,
+            'english': question.word.english,
+            'arabic': question.word.arabic,
+            'is_correct': question.is_correct,
+            'is_answered': question.is_answered
+        } for question in questions]
+
+        quiz_data = {
+            'id': quiz.id,
+            'user_id': quiz.user_id,
+            'category_id': quiz.category_id,
+            'category_name': quiz.category.category_name,
+            'score': quiz.score,
+            'total_questions': quiz.total_questions,
+            'date_taken': quiz.date_taken.isoformat(),
+            'questions': questions_list
+        }
+    elif quiz_type == 'VerbConjugationQuiz':
+        questions = VerbConjugationQuizQuestion.query.filter_by(quiz_id=quiz.id).all()
+        questions_list = [{
+            'id': question.id,
+            'verb_conjugation_id': question.verb_conjugation_id,
+            'verb': question.verb_conjugation.verb.english_verb,
+            'tense': question.verb_conjugation.tense,
+            'pronoun': question.verb_conjugation.pronoun,
+            'conjugation': question.verb_conjugation.conjugation,
+            'is_correct': question.is_correct,
+            'is_answered': question.is_answered
+        } for question in questions]
+
+        quiz_data = {
+            'id': quiz.id,
+            'user_id': quiz.user_id,
+            'score': quiz.score,
+            'total_questions': quiz.total_questions,
+            'date_taken': quiz.date_taken.isoformat(),
+            'questions': questions_list
+        }
+    else:
+        return jsonify({'error': 'quiz_type is unset'}), 400
+
+    return jsonify(quiz_data), 200
 
 @quiz_bp.route('/users/<int:user_id>/get-next-question', methods=['GET'])
-def get_next_question(user_id):
+def get_quiz_next_question(user_id):
     data = request.get_json()
     quiz_type = data.get('quiz_type', 'VocabQuiz')
     _, next_question = quiz_utils.get_next_question(quiz_type, user_id)
+    if not next_question:
+        return jsonify({'error': 'All questions answered'}), 500
     return jsonify(next_question), 200
 
 @quiz_bp.route('/users/<int:user_id>/send-answer', methods=['POST'])
@@ -204,9 +245,14 @@ def send_answer_from_client(user_id):
     user_answer = data.get('user_answer')
 
     updated_answer = quiz_utils.answer_current_quiz_question(quiz_type, user_id, user_answer)
-    _, next_question = quiz_utils.get_next_question(quiz_type, user_id)
-
-    if not updated_answer:
+    print(updated_answer)
+    if updated_answer == False:
         return jsonify({'error': 'Unable to send answer'}), 500
+    if updated_answer == None:
+        return jsonify({'error': 'All questions answered'}), 500
+
+    _, next_question = quiz_utils.get_next_question(quiz_type, user_id)
+    if not next_question:
+        return jsonify({'error': 'All questions answered'}), 500
 
     return jsonify(next_question), 200

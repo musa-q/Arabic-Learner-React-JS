@@ -1,5 +1,5 @@
 from .utils import Utils
-from .quiz import QuizUtils
+from .quiz_utils import QuizUtils
 
 utils = Utils()
 quiz_utils = QuizUtils()
