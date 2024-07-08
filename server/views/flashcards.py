@@ -4,8 +4,8 @@ from ..utils import utils
 
 flashcards_bp = Blueprint('flashcards', __name__)
 
-@flashcards_bp.route('/view-category-names', methods=['GET'])
-def view_category_names():
+@flashcards_bp.route('/get-all-category-names', methods=['GET'])
+def get_all_category_names():
     categories = VocabCategory.query.all()
     category_list = [{'id': category.id, 'category_name': category.category_name} for category in categories]
     return jsonify(category_list), 200
