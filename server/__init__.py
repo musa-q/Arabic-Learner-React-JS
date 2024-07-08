@@ -2,17 +2,19 @@ import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+from .config import Config
+from .ip_restriction import setup_cors_and_ip_restriction
 
 db = SQLAlchemy()
 
 def create_app():
     app = Flask(__name__)
-    basedir = os.path.abspath(os.path.dirname(__file__))
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'app.db')
-    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    app.config.from_object(Config)
 
     db.init_app(app)
     migrate = Migrate(app, db)
+
+    setup_cors_and_ip_restriction(app)
 
     from .views import home_bp, testing_bp, users_bp, quiz_bp, flashcards_bp, dev_bp
     app.register_blueprint(home_bp)
