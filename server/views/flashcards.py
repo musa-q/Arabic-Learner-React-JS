@@ -10,7 +10,7 @@ def get_all_category_names():
     category_list = [{'id': category.id, 'category_name': category.category_name} for category in categories]
     return jsonify(category_list), 200
 
-@flashcards_bp.route('/get-category-flashcards', methods=['GET'])
+@flashcards_bp.route('/get-category-flashcards', methods=['POST'])
 def get_category_flashcards():
     data = request.get_json()
     category_id = data.get('category_id')
@@ -19,7 +19,8 @@ def get_category_flashcards():
     if not category_id and not category_name_input:
         return jsonify({'error': 'User ID and Category ID are required'}), 400
 
-    category_name_input = category_name_input.lower()
+    if category_name_input:
+        category_name_input = category_name_input.lower()
 
     if not category_id:
         category_id = utils.get_category_id_from_category_name(category_name_input)
