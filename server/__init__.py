@@ -3,7 +3,8 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from .config import Config
-from .ip_restriction import setup_cors_and_ip_restriction
+from .ip_restriction import check_ip
+from flask_cors import CORS
 
 db = SQLAlchemy()
 
@@ -14,7 +15,9 @@ def create_app():
     db.init_app(app)
     migrate = Migrate(app, db)
 
-    setup_cors_and_ip_restriction(app)
+    app.before_request(check_ip)
+
+    CORS(app)
 
     from .views import home_bp, testing_bp, users_bp, quiz_bp, flashcards_bp, dev_bp
     app.register_blueprint(home_bp)
