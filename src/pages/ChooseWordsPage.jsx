@@ -4,7 +4,7 @@ import './ChooseWordsPage.css';
 import axios from 'axios';
 import { capitaliseWords } from '../utils';
 
-const ChooseWordsPage = ({ onChoose, title }) => {
+const ChooseWordsPage = ({ onChoose, title, setCategoryname }) => {
     const [fileList, setFileList] = useState([]);
 
     useEffect(() => {
@@ -19,9 +19,10 @@ const ChooseWordsPage = ({ onChoose, title }) => {
         fetchFileList();
     }, []);
 
-    const handleCategoryClick = async (categoryId) => {
+    const handleCategoryClick = async (categoryId, name) => {
         try {
             onChoose(categoryId);
+            setCategoryname(name);
         } catch (error) {
             console.error('Error sending category ID:', error);
         }
@@ -37,7 +38,7 @@ const ChooseWordsPage = ({ onChoose, title }) => {
                         variant="outline-light"
                         type="button"
                         key={category.id}
-                        onClick={() => handleCategoryClick(category.id)}
+                        onClick={() => handleCategoryClick(category.id, category.category_name)}
                     >
                         {capitaliseWords(category.category_name)}
                     </Button>

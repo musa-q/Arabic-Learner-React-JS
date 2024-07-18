@@ -66,13 +66,26 @@ class QuizUtils:
             return None
         return next_question_obj, next_question
 
-    def answer_current_quiz_question(self, quiz_type: str, user_id: int, user_answer: str):
+    def get_quiz_answer(self, quiz_type: str, user_id: int):
         current_quiz = self.get_current_quiz(quiz_type, user_id)
         if not current_quiz:
-            return False
+            return None
         current_question_obj, _ = self.get_next_question(quiz_type, user_id)
         if not current_question_obj:
             return None
+
+        if quiz_type == 'VocabQuiz':
+            return current_question_obj.word.arabic
+        elif quiz_type == 'VerbConjugationQuiz':
+            return current_question_obj.verb_conjugation.conjugation
+
+    def answer_current_quiz_question(self, quiz_type: str, user_id: int, user_answer: str):
+        current_quiz = self.get_current_quiz(quiz_type, user_id)
+        if not current_quiz:
+            return False, None
+        current_question_obj, _ = self.get_next_question(quiz_type, user_id)
+        if not current_question_obj:
+            return None, None
 
         try:
             current_question_obj.is_answered =  True
@@ -86,8 +99,8 @@ class QuizUtils:
                     current_quiz.score += 1
 
             db.session.commit()
-            return True
+            return True, current_question_obj.is_correct
         except:
-            return False
+            return False, None
 
 

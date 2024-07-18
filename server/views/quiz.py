@@ -18,7 +18,8 @@ def create_vocab_quiz():
     if not all([user_id, category_id]) and not all([user_id, category_name_input]):
         return jsonify({'error': 'User ID and Category ID are required'}), 400
 
-    category_name_input = category_name_input.lower()
+    if category_name_input:
+        category_name_input = category_name_input.lower()
 
     if not category_id:
         category_id = utils.get_category_id_from_category_name(category_name_input)
@@ -29,12 +30,12 @@ def create_vocab_quiz():
     if not user or not category:
         return jsonify({'error': 'Invalid User ID or Category ID'}), 400
 
-    current_time = datetime.now()
-    previous_quiz = quiz_utils.get_current_quiz('VocabQuiz', user_id)
-    if previous_quiz:
-        time_difference = current_time - previous_quiz.date_taken
-        if time_difference < timedelta(minutes=1):
-            return jsonify({'error': 'Cannot create quiz'}), 429
+    # current_time = datetime.now()
+    # previous_quiz = quiz_utils.get_current_quiz('VocabQuiz', user_id)
+    # if previous_quiz:
+    #     time_difference = current_time - previous_quiz.date_taken
+    #     if time_difference < timedelta(minutes=1):
+    #         return jsonify({'error': 'Cannot create quiz'}), 429
 
     words = VocabWord.query.filter_by(category_id=category_id).order_by(func.random()).limit(num_questions).all()
 
@@ -229,14 +230,15 @@ def view_current_user_vocab_quizzes(user_id):
 
     return jsonify(quiz_data), 200
 
-@quiz_bp.route('/users/<int:user_id>/get-next-question', methods=['GET'])
+@quiz_bp.route('/users/<int:user_id>/get-next-question', methods=['POST'])
 def get_quiz_next_question(user_id):
     data = request.get_json()
     quiz_type = data.get('quiz_type', 'VocabQuiz')
     _, next_question = quiz_utils.get_next_question(quiz_type, user_id)
+    hint = quiz_utils.get_quiz_answer(quiz_type, user_id)
     if not next_question:
         return jsonify({'error': 'All questions answered'}), 500
-    return jsonify(next_question), 200
+    return jsonify({'question': next_question, 'hint': hint}), 200
 
 @quiz_bp.route('/users/<int:user_id>/send-answer', methods=['POST'])
 def send_answer_from_client(user_id):
@@ -244,15 +246,10 @@ def send_answer_from_client(user_id):
     quiz_type = data.get('quiz_type', 'VocabQuiz')
     user_answer = data.get('user_answer')
 
-    updated_answer = quiz_utils.answer_current_quiz_question(quiz_type, user_id, user_answer)
-    print(updated_answer)
+    updated_answer, answerResponse = quiz_utils.answer_current_quiz_question(quiz_type, user_id, user_answer)
     if updated_answer == False:
         return jsonify({'error': 'Unable to send answer'}), 500
     if updated_answer == None:
         return jsonify({'error': 'All questions answered'}), 500
 
-    _, next_question = quiz_utils.get_next_question(quiz_type, user_id)
-    if not next_question:
-        return jsonify({'error': 'All questions answered'}), 500
-
-    return jsonify(next_question), 200
+    return jsonify({'answer_response': answerResponse}), 200
