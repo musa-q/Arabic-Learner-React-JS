@@ -115,7 +115,7 @@ const FlashCards = ({ flashcards }) => {
                                     {translitRadioValue === 'true' ? (
                                         <>
                                             <Card.Title className='front-card-title'>{flashcard.arabic}</Card.Title>
-                                            <Card.Text>{flashcard.romanized}</Card.Text>
+                                            <Card.Text>{flashcard.transliteration}</Card.Text>
                                         </>
                                     ) : (
                                         <>
