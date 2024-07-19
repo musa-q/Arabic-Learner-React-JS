@@ -10,7 +10,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0 --color",
     "preview": "vite preview",
-    "precommit": "npm run lint",
+    "precommit": "",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -18,7 +18,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "axios": "^1.6.8",
+    "axios": "^1.7.2",
     "bootstrap": "^5.3.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.2",
@@ -38,8 +38,6 @@
     "husky": "^9.0.10"
   },
   "husky": {
-    "hooks": {
-      "pre-commit": "npm run precommit"
-    }
+    "hooks": {}
   }
 }

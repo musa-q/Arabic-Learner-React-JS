@@ -25,7 +25,7 @@ export const sendPostRequest = async (devInfo, setPage, setSubmitted) => {
             console.error('Not logged');
         }
     } catch (error) {
-        console.log(error);
+        console.error(error);
     }
     setPage('home');
     setSubmitted(true);

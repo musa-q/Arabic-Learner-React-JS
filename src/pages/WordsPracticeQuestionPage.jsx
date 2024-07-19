@@ -7,80 +7,65 @@ import { ReactTransliterate } from "react-transliterate";
 import "react-transliterate/dist/index.css";
 import Toast from 'react-bootstrap/Toast';
 import ToastContainer from 'react-bootstrap/ToastContainer';
-
+import { capitaliseWords } from '../utils';
+import axios from 'axios';
 
 // Practice words by typing
-const WordsPracticeQuestionPage = ({ wordsList }) => {
-    const [pageTitle, setPageTitle] = useState(null);
-    const [allWords, setAllWords] = useState([]);
+const WordsPracticeQuestionPage = ({ quizId, pageTitle }) => {
     const [dataLoaded, setDataLoaded] = useState(false);
     const [revealAnswer, setRevealAnswer] = useState(false);
     const [showAnswerButton, setShowAnswerButton] = useState(false);
-    const [currentAnswer, setCurrentAnswer] = useState("");
-    const [correctAnswer, setCorrectAnswer] = useState("");
+    const [currentAnswer, setCurrentAnswer] = useState(null);
     const [resultMessage, setResultMessage] = useState("");
-    const [currentQuestion, setCurrentQuestion] = useState("");
+    const [hint, setHint] = useState(null);
+    const [currentQuestion, setCurrentQuestion] = useState(null);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch(`/arabic/words/${wordsList}`);
-                const wordsData = await response.json();
-                setAllWords(wordsData.translations);
-                setPageTitle(wordsData.title);
-
-                setDataLoaded(true);
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            }
-        };
-
-        fetchData();
-    }, []);
-
-    const getRandomWord = () => {
-        if (!dataLoaded || !allWords.length) {
-            return;
-        }
-
-        const wordIndex = Math.floor(Math.random() * allWords.length);
-        const word = allWords[wordIndex];
-
-        setCorrectAnswer(word.arabic);
-        setCurrentQuestion(word);
-    }
-
-    const removeDiacritics = (word) => {
-        return word.replace(/[\u0617-\u061A\u064B-\u0652\u0670]/g, '');
-    }
-
-    const normaliseText = (word) => {
-        word = removeDiacritics(word);
-        word = word.replace(/(آ|إ|أ)/g, 'ا');
-        word = word.replace(/(ة)/g, 'ه');
-        word = word.replace(/(ئ|ؤ)/g, 'ء');
-        word = word.replace(/(ى)/g, 'ي');
-        return word;
-    }
 
     const processText = (word) => {
         return word.trim().toLowerCase();
     }
 
-    const checkAnswer = () => {
-        var guess = processText(currentAnswer);
-        var answer = processText(correctAnswer);
-
-        if (guess === answer || guess === removeDiacritics(answer) || guess === normaliseText(answer)) {
-            setResultMessage("Correct!");
-        } else {
-            setResultMessage("Incorrect. Try again.");
-            setShowAnswerButton(true);
+    const checkAnswer = async () => {
+        if (currentAnswer == "" || currentAnswer == null) {
+            setResultMessage("Please answer!");
+            return;
         }
-    };
+        if (resultMessage != "Please answer!" && resultMessage == "" || resultMessage == null) {
+            console.log(resultMessage, 'ssafsaf');
+            return;
+        }
+        var guess = processText(currentAnswer);
+        console.log('daguesss', guess);
 
-    const nextQuestion = () => {
-        getRandomWord();
+        const response = await axios.post('http://localhost:5000/quiz/users/1/send-answer', {
+            quiz_type: 'VocabQuiz',
+            user_answer: guess,
+        });
+
+        const data = response.data;
+        console.log(data, 'answerdataaa');
+        if (data.answer_response == true) {
+            setResultMessage("Correct!");
+        } else if (data.answer_response == false) {
+            setResultMessage("Incorrect. Try again.");
+        } else {
+            console.error('Error. Unable to send answer');
+        }
+    }
+
+    const nextQuestion = async () => {
+        if (currentAnswer == "") {
+            setResultMessage("Please answer!");
+        }
+        const response = await axios.post('http://localhost:5000/quiz/users/1/get-next-question', {
+            quiz_type: 'VocabQuiz'
+        });
+
+        const data = response.data;
+        console.log("DADATA", data);
+        setHint(data.hint);
+        setCurrentQuestion(data.question.english);
+        setDataLoaded(true);
         setCurrentAnswer("");
         setResultMessage("");
         setShowAnswerButton(false);
@@ -108,7 +93,7 @@ const WordsPracticeQuestionPage = ({ wordsList }) => {
     };
 
     useEffect(() => {
-        if (dataLoaded) {
+        if (!dataLoaded) {
             nextQuestion();
         }
     }, [dataLoaded]);
@@ -132,14 +117,14 @@ const WordsPracticeQuestionPage = ({ wordsList }) => {
                 </Toast>
             </ToastContainer>
 
-            <h1>{pageTitle}</h1>
+            <h1>{capitaliseWords(pageTitle)}</h1>
             <Card className="practice-container">
                 <ListGroup variant="flush">
                     <div className="info-text">
                         {currentQuestion && (
                             <>
                                 <Card.Header>Translate to Arabic</Card.Header>
-                                <h2 className='pt-4'>{currentQuestion.english}</h2>
+                                <h2 className='pt-4'>{capitaliseWords(currentQuestion)}</h2>
                             </>
                         )}
                     </div>
@@ -164,7 +149,7 @@ const WordsPracticeQuestionPage = ({ wordsList }) => {
                         {showAnswerButton && (
                             <>
                                 <Button className="show-answer-button" type="button" variant="secondary" onClick={showAnswerClicked}>Show answer</Button>                                {revealAnswer && (
-                                    <p id='correct-answer'>The answer is: {correctAnswer}</p>
+                                    <p id='correct-answer'>The answer is: {hint}</p>
                                 )}
                             </>
                         )}
